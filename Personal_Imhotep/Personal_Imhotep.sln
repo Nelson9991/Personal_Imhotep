@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal_Imhotep", "Personal_Imhotep\Personal_Imhotep.csproj", "{A10F2CF4-9A4E-48BA-9135-F630D0363CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acceso_Datos", "Acceso_Datos\Acceso_Datos.csproj", "{6D0B31B9-37A5-4DA7-AB68-48B184AF5D1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A10F2CF4-9A4E-48BA-9135-F630D0363CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10F2CF4-9A4E-48BA-9135-F630D0363CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10F2CF4-9A4E-48BA-9135-F630D0363CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10F2CF4-9A4E-48BA-9135-F630D0363CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0B31B9-37A5-4DA7-AB68-48B184AF5D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0B31B9-37A5-4DA7-AB68-48B184AF5D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0B31B9-37A5-4DA7-AB68-48B184AF5D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0B31B9-37A5-4DA7-AB68-48B184AF5D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E080DE6-2C39-428B-A4B5-8C1FD03C2438}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Personal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Cédula" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Formacion" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="Caducidad_licencia" Type="date" />
+          <Property Name="Certificacion" Type="date" />
+          <Property Name="Observaciones" Type="varchar" MaxLength="300" />
+          <Property Name="hoja_de_vida" Type="varbinary(max)" />
+          <Property Name="doc_personales" Type="varbinary(max)" />
+          <Property Name="doc_Titulo" Type="varbinary(max)" />
+          <Property Name="nombre_hojaV" Type="varchar(max)" />
+          <Property Name="nombre_titulo" Type="varchar(max)" />
+          <Property Name="nombre_docP" Type="varchar(max)" />
+          <Property Name="Estado" Type="varchar" MaxLength="50" />
+          <Property Name="doc_Certificacion" Type="varbinary(max)" />
+          <Property Name="Licencia_Riesgos" Type="varbinary(max)" />
+          <Property Name="nom_docCertif" Type="varchar(max)" />
+          <Property Name="nom_Licencia" Type="varchar(max)" />
+          <Property Name="anio" Type="int" />
+        </EntityType>
+        <EntityType Name="USUARIO2">
+          <Key>
+            <PropertyRef Name="idUsuario" />
+          </Key>
+          <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombres_y_Apellidos" Type="varchar" MaxLength="50" />
+          <Property Name="Login" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Icono" Type="image" />
+          <Property Name="Nombre_de_icono" Type="varchar(max)" />
+          <Property Name="Correo" Type="varchar(max)" />
+          <Property Name="Rol" Type="varchar(max)" />
+          <Property Name="Estado" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Function Name="Actualizar_Persona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="cedula" Type="varchar" Mode="In" />
+          <Parameter Name="formacion" Type="varchar" Mode="In" />
+          <Parameter Name="caducidad_licencia" Type="date" Mode="In" />
+          <Parameter Name="caducidad_certif" Type="date" Mode="In" />
+          <Parameter Name="Observaciones" Type="varchar" Mode="In" />
+          <Parameter Name="hoja_vida" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="doc_personales" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="titulo" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="nom_hojaV" Type="varchar(max)" Mode="In" />
+          <Parameter Name="nom_Titulo" Type="varchar(max)" Mode="In" />
+          <Parameter Name="nom_docP" Type="varchar(max)" Mode="In" />
+          <Parameter Name="doc_Certif" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="licen_riesgo" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="nom_docCertif" Type="varchar(max)" Mode="In" />
+          <Parameter Name="nom_licencia" Type="varchar(max)" Mode="In" />
+          <Parameter Name="anio" Type="int" Mode="In" />
+        </Function>
+        <Function Name="buscar_formacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="letra" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="buscar_person_nom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="letra" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="buscar_usuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="letra" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="editar_usuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idUsuario" Type="int" Mode="In" />
+          <Parameter Name="nombres" Type="varchar" Mode="In" />
+          <Parameter Name="Login" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+          <Parameter Name="Icono" Type="image" Mode="In" />
+          <Parameter Name="Nombre_de_icono" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Correo" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Rol" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="Eliminar_Persona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="eliminar_usuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idusuario" Type="int" Mode="In" />
+          <Parameter Name="login" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Insertar_Persona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Nombre" Type="varchar" Mode="In" />
+          <Parameter Name="Cedula" Type="varchar" Mode="In" />
+          <Parameter Name="Formacion" Type="varchar" Mode="In" />
+          <Parameter Name="Caducidad" Type="date" Mode="In" />
+          <Parameter Name="Certificacion" Type="date" Mode="In" />
+          <Parameter Name="Observaciones" Type="varchar" Mode="In" />
+          <Parameter Name="hoja_vida" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="doc_perso" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="titulo" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="nom_hoja" Type="varchar(max)" Mode="In" />
+          <Parameter Name="nom_docs" Type="varchar(max)" Mode="In" />
+          <Parameter Name="nombre_titulo" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Estado" Type="varchar" Mode="In" />
+          <Parameter Name="doc_Certificacion" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="licencia_riesgos" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="nom_docCertif" Type="varchar(max)" Mode="In" />
+          <Parameter Name="nom_licencia" Type="varchar(max)" Mode="In" />
+          <Parameter Name="anio" Type="int" Mode="In" />
+        </Function>
+        <Function Name="insertar_usuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombres" Type="varchar" Mode="In" />
+          <Parameter Name="Login" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+          <Parameter Name="Icono" Type="image" Mode="In" />
+          <Parameter Name="Nombre_de_icono" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Correo" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Rol" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Estado" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Mostrar_Personas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="mostrar_usuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="Personal" EntityType="Self.Personal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="USUARIO2" EntityType="Self.USUARIO2" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Personal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Cédula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Formacion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Caducidad_licencia" Type="DateTime" Precision="0" />
+          <Property Name="Certificacion" Type="DateTime" Precision="0" />
+          <Property Name="Observaciones" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="hoja_de_vida" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="doc_personales" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="doc_Titulo" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="nombre_hojaV" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="nombre_titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="nombre_docP" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="doc_Certificacion" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Licencia_Riesgos" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="nom_docCertif" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="nom_Licencia" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="anio" Type="Int32" />
+        </EntityType>
+        <EntityType Name="USUARIO2">
+          <Key>
+            <PropertyRef Name="idUsuario" />
+          </Key>
+          <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombres_y_Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Icono" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Nombre_de_icono" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Rol" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="Personal_IMHOTEPEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Personal" EntityType="Self.Personal" />
+          <EntitySet Name="USUARIO2" EntityType="Self.USUARIO2" />
+          <FunctionImport Name="Actualizar_Persona">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="cedula" Mode="In" Type="String" />
+            <Parameter Name="formacion" Mode="In" Type="String" />
+            <Parameter Name="caducidad_licencia" Mode="In" Type="DateTime" />
+            <Parameter Name="caducidad_certif" Mode="In" Type="DateTime" />
+            <Parameter Name="Observaciones" Mode="In" Type="String" />
+            <Parameter Name="hoja_vida" Mode="In" Type="Binary" />
+            <Parameter Name="doc_personales" Mode="In" Type="Binary" />
+            <Parameter Name="titulo" Mode="In" Type="Binary" />
+            <Parameter Name="nom_hojaV" Mode="In" Type="String" />
+            <Parameter Name="nom_Titulo" Mode="In" Type="String" />
+            <Parameter Name="nom_docP" Mode="In" Type="String" />
+            <Parameter Name="doc_Certif" Mode="In" Type="Binary" />
+            <Parameter Name="licen_riesgo" Mode="In" Type="Binary" />
+            <Parameter Name="nom_docCertif" Mode="In" Type="String" />
+            <Parameter Name="nom_licencia" Mode="In" Type="String" />
+            <Parameter Name="anio" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="buscar_formacion" ReturnType="Collection(Model.buscar_formacion_Result)">
+            <Parameter Name="letra" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="buscar_person_nom" ReturnType="Collection(Model.buscar_person_nom_Result)">
+            <Parameter Name="letra" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="buscar_usuario" ReturnType="Collection(Model.buscar_usuario_Result)">
+            <Parameter Name="letra" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="editar_usuario">
+            <Parameter Name="idUsuario" Mode="In" Type="Int32" />
+            <Parameter Name="nombres" Mode="In" Type="String" />
+            <Parameter Name="Login" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="Icono" Mode="In" Type="Binary" />
+            <Parameter Name="Nombre_de_icono" Mode="In" Type="String" />
+            <Parameter Name="Correo" Mode="In" Type="String" />
+            <Parameter Name="Rol" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Eliminar_Persona">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="eliminar_usuario">
+            <Parameter Name="idusuario" Mode="In" Type="Int32" />
+            <Parameter Name="login" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Insertar_Persona">
+            <Parameter Name="Nombre" Mode="In" Type="String" />
+            <Parameter Name="Cedula" Mode="In" Type="String" />
+            <Parameter Name="Formacion" Mode="In" Type="String" />
+            <Parameter Name="Caducidad" Mode="In" Type="DateTime" />
+            <Parameter Name="Certificacion" Mode="In" Type="DateTime" />
+            <Parameter Name="Observaciones" Mode="In" Type="String" />
+            <Parameter Name="hoja_vida" Mode="In" Type="Binary" />
+            <Parameter Name="doc_perso" Mode="In" Type="Binary" />
+            <Parameter Name="titulo" Mode="In" Type="Binary" />
+            <Parameter Name="nom_hoja" Mode="In" Type="String" />
+            <Parameter Name="nom_docs" Mode="In" Type="String" />
+            <Parameter Name="nombre_titulo" Mode="In" Type="String" />
+            <Parameter Name="Estado" Mode="In" Type="String" />
+            <Parameter Name="doc_Certificacion" Mode="In" Type="Binary" />
+            <Parameter Name="licencia_riesgos" Mode="In" Type="Binary" />
+            <Parameter Name="nom_docCertif" Mode="In" Type="String" />
+            <Parameter Name="nom_licencia" Mode="In" Type="String" />
+            <Parameter Name="anio" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="insertar_usuario">
+            <Parameter Name="nombres" Mode="In" Type="String" />
+            <Parameter Name="Login" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="Icono" Mode="In" Type="Binary" />
+            <Parameter Name="Nombre_de_icono" Mode="In" Type="String" />
+            <Parameter Name="Correo" Mode="In" Type="String" />
+            <Parameter Name="Rol" Mode="In" Type="String" />
+            <Parameter Name="Estado" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Mostrar_Personas" ReturnType="Collection(Model.Mostrar_Personas_Result)" />
+          <FunctionImport Name="mostrar_usuario" ReturnType="Collection(Model.mostrar_usuario_Result)" />
+        </EntityContainer>
+        <ComplexType Name="buscar_formacion_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
+          <Property Type="DateTime" Name="Caducidad_licencia" Nullable="true" />
+          <Property Type="DateTime" Name="Certificacion" Nullable="true" />
+          <Property Type="String" Name="Observaciones" Nullable="true" MaxLength="300" />
+          <Property Type="Binary" Name="hoja_de_vida" Nullable="true" />
+          <Property Type="Binary" Name="doc_personales" Nullable="true" />
+          <Property Type="Binary" Name="doc_Titulo" Nullable="true" />
+          <Property Type="String" Name="nombre_hojaV" Nullable="true" />
+          <Property Type="String" Name="nombre_titulo" Nullable="true" />
+          <Property Type="String" Name="nombre_docP" Nullable="true" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="doc_Certificacion" Nullable="true" />
+          <Property Type="Binary" Name="Licencia_Riesgos" Nullable="true" />
+          <Property Type="String" Name="nom_docCertif" Nullable="true" />
+          <Property Type="String" Name="nom_Licencia" Nullable="true" />
+          <Property Type="Int32" Name="anio" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="buscar_person_nom_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
+          <Property Type="DateTime" Name="Caducidad_licencia" Nullable="true" />
+          <Property Type="DateTime" Name="Certificacion" Nullable="true" />
+          <Property Type="String" Name="Observaciones" Nullable="true" MaxLength="300" />
+          <Property Type="Binary" Name="hoja_de_vida" Nullable="true" />
+          <Property Type="Binary" Name="doc_personales" Nullable="true" />
+          <Property Type="Binary" Name="doc_Titulo" Nullable="true" />
+          <Property Type="String" Name="nombre_hojaV" Nullable="true" />
+          <Property Type="String" Name="nombre_titulo" Nullable="true" />
+          <Property Type="String" Name="nombre_docP" Nullable="true" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="doc_Certificacion" Nullable="true" />
+          <Property Type="Binary" Name="Licencia_Riesgos" Nullable="true" />
+          <Property Type="String" Name="nom_docCertif" Nullable="true" />
+          <Property Type="String" Name="nom_Licencia" Nullable="true" />
+          <Property Type="Int32" Name="anio" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="buscar_usuario_Result">
+          <Property Type="Int32" Name="idUsuario" Nullable="false" />
+          <Property Type="String" Name="Nombres" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Login" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="Icono" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Nombre_de_icono" Nullable="true" />
+          <Property Type="String" Name="Correo" Nullable="true" />
+          <Property Type="String" Name="rol" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Mostrar_Personas_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
+          <Property Type="DateTime" Name="Caducidad_Licencia" Nullable="true" />
+          <Property Type="DateTime" Name="Certificacion" Nullable="true" />
+          <Property Type="String" Name="Observaciones" Nullable="true" MaxLength="300" />
+          <Property Type="Binary" Name="hoja_de_vida" Nullable="true" />
+          <Property Type="Binary" Name="doc_personales" Nullable="true" />
+          <Property Type="Binary" Name="doc_Titulo" Nullable="true" />
+          <Property Type="String" Name="nombre_hojaV" Nullable="true" />
+          <Property Type="String" Name="nombre_titulo" Nullable="true" />
+          <Property Type="String" Name="nombre_docP" Nullable="true" />
+          <Property Type="Binary" Name="doc_Certificacion" Nullable="true" />
+          <Property Type="Binary" Name="Licencia_Riesgos" Nullable="true" />
+          <Property Type="String" Name="nom_docCertif" Nullable="true" />
+          <Property Type="String" Name="nom_Licencia" Nullable="true" />
+          <Property Type="Int32" Name="anio" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="mostrar_usuario_Result">
+          <Property Type="Int32" Name="idUsuario" Nullable="false" />
+          <Property Type="String" Name="Nombres" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Login" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="Icono" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Nombre_de_icono" Nullable="true" />
+          <Property Type="String" Name="Correo" Nullable="true" />
+          <Property Type="String" Name="rol" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Personal_IMHOTEPEntities">
+          <EntitySetMapping Name="Personal">
+            <EntityTypeMapping TypeName="Model.Personal">
+              <MappingFragment StoreEntitySet="Personal">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Cédula" ColumnName="Cédula" />
+                <ScalarProperty Name="Formacion" ColumnName="Formacion" />
+                <ScalarProperty Name="Caducidad_licencia" ColumnName="Caducidad_licencia" />
+                <ScalarProperty Name="Certificacion" ColumnName="Certificacion" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="hoja_de_vida" ColumnName="hoja_de_vida" />
+                <ScalarProperty Name="doc_personales" ColumnName="doc_personales" />
+                <ScalarProperty Name="doc_Titulo" ColumnName="doc_Titulo" />
+                <ScalarProperty Name="nombre_hojaV" ColumnName="nombre_hojaV" />
+                <ScalarProperty Name="nombre_titulo" ColumnName="nombre_titulo" />
+                <ScalarProperty Name="nombre_docP" ColumnName="nombre_docP" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="doc_Certificacion" ColumnName="doc_Certificacion" />
+                <ScalarProperty Name="Licencia_Riesgos" ColumnName="Licencia_Riesgos" />
+                <ScalarProperty Name="nom_docCertif" ColumnName="nom_docCertif" />
+                <ScalarProperty Name="nom_Licencia" ColumnName="nom_Licencia" />
+                <ScalarProperty Name="anio" ColumnName="anio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USUARIO2">
+            <EntityTypeMapping TypeName="Model.USUARIO2">
+              <MappingFragment StoreEntitySet="USUARIO2">
+                <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+                <ScalarProperty Name="Nombres_y_Apellidos" ColumnName="Nombres_y_Apellidos" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Icono" ColumnName="Icono" />
+                <ScalarProperty Name="Nombre_de_icono" ColumnName="Nombre_de_icono" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Actualizar_Persona" FunctionName="Model.Store.Actualizar_Persona" />
+          <FunctionImportMapping FunctionImportName="buscar_formacion" FunctionName="Model.Store.buscar_formacion">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.buscar_formacion_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Cédula" ColumnName="Cédula" />
+                <ScalarProperty Name="Formacion" ColumnName="Formacion" />
+                <ScalarProperty Name="Caducidad_licencia" ColumnName="Caducidad_licencia" />
+                <ScalarProperty Name="Certificacion" ColumnName="Certificacion" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="hoja_de_vida" ColumnName="hoja_de_vida" />
+                <ScalarProperty Name="doc_personales" ColumnName="doc_personales" />
+                <ScalarProperty Name="doc_Titulo" ColumnName="doc_Titulo" />
+                <ScalarProperty Name="nombre_hojaV" ColumnName="nombre_hojaV" />
+                <ScalarProperty Name="nombre_titulo" ColumnName="nombre_titulo" />
+                <ScalarProperty Name="nombre_docP" ColumnName="nombre_docP" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="doc_Certificacion" ColumnName="doc_Certificacion" />
+                <ScalarProperty Name="Licencia_Riesgos" ColumnName="Licencia_Riesgos" />
+                <ScalarProperty Name="nom_docCertif" ColumnName="nom_docCertif" />
+                <ScalarProperty Name="nom_Licencia" ColumnName="nom_Licencia" />
+                <ScalarProperty Name="anio" ColumnName="anio" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="buscar_person_nom" FunctionName="Model.Store.buscar_person_nom">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.buscar_person_nom_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Cédula" ColumnName="Cédula" />
+                <ScalarProperty Name="Formacion" ColumnName="Formacion" />
+                <ScalarProperty Name="Caducidad_licencia" ColumnName="Caducidad_licencia" />
+                <ScalarProperty Name="Certificacion" ColumnName="Certificacion" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="hoja_de_vida" ColumnName="hoja_de_vida" />
+                <ScalarProperty Name="doc_personales" ColumnName="doc_personales" />
+                <ScalarProperty Name="doc_Titulo" ColumnName="doc_Titulo" />
+                <ScalarProperty Name="nombre_hojaV" ColumnName="nombre_hojaV" />
+                <ScalarProperty Name="nombre_titulo" ColumnName="nombre_titulo" />
+                <ScalarProperty Name="nombre_docP" ColumnName="nombre_docP" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="doc_Certificacion" ColumnName="doc_Certificacion" />
+                <ScalarProperty Name="Licencia_Riesgos" ColumnName="Licencia_Riesgos" />
+                <ScalarProperty Name="nom_docCertif" ColumnName="nom_docCertif" />
+                <ScalarProperty Name="nom_Licencia" ColumnName="nom_Licencia" />
+                <ScalarProperty Name="anio" ColumnName="anio" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="buscar_usuario" FunctionName="Model.Store.buscar_usuario">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.buscar_usuario_Result">
+                <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Icono" ColumnName="Icono" />
+                <ScalarProperty Name="Nombre_de_icono" ColumnName="Nombre_de_icono" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="rol" ColumnName="rol" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="editar_usuario" FunctionName="Model.Store.editar_usuario" />
+          <FunctionImportMapping FunctionImportName="Eliminar_Persona" FunctionName="Model.Store.Eliminar_Persona" />
+          <FunctionImportMapping FunctionImportName="eliminar_usuario" FunctionName="Model.Store.eliminar_usuario" />
+          <FunctionImportMapping FunctionImportName="Insertar_Persona" FunctionName="Model.Store.Insertar_Persona" />
+          <FunctionImportMapping FunctionImportName="insertar_usuario" FunctionName="Model.Store.insertar_usuario" />
+          <FunctionImportMapping FunctionImportName="Mostrar_Personas" FunctionName="Model.Store.Mostrar_Personas">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.Mostrar_Personas_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Cédula" ColumnName="Cédula" />
+                <ScalarProperty Name="Formacion" ColumnName="Formacion" />
+                <ScalarProperty Name="Caducidad_Licencia" ColumnName="Caducidad Licencia" />
+                <ScalarProperty Name="Certificacion" ColumnName="Certificacion" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="hoja_de_vida" ColumnName="hoja_de_vida" />
+                <ScalarProperty Name="doc_personales" ColumnName="doc_personales" />
+                <ScalarProperty Name="doc_Titulo" ColumnName="doc_Titulo" />
+                <ScalarProperty Name="nombre_hojaV" ColumnName="nombre_hojaV" />
+                <ScalarProperty Name="nombre_titulo" ColumnName="nombre_titulo" />
+                <ScalarProperty Name="nombre_docP" ColumnName="nombre_docP" />
+                <ScalarProperty Name="doc_Certificacion" ColumnName="doc_Certificacion" />
+                <ScalarProperty Name="Licencia_Riesgos" ColumnName="Licencia_Riesgos" />
+                <ScalarProperty Name="nom_docCertif" ColumnName="nom_docCertif" />
+                <ScalarProperty Name="nom_Licencia" ColumnName="nom_Licencia" />
+                <ScalarProperty Name="anio" ColumnName="anio" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="mostrar_usuario" FunctionName="Model.Store.mostrar_usuario">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.mostrar_usuario_Result">
+                <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Icono" ColumnName="Icono" />
+                <ScalarProperty Name="Nombre_de_icono" ColumnName="Nombre_de_icono" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="rol" ColumnName="rol" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
