@@ -19,6 +19,11 @@ namespace Personal_Imhotep
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
 
         }
     }
