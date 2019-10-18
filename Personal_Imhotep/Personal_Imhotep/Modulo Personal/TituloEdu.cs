@@ -20,6 +20,7 @@ namespace Personal_Imhotep.Modulo_Personal
 
 
         public byte[] buffer = null;
+        public string nombTitulo;
 
         private void btnCargarTitulo_Click(object sender, EventArgs e)
         {
@@ -29,6 +30,7 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
+                nombTitulo = ruta;
                 buffer = File.ReadAllBytes(ruta);
                 webTitulo.Navigate(ruta);
             }

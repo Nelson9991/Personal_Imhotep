@@ -25,6 +25,7 @@ namespace Personal_Imhotep.Modulo_Personal
 
 
         public byte[] buffer = null;
+        public string nombDocs;
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
@@ -34,6 +35,7 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
+                nombDocs = ruta;
                 buffer = File.ReadAllBytes(ruta);
                 webDocs.Navigate(ruta);
             }

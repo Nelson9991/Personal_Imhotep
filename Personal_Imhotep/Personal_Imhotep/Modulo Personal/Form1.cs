@@ -24,9 +24,18 @@ namespace Personal_Imhotep
 
         Licencia licencia = new Licencia();
 
+        Certificacion certif = new Certificacion();
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        public DataGridView ObetnerGrid()
+        {
+            var grilla = GridPersonal;
+
+            return grilla;
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
@@ -39,7 +48,6 @@ namespace Personal_Imhotep
             hoja.ShowDialog();
         }
 
-        byte[] buffer = null;
 
         public Personal ObtenerDatosPersona()
         {
@@ -59,24 +67,87 @@ namespace Personal_Imhotep
 
             persona.hoja_de_vida = hoja.buffer;
 
-              persona.doc_personales 
-              persona.doc_Titulo 
-              persona.nombre_hojaV persona.nombre_titulo persona.nombre_docP
-              persona.doc_Certificacion persona.Licencia_Riesgos
-              persona.nom_docCertif persona.nom_Licencia 
-              persona.anio
+            persona.doc_personales = doc.buffer;
+
+            persona.doc_Titulo = titulo.buffer;
+
+            persona.nombre_hojaV = hoja.nombHoja;
+
+            persona.nombre_titulo = titulo.nombTitulo;
+
+            persona.nombre_docP = doc.nombDocs;
+
+            persona.doc_Certificacion = certif.buffer;
+
+            persona.Licencia_Riesgos = licencia.buffer;
+
+            persona.nom_docCertif = certif.nombCertif;
+
+            persona.nom_Licencia = licencia.nombLicen;
+
+            persona.anio = Convert.ToInt32(dpAnio.Text);
+
+            return persona;
         }
 
         private void rtyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(txtNombre.Text != "")
             {
-                pr.InsertarPersona()
+                try
+                {
+                    var persona = ObtenerDatosPersona();
+
+                    pr.InsertarPersona(persona);
+
+                    MessageBox.Show("Datos guardados");
+
+                    Mostrar();
+                    panel_Usuarios.Visible = false;
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+    
             }
+        }
+
+        private void Mostrar()
+        {
+            try
+            {
+
+                var personal = pr.MostrarPersonal();
+                GridPersonal.DataSource = personal;
+
+                GridPersonal.Columns[0].DisplayIndex = 18;
+                GridPersonal.Columns[1].Visible = false;
+                GridPersonal.Columns[5].HeaderText = "Caducidad Licencia";
+                GridPersonal.Columns[8].Visible = false;
+                GridPersonal.Columns[9].Visible = false;
+                GridPersonal.Columns[10].Visible = false;
+                GridPersonal.Columns[11].Visible = false;
+                GridPersonal.Columns[12].Visible = false;
+                GridPersonal.Columns[13].Visible = false;
+                GridPersonal.Columns[14].Visible = false;
+                GridPersonal.Columns[15].Visible = false;
+                GridPersonal.Columns[16].Visible = false;
+                GridPersonal.Columns[17].Visible = false;
+                GridPersonal.Columns[18].Visible = false;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Mostrar();
+            panel_Usuarios.Visible = false;
 
         }
 
@@ -93,6 +164,38 @@ namespace Personal_Imhotep
         private void btnMostrarLicen_Click(object sender, EventArgs e)
         {
             licencia.ShowDialog();
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            panel_Usuarios.Visible = true;
+        }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
+        {
+            panel_Usuarios.Visible = false;
+        }
+
+        private void GridPersonal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            panel_Usuarios.Visible = true;
+
+            lblIdPerson.Text = GridPersonal.SelectedCells[1].Value.ToString();
+
+            txtNombre.Text = GridPersonal.SelectedCells[2].Value.ToString();
+
+            txtCédula.Text = GridPersonal.SelectedCells[3].Value.ToString();
+
+            dropFormacion.Text = GridPersonal.SelectedCells[4].Value.ToString();
+
+            dtFechaCaduc.Value = Convert.ToDateTime(GridPersonal.SelectedCells[5].Value);
+
+            dtFechCertifica.Value = Convert.ToDateTime(GridPersonal.SelectedCells[6].Value);
+
+            txtObservacion.Text = GridPersonal.SelectedCells[7].Value.ToString();
+
+            dpAnio.Text = GridPersonal.SelectedCells[18].Value.ToString();
+
         }
     }
 }

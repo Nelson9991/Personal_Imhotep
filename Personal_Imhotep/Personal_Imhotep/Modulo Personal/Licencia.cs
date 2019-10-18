@@ -25,6 +25,8 @@ namespace Personal_Imhotep.Modulo_Personal
 
         public byte[] buffer = null;
 
+        public string nombLicen;
+
         private void btnlicen_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -33,6 +35,7 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
+                nombLicen = ruta;
                 buffer = File.ReadAllBytes(ruta);
                 webLicencia.Navigate(ruta);
             }

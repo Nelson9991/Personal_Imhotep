@@ -306,6 +306,7 @@
             this.btnCargarCertifi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCargarCertifi.TextMarginLeft = 0;
             this.btnCargarCertifi.UseDefaultRadiusAndThickness = true;
+            this.btnCargarCertifi.Click += new System.EventHandler(this.btnCargarCertifi_Click);
             // 
             // Certificacion
             // 
