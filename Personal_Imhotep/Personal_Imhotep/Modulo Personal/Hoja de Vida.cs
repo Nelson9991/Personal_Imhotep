@@ -11,10 +11,8 @@ using System.Windows.Forms;
 
 namespace Personal_Imhotep.Modulo_Personal
 {
-    public partial class Hoja_de_Vida : Form
+    public partial class Hoja_de_Vida : Form 
     {
-
-        Form1 form1;
 
         public Hoja_de_Vida()
         {
@@ -23,6 +21,7 @@ namespace Personal_Imhotep.Modulo_Personal
 
         public byte[] buffer = null;
         public string nombHoja;
+        public string rutaHoja;
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
@@ -49,21 +48,20 @@ namespace Personal_Imhotep.Modulo_Personal
             this.Close();
         }
 
-        public void MostrarHojaV()
+        public void MostrarHojaV(string nombreHoja, object buffer)
         {
+
             byte[] buffer2;
 
-            var grilla = form1.ObetnerGrid();
+            string ruta = @"C:\temp\";
 
-            string nombreHoja = grilla.SelectedCells[11].Value.ToString();
-
-            string ruta = @"C:\";
-
-            if (grilla.SelectedCells[8].Value.ToString() != "")
+            if (buffer.ToString() != "")
             {
-                ruta = Path.Combine(ruta, nombHoja);
+                ruta = Path.Combine(ruta, nombreHoja);
 
-                buffer2 = (byte[])grilla.SelectedCells[8].Value;
+                rutaHoja = ruta;
+
+                buffer2 = (byte[])buffer;
 
                 File.WriteAllBytes(ruta, buffer2);
 

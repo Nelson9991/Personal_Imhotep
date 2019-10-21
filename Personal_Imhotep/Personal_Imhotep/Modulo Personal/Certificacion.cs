@@ -20,6 +20,7 @@ namespace Personal_Imhotep.Modulo_Personal
 
         public byte[] buffer = null;
         public string nombCertif;
+        public string rutaCertif;
 
         private void btnCargarCertifi_Click(object sender, EventArgs e)
         {
@@ -29,10 +30,42 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
-                nombCertif = ruta;
+                nombCertif = Path.GetFileName(ruta);
                 buffer = File.ReadAllBytes(ruta);
                 webCertificacion.Navigate(ruta);
             }
+        }
+
+        public void MostrarCertificacion(string nombreCertif, object buffer)
+        {
+
+            byte[] buffer2;
+
+            string ruta = @"C:\temp\";
+
+            if (buffer.ToString() != "")
+            {
+                ruta = Path.Combine(ruta, nombreCertif);
+
+                rutaCertif = ruta;
+
+                buffer2 = (byte[])buffer;
+
+                File.WriteAllBytes(ruta, buffer2);
+
+                webCertificacion.Navigate(ruta);
+            }
+        }
+
+        private void btnCertif_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Datos Guardados");
+            this.Close();
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -26,6 +26,7 @@ namespace Personal_Imhotep.Modulo_Personal
 
         public byte[] buffer = null;
         public string nombDocs;
+        public string rutaDocs;
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
@@ -35,10 +36,37 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
-                nombDocs = ruta;
+                nombDocs = Path.GetFileName(ruta);
                 buffer = File.ReadAllBytes(ruta);
                 webDocs.Navigate(ruta);
             }
+        }
+
+        public void MostrarDocs_Perso(string nombreDoc, object buffer)
+        {
+
+            byte[] buffer2;
+
+            string ruta = @"C:\temp\";
+
+            if (buffer.ToString() != "")
+            {
+                ruta = Path.Combine(ruta, nombreDoc);
+
+                rutaDocs = ruta;
+
+                buffer2 = (byte[])buffer;
+
+                File.WriteAllBytes(ruta, buffer2);
+
+                webDocs.Navigate(ruta);
+            }
+        }
+
+        private void btnGuardarDocs_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Datos Guardados");
+            this.Close();
         }
     }
 }

@@ -4,7 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,7 +47,14 @@ namespace Personal_Imhotep
 
         private void btnMostrarHoja_Click(object sender, EventArgs e)
         {
-            hoja.ShowDialog();
+            try
+            {
+                hoja.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
@@ -104,6 +113,7 @@ namespace Personal_Imhotep
 
                     Mostrar();
                     panel_Usuarios.Visible = false;
+                    btnNuevo.Visible = true;
                 }
                 catch(Exception ex)
                 {
@@ -153,27 +163,66 @@ namespace Personal_Imhotep
 
         private void btnMostrarDatosP_Click(object sender, EventArgs e)
         {
-            doc.ShowDialog();
+            try
+            {
+                doc.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnMostrarTitulo_Click(object sender, EventArgs e)
         {
-            titulo.ShowDialog();
+            try
+            {
+                titulo.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnMostrarLicen_Click(object sender, EventArgs e)
         {
-            licencia.ShowDialog();
+            try
+            {
+                licencia.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
+
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             panel_Usuarios.Visible = true;
+            txtNombre.Text = "";
+            txtCédula.Text = "";
+            txtObservacion.Text = "";
+            dtFechaCaduc.Value = DateTime.Today;
+            dtFechCertifica.Value = DateTime.Today;
+            dropFormacion.Text = "Formación";
+            dpAnio.Text = "Año del Personal";
+            btnGuardar.Visible = true;
+            btnGuardarCambios.Visible = false;
+            btnNuevo.Visible = false;
         }
-
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
+            CerrarArchivosTemp();
+            EliminarArchivosTemp(hoja.rutaHoja);
+            EliminarArchivosTemp(doc.rutaDocs);
+            EliminarArchivosTemp(titulo.rutaTitulo);
+            EliminarArchivosTemp(certif.rutaCertif);
+            EliminarArchivosTemp(licencia.rutaLicen);
             panel_Usuarios.Visible = false;
+
         }
 
         private void GridPersonal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -195,7 +244,89 @@ namespace Personal_Imhotep
             txtObservacion.Text = GridPersonal.SelectedCells[7].Value.ToString();
 
             dpAnio.Text = GridPersonal.SelectedCells[18].Value.ToString();
+  
+            if(GridPersonal.SelectedCells[8].Value != null)
+            {
+                hoja.MostrarHojaV(GridPersonal.SelectedCells[11].Value.ToString(), GridPersonal.SelectedCells[8].Value);
+            }
+            
+            if (GridPersonal.SelectedCells[9].Value != null)
+            {
+                doc.MostrarDocs_Perso(GridPersonal.SelectedCells[13].Value.ToString(), GridPersonal.SelectedCells[9].Value);
+            }
+            
+            if(GridPersonal.SelectedCells[10].Value != null)
+            {
+                titulo.MostrarTitulo(GridPersonal.SelectedCells[12].Value.ToString(), GridPersonal.SelectedCells[10].Value);
+            }
+            
+            if (GridPersonal.SelectedCells[14].Value != null)
+            {
+                certif.MostrarCertificacion(GridPersonal.SelectedCells[16].Value.ToString(), GridPersonal.SelectedCells[14].Value);
+            }
+            
+            if(GridPersonal.SelectedCells[15].Value != null)
+            {
+                licencia.MostrarLicencia(GridPersonal.SelectedCells[17].Value.ToString(), GridPersonal.SelectedCells[15].Value);
+            }
+            
 
+        }
+
+        private void btnMostrarCerti_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                certif.ShowDialog();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        private void CerrarArchivosTemp()
+        {
+            foreach (var process in Process.GetProcessesByName("AcroRd32")) //whatever you need to close 
+            {     
+                    process.Kill();
+                         
+            }
+
+        }
+
+        private void EliminarArchivosTemp(string path)
+        {
+            // Delete a file by using File class static method...
+            if (File.Exists(path))
+            {
+                // Use a try block to catch IOExceptions, to
+                // handle the case of the file already being
+                // opened by another process.
+                try
+                {
+                    File.Delete(path);
+                }
+                catch (IOException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void btnGuardarCambios_Click(object sender, EventArgs e)
+        {
+            EliminarArchivosTemp(hoja.rutaHoja);
+            EliminarArchivosTemp(doc.rutaDocs);
+            EliminarArchivosTemp(titulo.rutaTitulo);
+            EliminarArchivosTemp(certif.rutaCertif);
+            EliminarArchivosTemp(licencia.rutaLicen);
         }
     }
 }

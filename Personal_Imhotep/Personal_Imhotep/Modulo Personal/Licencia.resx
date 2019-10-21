@@ -132,6 +132,14 @@
         x+vt8HP2CJy7R7R8zLdkZGbdxvgDb3JaKK8opj8AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAjCAYAAAAAEIPqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB1SURBVFhH7dixCQAhEAXRLcf+izG5Mi4/xWNC0wGF/2Gy
+        DV68de2+3p7R2zi95YRctTs4NchB60EOWg9y0HqQg9aDHLQe5KD1IAetBzloPchB60EOWg9y0HqQg9aD
+        HLQe5KD1IAetB/n/T7+7g9NaTsi3rWoCv9qLYciSEFoAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnCargarLicencia.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANIAAAAtCAYAAADbXTWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -141,15 +149,6 @@
         CRrJSEjQSEZCgkYyEhI0kpGQoJGMhASNZCQkaCQjIUEjGQkJGslISNBIRkKCRjISEjSSkZCgkYyEBI1k
         JCRoJCMhQSMZCQkayUhI0EhGQoJGMhISNJKRkKCRjIQEjWQkJGgkIyFBIxmNsWzzevYAPLbs8zcZjbFu
         x+vt8HP2CJy7R7R8zLdkZGbdxvgDb3JaKK8opj8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAjCAYAAAAAEIPqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVFhH7dixDQIxEETRbeTuKIUKaM1GlEFMSik0cBEN
-        rDmjHzodySfNSj+xJnix47S3lXbZaj7X2tq03fPVnZAj1pLv4XCylpIfyAd6MJg1yEbLg2y0PMhGy4Ns
-        tDzIRsuDbLQ8yEbLg2y0PMhGy4NstDzIRsuDbLQ8yEbLg2y0PMgR/TdyNJitpeYX8v9/+no87KPhLHXw
-        8sgb5LNdxA8e2Mur2nqRPwAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

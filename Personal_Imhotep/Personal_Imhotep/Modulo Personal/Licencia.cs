@@ -27,6 +27,8 @@ namespace Personal_Imhotep.Modulo_Personal
 
         public string nombLicen;
 
+        public string rutaLicen;
+
         private void btnlicen_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -35,10 +37,36 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
-                nombLicen = ruta;
+                nombLicen = Path.GetFileName(ruta);
                 buffer = File.ReadAllBytes(ruta);
                 webLicencia.Navigate(ruta);
             }
+        }
+
+        public void MostrarLicencia(string nombreLicen, object buffer)
+        {
+            byte[] buffer2;
+
+            string ruta = @"C:\temp\";
+
+            if (buffer.ToString() != "")
+            {
+                ruta = Path.Combine(ruta, nombreLicen);
+
+                rutaLicen = ruta;
+
+                buffer2 = (byte[])buffer;
+
+                File.WriteAllBytes(ruta, buffer2);
+
+                webLicencia.Navigate(ruta);
+            }
+        }
+
+        private void btnLicencia_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Datos Guardados");
+            this.Close();
         }
     }
 }

@@ -76,12 +76,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.btnNuevo = new Bunifu.UI.WinForms.BunifuImageButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuDropdown1 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.txtBuscarNom = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.btnBuscarNom = new Bunifu.UI.WinForms.BunifuImageButton();
             this.GridPersonal = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel_Usuarios = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             this.dpAnio = new Bunifu.UI.WinForms.BunifuDropdown();
             this.lblIdPerson = new System.Windows.Forms.Label();
@@ -89,8 +90,8 @@
             this.btnMostrarLicen = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label11 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.rtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rtyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGuardarCambios = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGuardar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnMostrarCerti = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label10 = new System.Windows.Forms.Label();
             this.btnMostrarTitulo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -111,7 +112,6 @@
             this.txtNombre = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -272,43 +272,43 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.bunifuImageButton1);
+            this.panel5.Controls.Add(this.btnNuevo);
             this.panel5.Location = new System.Drawing.Point(0, 241);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(91, 100);
             this.panel5.TabIndex = 0;
             // 
-            // bunifuImageButton1
+            // btnNuevo
             // 
-            this.bunifuImageButton1.ActiveImage = null;
-            this.bunifuImageButton1.AllowAnimations = true;
-            this.bunifuImageButton1.AllowBuffering = false;
-            this.bunifuImageButton1.AllowZooming = true;
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
-            this.bunifuImageButton1.FadeWhenInactive = false;
-            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.ImageLocation = null;
-            this.bunifuImageButton1.ImageMargin = 20;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(65, 65);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(85, 85);
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(3, 3);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Rotation = 0;
-            this.bunifuImageButton1.ShowActiveImage = true;
-            this.bunifuImageButton1.ShowCursorChanges = true;
-            this.bunifuImageButton1.ShowImageBorders = true;
-            this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(85, 85);
-            this.bunifuImageButton1.TabIndex = 0;
-            this.bunifuImageButton1.ToolTipText = "";
-            this.bunifuImageButton1.WaitOnLoad = false;
-            this.bunifuImageButton1.Zoom = 20;
-            this.bunifuImageButton1.ZoomSpeed = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.btnNuevo.ActiveImage = null;
+            this.btnNuevo.AllowAnimations = true;
+            this.btnNuevo.AllowBuffering = false;
+            this.btnNuevo.AllowZooming = true;
+            this.btnNuevo.BackColor = System.Drawing.Color.Transparent;
+            this.btnNuevo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnNuevo.ErrorImage")));
+            this.btnNuevo.FadeWhenInactive = false;
+            this.btnNuevo.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.ImageActive = null;
+            this.btnNuevo.ImageLocation = null;
+            this.btnNuevo.ImageMargin = 20;
+            this.btnNuevo.ImageSize = new System.Drawing.Size(65, 65);
+            this.btnNuevo.ImageZoomSize = new System.Drawing.Size(85, 85);
+            this.btnNuevo.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnNuevo.InitialImage")));
+            this.btnNuevo.Location = new System.Drawing.Point(3, 3);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Rotation = 0;
+            this.btnNuevo.ShowActiveImage = true;
+            this.btnNuevo.ShowCursorChanges = true;
+            this.btnNuevo.ShowImageBorders = true;
+            this.btnNuevo.ShowSizeMarkers = false;
+            this.btnNuevo.Size = new System.Drawing.Size(85, 85);
+            this.btnNuevo.TabIndex = 0;
+            this.btnNuevo.ToolTipText = "";
+            this.btnNuevo.WaitOnLoad = false;
+            this.btnNuevo.Zoom = 20;
+            this.btnNuevo.ZoomSpeed = 10;
+            this.btnNuevo.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // panel4
             // 
@@ -485,7 +485,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.GridPersonal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.GridPersonal.ColumnHeadersHeight = 37;
+            this.GridPersonal.ColumnHeadersHeight = 40;
             this.GridPersonal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.GridPersonal.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
@@ -530,6 +530,14 @@
             this.GridPersonal.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.GridPersonal.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridPersonal_CellDoubleClick);
             // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "";
+            this.Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Eliminar.Image")));
+            this.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            // 
             // panel_Usuarios
             // 
             this.panel_Usuarios.BorderColor = System.Drawing.Color.Transparent;
@@ -558,13 +566,14 @@
             this.panel_Usuarios.Controls.Add(this.label3);
             this.panel_Usuarios.Controls.Add(this.txtNombre);
             this.panel_Usuarios.Controls.Add(this.label2);
+            this.panel_Usuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Usuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_Usuarios.Location = new System.Drawing.Point(67, 168);
+            this.panel_Usuarios.Location = new System.Drawing.Point(0, 100);
             this.panel_Usuarios.Name = "panel_Usuarios";
             this.panel_Usuarios.PanelColor = System.Drawing.Color.Empty;
             this.panel_Usuarios.ShadowDept = 2;
             this.panel_Usuarios.ShadowTopLeftVisible = true;
-            this.panel_Usuarios.Size = new System.Drawing.Size(1090, 551);
+            this.panel_Usuarios.Size = new System.Drawing.Size(1090, 558);
             this.panel_Usuarios.TabIndex = 4;
             // 
             // dpAnio
@@ -771,30 +780,31 @@
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(40)))));
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rtToolStripMenuItem,
-            this.rtyToolStripMenuItem});
+            this.btnGuardarCambios,
+            this.btnGuardar});
             this.menuStrip1.Location = new System.Drawing.Point(409, 441);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(286, 59);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // rtToolStripMenuItem
+            // btnGuardarCambios
             // 
-            this.rtToolStripMenuItem.AutoSize = false;
-            this.rtToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtToolStripMenuItem.Name = "rtToolStripMenuItem";
-            this.rtToolStripMenuItem.Size = new System.Drawing.Size(157, 65);
-            this.rtToolStripMenuItem.Text = "Guardar Cambios ";
+            this.btnGuardarCambios.AutoSize = false;
+            this.btnGuardarCambios.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarCambios.Name = "btnGuardarCambios";
+            this.btnGuardarCambios.Size = new System.Drawing.Size(157, 65);
+            this.btnGuardarCambios.Text = "Guardar Cambios ";
+            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
             // 
-            // rtyToolStripMenuItem
+            // btnGuardar
             // 
-            this.rtyToolStripMenuItem.AutoSize = false;
-            this.rtyToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtyToolStripMenuItem.Name = "rtyToolStripMenuItem";
-            this.rtyToolStripMenuItem.Size = new System.Drawing.Size(122, 55);
-            this.rtyToolStripMenuItem.Text = "Guardar";
-            this.rtyToolStripMenuItem.Click += new System.EventHandler(this.rtyToolStripMenuItem_Click);
+            this.btnGuardar.AutoSize = false;
+            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(122, 55);
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.rtyToolStripMenuItem_Click);
             // 
             // btnMostrarCerti
             // 
@@ -858,6 +868,7 @@
             this.btnMostrarCerti.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMostrarCerti.TextMarginLeft = 0;
             this.btnMostrarCerti.UseDefaultRadiusAndThickness = true;
+            this.btnMostrarCerti.Click += new System.EventHandler(this.btnMostrarCerti_Click);
             // 
             // label10
             // 
@@ -1461,14 +1472,6 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "";
-            this.Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Eliminar.Image")));
-            this.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1514,7 +1517,7 @@
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBuscarNom;
         private Bunifu.UI.WinForms.BunifuImageButton btnBuscarNom;
         private System.Windows.Forms.Panel panel5;
-        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
+        private Bunifu.UI.WinForms.BunifuImageButton btnNuevo;
         private Bunifu.UI.WinForms.BunifuDataGridView GridPersonal;
         private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel panel_Usuarios;
         private System.Windows.Forms.Label label2;
@@ -1540,8 +1543,8 @@
         private System.Windows.Forms.Label label8;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton7;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem rtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rtyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnGuardarCambios;
+        private System.Windows.Forms.ToolStripMenuItem btnGuardar;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Label lblIdPerson;
         private Bunifu.UI.WinForms.BunifuDropdown dpAnio;
