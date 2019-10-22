@@ -30,10 +30,16 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
+                rutaCertif = ruta;
                 nombCertif = Path.GetFileName(ruta);
                 buffer = File.ReadAllBytes(ruta);
                 webCertificacion.Navigate(ruta);
             }
+        }
+
+        public void MostrarPreview(string ruta)
+        {
+            webCertificacion.Navigate(ruta);
         }
 
         public void MostrarCertificacion(string nombreCertif, object buffer)

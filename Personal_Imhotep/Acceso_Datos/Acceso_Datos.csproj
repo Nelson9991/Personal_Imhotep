@@ -54,69 +54,69 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="buscar_formacion_Result.cs">
-      <DependentUpon>Personal_Model.tt</DependentUpon>
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
     <Compile Include="buscar_person_nom_Result.cs">
-      <DependentUpon>Personal_Model.tt</DependentUpon>
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
     <Compile Include="buscar_usuario_Result.cs">
-      <DependentUpon>Personal_Model.tt</DependentUpon>
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
     <Compile Include="Mostrar_Personas_Result.cs">
-      <DependentUpon>Personal_Model.tt</DependentUpon>
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
     <Compile Include="mostrar_usuario_Result.cs">
-      <DependentUpon>Personal_Model.tt</DependentUpon>
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
     <Compile Include="Personal.cs">
-      <DependentUpon>Personal_Model.tt</DependentUpon>
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
-    <Compile Include="Personal_Model.Context.cs">
+    <Compile Include="Personal_Imhotep.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Personal_Model.Context.tt</DependentUpon>
+      <DependentUpon>Personal_Imhotep.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Personal_Model.cs">
+    <Compile Include="Personal_Imhotep.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Personal_Model.tt</DependentUpon>
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
-    <Compile Include="Personal_Model.Designer.cs">
+    <Compile Include="Personal_Imhotep.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Personal_Model.edmx</DependentUpon>
+      <DependentUpon>Personal_Imhotep.edmx</DependentUpon>
     </Compile>
     <Compile Include="Personal_Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="USUARIO2.cs">
-      <DependentUpon>Personal_Model.tt</DependentUpon>
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <EntityDeploy Include="Personal_Model.edmx">
+    <EntityDeploy Include="Personal_Imhotep.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Personal_Model.Designer.cs</LastGenOutput>
+      <LastGenOutput>Personal_Imhotep.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Personal_Model.edmx.diagram">
-      <DependentUpon>Personal_Model.edmx</DependentUpon>
+    <None Include="Personal_Imhotep.edmx.diagram">
+      <DependentUpon>Personal_Imhotep.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Personal_Model.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Personal_Model.edmx</DependentUpon>
-      <LastGenOutput>Personal_Model.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Personal_Model.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Personal_Model.edmx</DependentUpon>
-      <LastGenOutput>Personal_Model.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Personal_Imhotep.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Personal_Imhotep.edmx</DependentUpon>
+      <LastGenOutput>Personal_Imhotep.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Personal_Imhotep.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Personal_Imhotep.edmx</DependentUpon>
+      <LastGenOutput>Personal_Imhotep.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

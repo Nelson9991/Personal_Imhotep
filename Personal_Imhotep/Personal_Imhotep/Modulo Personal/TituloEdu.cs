@@ -31,15 +31,21 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
+                rutaTitulo = ruta;
                 nombTitulo = Path.GetFileName(ruta);
                 buffer = File.ReadAllBytes(ruta);
                 webTitulo.Navigate(ruta);
             }
         }
 
+        public void MostrarPreview(string ruta)
+        {
+            webTitulo.Navigate(ruta);
+        }
+
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         public void MostrarTitulo(string nombreTitulo, object buffer)

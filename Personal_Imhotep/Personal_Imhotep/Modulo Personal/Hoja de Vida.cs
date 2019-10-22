@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -31,15 +32,21 @@ namespace Personal_Imhotep.Modulo_Personal
             if(ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
+                rutaHoja = ruta;
                 nombHoja = Path.GetFileName(ruta);
                 buffer = File.ReadAllBytes(ruta);
                 webHojaV.Navigate(ruta);
             }
         }
 
+        public void MostrarPreview(string ruta)
+        {
+            webHojaV.Navigate(ruta);
+        }
+
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         private void btnGuardarHoja_Click(object sender, EventArgs e)
@@ -50,8 +57,7 @@ namespace Personal_Imhotep.Modulo_Personal
 
         public void MostrarHojaV(string nombreHoja, object buffer)
         {
-
-            byte[] buffer2;
+                byte[] buffer2;
 
             string ruta = @"C:\temp\";
 
@@ -63,8 +69,16 @@ namespace Personal_Imhotep.Modulo_Personal
 
                 buffer2 = (byte[])buffer;
 
-                File.WriteAllBytes(ruta, buffer2);
-
+                try
+                {
+                    File.WriteAllBytes(ruta, buffer2);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+ 
+               
                 webHojaV.Navigate(ruta);
             }
         }

@@ -20,7 +20,7 @@ namespace Personal_Imhotep.Modulo_Personal
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
 
@@ -36,10 +36,16 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
+                rutaDocs = ruta;
                 nombDocs = Path.GetFileName(ruta);
                 buffer = File.ReadAllBytes(ruta);
                 webDocs.Navigate(ruta);
             }
+        }
+
+        public void MostrarPreview(string ruta)
+        {
+            webDocs.Navigate(ruta);
         }
 
         public void MostrarDocs_Perso(string nombreDoc, object buffer)

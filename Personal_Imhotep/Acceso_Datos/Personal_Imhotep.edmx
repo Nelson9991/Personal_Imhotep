@@ -168,7 +168,7 @@
           <Property Name="Rol" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="Personal_IMHOTEPEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Personal_IMHOTEPEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Personal" EntityType="Self.Personal" />
           <EntitySet Name="USUARIO2" EntityType="Self.USUARIO2" />
           <FunctionImport Name="Actualizar_Persona">
@@ -337,7 +337,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Personal_IMHOTEPEntities">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Personal_IMHOTEPEntities1">
           <EntitySetMapping Name="Personal">
             <EntityTypeMapping TypeName="Model.Personal">
               <MappingFragment StoreEntitySet="Personal">

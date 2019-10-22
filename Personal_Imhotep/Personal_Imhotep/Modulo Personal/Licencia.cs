@@ -20,7 +20,7 @@ namespace Personal_Imhotep.Modulo_Personal
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         public byte[] buffer = null;
@@ -37,10 +37,16 @@ namespace Personal_Imhotep.Modulo_Personal
             if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
             {
                 string ruta = ofd.FileName;
+                rutaLicen = ruta;
                 nombLicen = Path.GetFileName(ruta);
                 buffer = File.ReadAllBytes(ruta);
                 webLicencia.Navigate(ruta);
             }
+        }
+
+        public void MostrarPreview(string ruta)
+        {
+            webLicencia.Navigate(ruta);
         }
 
         public void MostrarLicencia(string nombreLicen, object buffer)

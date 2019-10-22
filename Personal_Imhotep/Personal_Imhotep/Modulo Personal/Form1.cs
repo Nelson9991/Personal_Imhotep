@@ -55,6 +55,11 @@ namespace Personal_Imhotep
             {
                 MessageBox.Show(ex.Message);
             }
+
+            if(hoja.rutaHoja != null)
+            {
+                hoja.MostrarPreview(hoja.rutaHoja);
+            }
         }
 
 
@@ -119,7 +124,8 @@ namespace Personal_Imhotep
                 {
                     MessageBox.Show(ex.Message);
                 }
-    
+
+
             }
         }
 
@@ -171,6 +177,11 @@ namespace Personal_Imhotep
             {
                 MessageBox.Show(ex.Message);
             }
+
+            if(doc.rutaDocs != null)
+            {
+                doc.MostrarPreview(doc.rutaDocs);
+            }
         }
 
         private void btnMostrarTitulo_Click(object sender, EventArgs e)
@@ -182,6 +193,11 @@ namespace Personal_Imhotep
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+
+            if(titulo.rutaTitulo != null)
+            {
+                titulo.MostrarPreview(titulo.rutaTitulo);
             }
         }
 
@@ -195,12 +211,23 @@ namespace Personal_Imhotep
             {
                 MessageBox.Show(ex.Message);
             }
+
+            if(licencia.rutaLicen != null)
+            {
+                licencia.MostrarPreview(licencia.rutaLicen);
+            }
         }
 
 
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
+            hoja.rutaHoja = "";
+            certif.rutaCertif = "";
+            titulo.rutaTitulo = "";
+            doc.rutaDocs = "";
+            licencia.rutaLicen = "";
+
             panel_Usuarios.Visible = true;
             txtNombre.Text = "";
             txtCédula.Text = "";
@@ -215,12 +242,7 @@ namespace Personal_Imhotep
         }
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
-            CerrarArchivosTemp();
-            EliminarArchivosTemp(hoja.rutaHoja);
-            EliminarArchivosTemp(doc.rutaDocs);
-            EliminarArchivosTemp(titulo.rutaTitulo);
-            EliminarArchivosTemp(certif.rutaCertif);
-            EliminarArchivosTemp(licencia.rutaLicen);
+
             panel_Usuarios.Visible = false;
 
         }
@@ -228,6 +250,8 @@ namespace Personal_Imhotep
         private void GridPersonal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             panel_Usuarios.Visible = true;
+            btnGuardar.Visible = false;
+            btnGuardarCambios.Visible = true;
 
             lblIdPerson.Text = GridPersonal.SelectedCells[1].Value.ToString();
 
@@ -269,8 +293,6 @@ namespace Personal_Imhotep
             {
                 licencia.MostrarLicencia(GridPersonal.SelectedCells[17].Value.ToString(), GridPersonal.SelectedCells[15].Value);
             }
-            
-
         }
 
         private void btnMostrarCerti_Click(object sender, EventArgs e)
@@ -283,50 +305,67 @@ namespace Personal_Imhotep
             {
                 MessageBox.Show(ex.Message);
             }
+
+            if(certif.rutaCertif != null)
+            {
+                certif.MostrarPreview(certif.rutaCertif);
+            }
             
-        }
-
-        private void CerrarArchivosTemp()
-        {
-            foreach (var process in Process.GetProcessesByName("AcroRd32")) //whatever you need to close 
-            {     
-                    process.Kill();
-                         
-            }
-
-        }
-
-        private void EliminarArchivosTemp(string path)
-        {
-            // Delete a file by using File class static method...
-            if (File.Exists(path))
-            {
-                // Use a try block to catch IOExceptions, to
-                // handle the case of the file already being
-                // opened by another process.
-                try
-                {
-                    File.Delete(path);
-                }
-                catch (IOException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                    return;
-                }
-            }
-            else
-            {
-                return;
-            }
         }
 
         private void btnGuardarCambios_Click(object sender, EventArgs e)
         {
-            EliminarArchivosTemp(hoja.rutaHoja);
-            EliminarArchivosTemp(doc.rutaDocs);
-            EliminarArchivosTemp(titulo.rutaTitulo);
-            EliminarArchivosTemp(certif.rutaCertif);
-            EliminarArchivosTemp(licencia.rutaLicen);
+            if (txtNombre.Text != "")
+            {
+                try
+                {
+                    var persona = ObtenerDatosPersona();
+
+                    persona.Id = Convert.ToInt32(lblIdPerson.Text);
+
+                    pr.ActualizarPersona(persona);
+
+                    MessageBox.Show("Datos Actualizados");
+
+                    Mostrar();
+                    panel_Usuarios.Visible = false;
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        private void GridPersonal_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex == this.GridPersonal.Columns["Eliminar"].Index)
+            {
+                DialogResult resul;
+
+                resul = MessageBox.Show("¿Realmente desea eliminar esta Persona?", "Eliminando Registros", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                if(resul == DialogResult.OK)
+                {
+                    try
+                    {
+                        int id = Convert.ToInt32(GridPersonal.SelectedCells[1].Value);
+
+                        pr.EliminarPersona(id);
+
+                        MessageBox.Show("Persona Eliminada");
+
+                        Mostrar();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+
         }
     }
 }
