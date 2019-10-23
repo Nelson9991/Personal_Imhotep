@@ -48,6 +48,8 @@ namespace Personal_Imhotep.Modulo_Personal
             this.Close();
         }
 
+        public FileStream fs = null;
+
         public void MostrarTitulo(string nombreTitulo, object buffer)
         {
             
@@ -63,7 +65,19 @@ namespace Personal_Imhotep.Modulo_Personal
 
                 buffer2 = (byte[])buffer;
 
-                File.WriteAllBytes(ruta, buffer2);
+                try
+                {
+                    using (fs = File.Create(ruta))
+                    {
+                        fs.Write(buffer2, 0, buffer2.Length);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
 
                 webTitulo.Navigate(ruta);
             }

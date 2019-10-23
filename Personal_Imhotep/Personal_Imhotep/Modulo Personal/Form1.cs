@@ -222,6 +222,13 @@ namespace Personal_Imhotep
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
+            var resultado = System.Diagnostics.Process.GetProcessesByName("AcroRd32");
+            foreach (var item in resultado)
+            {
+                item.Kill();
+            }
+
+
             hoja.rutaHoja = "";
             certif.rutaCertif = "";
             titulo.rutaTitulo = "";
@@ -243,11 +250,22 @@ namespace Personal_Imhotep
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
 
+            MatarProcesoAcrobat(); 
+
             panel_Usuarios.Visible = false;
 
         }
 
-        private void GridPersonal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        public void MatarProcesoAcrobat()
+        {
+            var resultado = System.Diagnostics.Process.GetProcessesByName("AcroRd32");
+            foreach (var item in resultado)
+            {
+                item.Kill();
+            }
+        }
+
+       private void GridPersonal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             panel_Usuarios.Visible = true;
             btnGuardar.Visible = false;

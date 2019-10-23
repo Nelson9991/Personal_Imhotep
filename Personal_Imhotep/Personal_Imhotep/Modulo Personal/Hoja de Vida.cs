@@ -55,8 +55,11 @@ namespace Personal_Imhotep.Modulo_Personal
             this.Close();
         }
 
+        FileStream fs;
+
         public void MostrarHojaV(string nombreHoja, object buffer)
         {
+
                 byte[] buffer2;
 
             string ruta = @"C:\temp\";
@@ -71,7 +74,12 @@ namespace Personal_Imhotep.Modulo_Personal
 
                 try
                 {
-                    File.WriteAllBytes(ruta, buffer2);
+                    using(FileStream fs = File.Create(ruta))
+                    {
+                        fs.Write(buffer2, 0, buffer2.Length);
+
+                       
+                    }
                 }
                 catch(Exception ex)
                 {
@@ -82,5 +90,7 @@ namespace Personal_Imhotep.Modulo_Personal
                 webHojaV.Navigate(ruta);
             }
         }
+            
+        
     }
 }
