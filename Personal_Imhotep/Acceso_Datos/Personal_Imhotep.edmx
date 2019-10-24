@@ -28,6 +28,7 @@
           <Property Name="nom_docCertif" Type="varchar(max)" />
           <Property Name="nom_Licencia" Type="varchar(max)" />
           <Property Name="anio" Type="int" />
+          <Property Name="Tipo_Bachillerato" Type="varchar" MaxLength="300" />
         </EntityType>
         <EntityType Name="USUARIO2">
           <Key>
@@ -62,11 +63,15 @@
           <Parameter Name="nom_docCertif" Type="varchar(max)" Mode="In" />
           <Parameter Name="nom_licencia" Type="varchar(max)" Mode="In" />
           <Parameter Name="anio" Type="int" Mode="In" />
+          <Parameter Name="tipo_bachiller" Type="varchar" Mode="In" />
         </Function>
         <Function Name="buscar_formacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="letra" Type="varchar" Mode="In" />
         </Function>
         <Function Name="buscar_person_nom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="letra" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="buscar_tipo_Bachiller" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="letra" Type="varchar" Mode="In" />
         </Function>
         <Function Name="buscar_usuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -108,6 +113,7 @@
           <Parameter Name="nom_docCertif" Type="varchar(max)" Mode="In" />
           <Parameter Name="nom_licencia" Type="varchar(max)" Mode="In" />
           <Parameter Name="anio" Type="int" Mode="In" />
+          <Parameter Name="tipo_Bachiller" Type="varchar" Mode="In" />
         </Function>
         <Function Name="insertar_usuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="nombres" Type="varchar" Mode="In" />
@@ -153,6 +159,7 @@
           <Property Name="nom_docCertif" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="nom_Licencia" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="anio" Type="Int32" />
+          <Property Name="Tipo_Bachillerato" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="USUARIO2">
           <Key>
@@ -168,7 +175,7 @@
           <Property Name="Rol" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="Personal_IMHOTEPEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Personal_IMHOTEPEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Personal" EntityType="Self.Personal" />
           <EntitySet Name="USUARIO2" EntityType="Self.USUARIO2" />
           <FunctionImport Name="Actualizar_Persona">
@@ -190,11 +197,15 @@
             <Parameter Name="nom_docCertif" Mode="In" Type="String" />
             <Parameter Name="nom_licencia" Mode="In" Type="String" />
             <Parameter Name="anio" Mode="In" Type="Int32" />
+            <Parameter Name="tipo_bachiller" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="buscar_formacion" ReturnType="Collection(Model.buscar_formacion_Result)">
             <Parameter Name="letra" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="buscar_person_nom" ReturnType="Collection(Model.buscar_person_nom_Result)">
+            <Parameter Name="letra" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="buscar_tipo_Bachiller" ReturnType="Collection(Model.buscar_tipo_Bachiller_Result)">
             <Parameter Name="letra" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="buscar_usuario" ReturnType="Collection(Model.buscar_usuario_Result)">
@@ -236,6 +247,7 @@
             <Parameter Name="nom_docCertif" Mode="In" Type="String" />
             <Parameter Name="nom_licencia" Mode="In" Type="String" />
             <Parameter Name="anio" Mode="In" Type="Int32" />
+            <Parameter Name="tipo_Bachiller" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="insertar_usuario">
             <Parameter Name="nombres" Mode="In" Type="String" />
@@ -270,6 +282,7 @@
           <Property Type="String" Name="nom_docCertif" Nullable="true" />
           <Property Type="String" Name="nom_Licencia" Nullable="true" />
           <Property Type="Int32" Name="anio" Nullable="true" />
+          <Property Type="String" Name="Tipo_Bachillerato" Nullable="true" MaxLength="300" />
         </ComplexType>
         <ComplexType Name="buscar_person_nom_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
@@ -291,6 +304,29 @@
           <Property Type="String" Name="nom_docCertif" Nullable="true" />
           <Property Type="String" Name="nom_Licencia" Nullable="true" />
           <Property Type="Int32" Name="anio" Nullable="true" />
+          <Property Type="String" Name="Tipo_Bachillerato" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="buscar_tipo_Bachiller_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
+          <Property Type="DateTime" Name="Caducidad_licencia" Nullable="true" />
+          <Property Type="DateTime" Name="Certificacion" Nullable="true" />
+          <Property Type="String" Name="Observaciones" Nullable="true" MaxLength="300" />
+          <Property Type="Binary" Name="hoja_de_vida" Nullable="true" />
+          <Property Type="Binary" Name="doc_personales" Nullable="true" />
+          <Property Type="Binary" Name="doc_Titulo" Nullable="true" />
+          <Property Type="String" Name="nombre_hojaV" Nullable="true" />
+          <Property Type="String" Name="nombre_titulo" Nullable="true" />
+          <Property Type="String" Name="nombre_docP" Nullable="true" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="doc_Certificacion" Nullable="true" />
+          <Property Type="Binary" Name="Licencia_Riesgos" Nullable="true" />
+          <Property Type="String" Name="nom_docCertif" Nullable="true" />
+          <Property Type="String" Name="nom_Licencia" Nullable="true" />
+          <Property Type="Int32" Name="anio" Nullable="true" />
+          <Property Type="String" Name="Tipo_Bachillerato" Nullable="true" MaxLength="300" />
         </ComplexType>
         <ComplexType Name="buscar_usuario_Result">
           <Property Type="Int32" Name="idUsuario" Nullable="false" />
@@ -307,7 +343,7 @@
           <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
           <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
           <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
-          <Property Type="DateTime" Name="Caducidad_Licencia" Nullable="true" />
+          <Property Type="DateTime" Name="Caducidad_licencia" Nullable="true" />
           <Property Type="DateTime" Name="Certificacion" Nullable="true" />
           <Property Type="String" Name="Observaciones" Nullable="true" MaxLength="300" />
           <Property Type="Binary" Name="hoja_de_vida" Nullable="true" />
@@ -316,11 +352,13 @@
           <Property Type="String" Name="nombre_hojaV" Nullable="true" />
           <Property Type="String" Name="nombre_titulo" Nullable="true" />
           <Property Type="String" Name="nombre_docP" Nullable="true" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="50" />
           <Property Type="Binary" Name="doc_Certificacion" Nullable="true" />
           <Property Type="Binary" Name="Licencia_Riesgos" Nullable="true" />
           <Property Type="String" Name="nom_docCertif" Nullable="true" />
           <Property Type="String" Name="nom_Licencia" Nullable="true" />
           <Property Type="Int32" Name="anio" Nullable="true" />
+          <Property Type="String" Name="Tipo_Bachillerato" Nullable="true" MaxLength="300" />
         </ComplexType>
         <ComplexType Name="mostrar_usuario_Result">
           <Property Type="Int32" Name="idUsuario" Nullable="false" />
@@ -337,7 +375,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Personal_IMHOTEPEntities1">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Personal_IMHOTEPEntities">
           <EntitySetMapping Name="Personal">
             <EntityTypeMapping TypeName="Model.Personal">
               <MappingFragment StoreEntitySet="Personal">
@@ -360,6 +398,7 @@
                 <ScalarProperty Name="nom_docCertif" ColumnName="nom_docCertif" />
                 <ScalarProperty Name="nom_Licencia" ColumnName="nom_Licencia" />
                 <ScalarProperty Name="anio" ColumnName="anio" />
+                <ScalarProperty Name="Tipo_Bachillerato" ColumnName="Tipo_Bachillerato" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -401,6 +440,7 @@
                 <ScalarProperty Name="nom_docCertif" ColumnName="nom_docCertif" />
                 <ScalarProperty Name="nom_Licencia" ColumnName="nom_Licencia" />
                 <ScalarProperty Name="anio" ColumnName="anio" />
+                <ScalarProperty Name="Tipo_Bachillerato" ColumnName="Tipo_Bachillerato" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -426,6 +466,33 @@
                 <ScalarProperty Name="nom_docCertif" ColumnName="nom_docCertif" />
                 <ScalarProperty Name="nom_Licencia" ColumnName="nom_Licencia" />
                 <ScalarProperty Name="anio" ColumnName="anio" />
+                <ScalarProperty Name="Tipo_Bachillerato" ColumnName="Tipo_Bachillerato" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="buscar_tipo_Bachiller" FunctionName="Model.Store.buscar_tipo_Bachiller">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.buscar_tipo_Bachiller_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Cédula" ColumnName="Cédula" />
+                <ScalarProperty Name="Formacion" ColumnName="Formacion" />
+                <ScalarProperty Name="Caducidad_licencia" ColumnName="Caducidad_licencia" />
+                <ScalarProperty Name="Certificacion" ColumnName="Certificacion" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="hoja_de_vida" ColumnName="hoja_de_vida" />
+                <ScalarProperty Name="doc_personales" ColumnName="doc_personales" />
+                <ScalarProperty Name="doc_Titulo" ColumnName="doc_Titulo" />
+                <ScalarProperty Name="nombre_hojaV" ColumnName="nombre_hojaV" />
+                <ScalarProperty Name="nombre_titulo" ColumnName="nombre_titulo" />
+                <ScalarProperty Name="nombre_docP" ColumnName="nombre_docP" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="doc_Certificacion" ColumnName="doc_Certificacion" />
+                <ScalarProperty Name="Licencia_Riesgos" ColumnName="Licencia_Riesgos" />
+                <ScalarProperty Name="nom_docCertif" ColumnName="nom_docCertif" />
+                <ScalarProperty Name="nom_Licencia" ColumnName="nom_Licencia" />
+                <ScalarProperty Name="anio" ColumnName="anio" />
+                <ScalarProperty Name="Tipo_Bachillerato" ColumnName="Tipo_Bachillerato" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -455,7 +522,7 @@
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
                 <ScalarProperty Name="Cédula" ColumnName="Cédula" />
                 <ScalarProperty Name="Formacion" ColumnName="Formacion" />
-                <ScalarProperty Name="Caducidad_Licencia" ColumnName="Caducidad Licencia" />
+                <ScalarProperty Name="Caducidad_licencia" ColumnName="Caducidad_licencia" />
                 <ScalarProperty Name="Certificacion" ColumnName="Certificacion" />
                 <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
                 <ScalarProperty Name="hoja_de_vida" ColumnName="hoja_de_vida" />
@@ -464,11 +531,13 @@
                 <ScalarProperty Name="nombre_hojaV" ColumnName="nombre_hojaV" />
                 <ScalarProperty Name="nombre_titulo" ColumnName="nombre_titulo" />
                 <ScalarProperty Name="nombre_docP" ColumnName="nombre_docP" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
                 <ScalarProperty Name="doc_Certificacion" ColumnName="doc_Certificacion" />
                 <ScalarProperty Name="Licencia_Riesgos" ColumnName="Licencia_Riesgos" />
                 <ScalarProperty Name="nom_docCertif" ColumnName="nom_docCertif" />
                 <ScalarProperty Name="nom_Licencia" ColumnName="nom_Licencia" />
                 <ScalarProperty Name="anio" ColumnName="anio" />
+                <ScalarProperty Name="Tipo_Bachillerato" ColumnName="Tipo_Bachillerato" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

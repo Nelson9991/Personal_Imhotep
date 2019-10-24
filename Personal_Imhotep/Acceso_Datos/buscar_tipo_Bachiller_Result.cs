@@ -10,9 +10,8 @@
 namespace Acceso_Datos
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Personal
+    public partial class buscar_tipo_Bachiller_Result
     {
         public int Id { get; set; }
         public string Nombre { get; set; }

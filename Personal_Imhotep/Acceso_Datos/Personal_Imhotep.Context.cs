@@ -15,10 +15,10 @@ namespace Acceso_Datos
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class Personal_IMHOTEPEntities1 : DbContext
+    public partial class Personal_IMHOTEPEntities : DbContext
     {
-        public Personal_IMHOTEPEntities1()
-            : base("name=Personal_IMHOTEPEntities1")
+        public Personal_IMHOTEPEntities()
+            : base("name=Personal_IMHOTEPEntities")
         {
         }
     
@@ -30,7 +30,7 @@ namespace Acceso_Datos
         public virtual DbSet<Personal> Personal { get; set; }
         public virtual DbSet<USUARIO2> USUARIO2 { get; set; }
     
-        public virtual int Actualizar_Persona(Nullable<int> id, string nombre, string cedula, string formacion, Nullable<System.DateTime> caducidad_licencia, Nullable<System.DateTime> caducidad_certif, string observaciones, byte[] hoja_vida, byte[] doc_personales, byte[] titulo, string nom_hojaV, string nom_Titulo, string nom_docP, byte[] doc_Certif, byte[] licen_riesgo, string nom_docCertif, string nom_licencia, Nullable<int> anio)
+        public virtual int Actualizar_Persona(Nullable<int> id, string nombre, string cedula, string formacion, Nullable<System.DateTime> caducidad_licencia, Nullable<System.DateTime> caducidad_certif, string observaciones, byte[] hoja_vida, byte[] doc_personales, byte[] titulo, string nom_hojaV, string nom_Titulo, string nom_docP, byte[] doc_Certif, byte[] licen_riesgo, string nom_docCertif, string nom_licencia, Nullable<int> anio, string tipo_bachiller)
         {
             var idParameter = id.HasValue ?
                 new ObjectParameter("Id", id) :
@@ -104,7 +104,11 @@ namespace Acceso_Datos
                 new ObjectParameter("anio", anio) :
                 new ObjectParameter("anio", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Actualizar_Persona", idParameter, nombreParameter, cedulaParameter, formacionParameter, caducidad_licenciaParameter, caducidad_certifParameter, observacionesParameter, hoja_vidaParameter, doc_personalesParameter, tituloParameter, nom_hojaVParameter, nom_TituloParameter, nom_docPParameter, doc_CertifParameter, licen_riesgoParameter, nom_docCertifParameter, nom_licenciaParameter, anioParameter);
+            var tipo_bachillerParameter = tipo_bachiller != null ?
+                new ObjectParameter("tipo_bachiller", tipo_bachiller) :
+                new ObjectParameter("tipo_bachiller", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Actualizar_Persona", idParameter, nombreParameter, cedulaParameter, formacionParameter, caducidad_licenciaParameter, caducidad_certifParameter, observacionesParameter, hoja_vidaParameter, doc_personalesParameter, tituloParameter, nom_hojaVParameter, nom_TituloParameter, nom_docPParameter, doc_CertifParameter, licen_riesgoParameter, nom_docCertifParameter, nom_licenciaParameter, anioParameter, tipo_bachillerParameter);
         }
     
         public virtual ObjectResult<buscar_formacion_Result> buscar_formacion(string letra)
@@ -123,6 +127,15 @@ namespace Acceso_Datos
                 new ObjectParameter("letra", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<buscar_person_nom_Result>("buscar_person_nom", letraParameter);
+        }
+    
+        public virtual ObjectResult<buscar_tipo_Bachiller_Result> buscar_tipo_Bachiller(string letra)
+        {
+            var letraParameter = letra != null ?
+                new ObjectParameter("letra", letra) :
+                new ObjectParameter("letra", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<buscar_tipo_Bachiller_Result>("buscar_tipo_Bachiller", letraParameter);
         }
     
         public virtual ObjectResult<buscar_usuario_Result> buscar_usuario(string letra)
@@ -193,7 +206,7 @@ namespace Acceso_Datos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("eliminar_usuario", idusuarioParameter, loginParameter);
         }
     
-        public virtual int Insertar_Persona(string nombre, string cedula, string formacion, Nullable<System.DateTime> caducidad, Nullable<System.DateTime> certificacion, string observaciones, byte[] hoja_vida, byte[] doc_perso, byte[] titulo, string nom_hoja, string nom_docs, string nombre_titulo, string estado, byte[] doc_Certificacion, byte[] licencia_riesgos, string nom_docCertif, string nom_licencia, Nullable<int> anio)
+        public virtual int Insertar_Persona(string nombre, string cedula, string formacion, Nullable<System.DateTime> caducidad, Nullable<System.DateTime> certificacion, string observaciones, byte[] hoja_vida, byte[] doc_perso, byte[] titulo, string nom_hoja, string nom_docs, string nombre_titulo, string estado, byte[] doc_Certificacion, byte[] licencia_riesgos, string nom_docCertif, string nom_licencia, Nullable<int> anio, string tipo_Bachiller)
         {
             var nombreParameter = nombre != null ?
                 new ObjectParameter("Nombre", nombre) :
@@ -267,7 +280,11 @@ namespace Acceso_Datos
                 new ObjectParameter("anio", anio) :
                 new ObjectParameter("anio", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Insertar_Persona", nombreParameter, cedulaParameter, formacionParameter, caducidadParameter, certificacionParameter, observacionesParameter, hoja_vidaParameter, doc_persoParameter, tituloParameter, nom_hojaParameter, nom_docsParameter, nombre_tituloParameter, estadoParameter, doc_CertificacionParameter, licencia_riesgosParameter, nom_docCertifParameter, nom_licenciaParameter, anioParameter);
+            var tipo_BachillerParameter = tipo_Bachiller != null ?
+                new ObjectParameter("tipo_Bachiller", tipo_Bachiller) :
+                new ObjectParameter("tipo_Bachiller", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Insertar_Persona", nombreParameter, cedulaParameter, formacionParameter, caducidadParameter, certificacionParameter, observacionesParameter, hoja_vidaParameter, doc_persoParameter, tituloParameter, nom_hojaParameter, nom_docsParameter, nombre_tituloParameter, estadoParameter, doc_CertificacionParameter, licencia_riesgosParameter, nom_docCertifParameter, nom_licenciaParameter, anioParameter, tipo_BachillerParameter);
         }
     
         public virtual int insertar_usuario(string nombres, string login, string password, byte[] icono, string nombre_de_icono, string correo, string rol, string estado)

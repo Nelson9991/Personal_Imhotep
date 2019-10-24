@@ -42,7 +42,7 @@ namespace Personal_Imhotep.Modulo_Personal
             webCertificacion.Navigate(ruta);
         }
 
-         public FileStream fs = null;
+        public FileStream fs = null;
 
         public void MostrarCertificacion(string nombreCertif, object buffer)
         {

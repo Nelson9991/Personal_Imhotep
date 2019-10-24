@@ -32,5 +32,6 @@ namespace Acceso_Datos
         public string nom_docCertif { get; set; }
         public string nom_Licencia { get; set; }
         public Nullable<int> anio { get; set; }
+        public string Tipo_Bachillerato { get; set; }
     }
 }

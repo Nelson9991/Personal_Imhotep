@@ -59,6 +59,9 @@
     <Compile Include="buscar_person_nom_Result.cs">
       <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
+    <Compile Include="buscar_tipo_Bachiller_Result.cs">
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
+    </Compile>
     <Compile Include="buscar_usuario_Result.cs">
       <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>

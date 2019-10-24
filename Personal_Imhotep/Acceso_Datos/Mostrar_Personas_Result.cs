@@ -17,7 +17,7 @@ namespace Acceso_Datos
         public string Nombre { get; set; }
         public string Cédula { get; set; }
         public string Formacion { get; set; }
-        public Nullable<System.DateTime> Caducidad_Licencia { get; set; }
+        public Nullable<System.DateTime> Caducidad_licencia { get; set; }
         public Nullable<System.DateTime> Certificacion { get; set; }
         public string Observaciones { get; set; }
         public byte[] hoja_de_vida { get; set; }
@@ -26,10 +26,12 @@ namespace Acceso_Datos
         public string nombre_hojaV { get; set; }
         public string nombre_titulo { get; set; }
         public string nombre_docP { get; set; }
+        public string Estado { get; set; }
         public byte[] doc_Certificacion { get; set; }
         public byte[] Licencia_Riesgos { get; set; }
         public string nom_docCertif { get; set; }
         public string nom_Licencia { get; set; }
         public Nullable<int> anio { get; set; }
+        public string Tipo_Bachillerato { get; set; }
     }
 }

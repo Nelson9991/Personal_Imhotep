@@ -75,7 +75,7 @@ namespace Personal_Imhotep
 
             persona.Caducidad_licencia = dtFechaCaduc.Value;
 
-            persona.Certificacion = dtFechCertifica.Value;  
+            persona.Certificacion = null;  
             
             persona.Observaciones = txtObservacion.Text;
 
@@ -99,34 +99,63 @@ namespace Personal_Imhotep
 
             persona.nom_Licencia = licencia.nombLicen;
 
-            persona.anio = Convert.ToInt32(dpAnio.Text);
+            persona.anio = Convert.ToInt32(txtTipoBachiller.Text);
+
+            persona.Tipo_Bachillerato = txtTipoBachiller.Text;
 
             return persona;
         }
 
         private void rtyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(txtNombre.Text != "")
+
+            if(txtNombre.Text == "")
             {
+                errorProvider1.SetError(txtNombre, "Este campo no se debe dejar vacio");
+            }
+            if(txtCédula.Text == "")
+            {
+                errorProvider1.SetError(txtCédula, "Este campo no se debe dejar vacio");
+            }
+            if (txtTipoBachiller.Text == "Año del Personal")
+            {
+                errorProvider1.SetError(txtTipoBachiller, "Escoja un año para el personal correspondiente");
+                
+            }
+
+            if (txtNombre.Text == "" || txtCédula.Text == "" || txtTipoBachiller.Text == "Año del Personal")
+            {
+                return;
+            }
+            else
+            {
+
+                var persona = ObtenerDatosPersona();
+
+                if (dropFormacion.Text == "Formación")
+                {
+                    persona.Formacion = "";
+                }
+
                 try
                 {
-                    var persona = ObtenerDatosPersona();
-
                     pr.InsertarPersona(persona);
 
-                    MessageBox.Show("Datos guardados");
 
-                    Mostrar();
-                    panel_Usuarios.Visible = false;
-                    btnNuevo.Visible = true;
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    var result = MessageBox.Show(ex.InnerException.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    return;
                 }
 
-
-            }
+                MessageBox.Show("Datos guardados");
+                Mostrar();
+                panel_Usuarios.Visible = false;
+                btnNuevo.Visible = true;
+                btnNuevo.Visible = true;
+            }    
         }
 
         private void Mostrar()
@@ -139,7 +168,18 @@ namespace Personal_Imhotep
 
                 GridPersonal.Columns[0].DisplayIndex = 18;
                 GridPersonal.Columns[1].Visible = false;
-                GridPersonal.Columns[5].HeaderText = "Caducidad Licencia";
+                GridPersonal.Columns[5].HeaderText = "Cadu. Licencia/Certificación";
+                if(GridPersonal.SelectedCells[4].Value.ToString() == "BACHILLERATO")
+                {
+                    GridPersonal.Columns[20].Visible = true;
+                    GridPersonal.Columns[20].HeaderText = "Tipo Bachiller"; 
+                    GridPersonal.Columns[20].DisplayIndex = 4;
+                }
+                else
+                {
+                    GridPersonal.Columns[20].Visible = false;
+                }
+                GridPersonal.Columns[6].Visible = false;
                 GridPersonal.Columns[8].Visible = false;
                 GridPersonal.Columns[9].Visible = false;
                 GridPersonal.Columns[10].Visible = false;
@@ -151,6 +191,7 @@ namespace Personal_Imhotep
                 GridPersonal.Columns[16].Visible = false;
                 GridPersonal.Columns[17].Visible = false;
                 GridPersonal.Columns[18].Visible = false;
+                GridPersonal.Columns[19].Visible = false;
 
             }
             catch (Exception ex)
@@ -163,6 +204,7 @@ namespace Personal_Imhotep
         private void Form1_Load(object sender, EventArgs e)
         {
             Mostrar();
+            txtTipoBachiller.Visible = false;
             panel_Usuarios.Visible = false;
 
         }
@@ -240,9 +282,9 @@ namespace Personal_Imhotep
             txtCédula.Text = "";
             txtObservacion.Text = "";
             dtFechaCaduc.Value = DateTime.Today;
-            dtFechCertifica.Value = DateTime.Today;
+            //dtFechCertifica.Value = DateTime.Today;
             dropFormacion.Text = "Formación";
-            dpAnio.Text = "Año del Personal";
+            txtTipoBachiller.Text = "Año del Personal";
             btnGuardar.Visible = true;
             btnGuardarCambios.Visible = false;
             btnNuevo.Visible = false;
@@ -250,8 +292,11 @@ namespace Personal_Imhotep
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
 
-            MatarProcesoAcrobat(); 
-
+            MatarProcesoAcrobat();
+            errorProvider1.SetError(txtTipoBachiller, "");
+            errorProvider1.SetError(txtNombre, "");
+            errorProvider1.SetError(txtCédula, "");
+            btnNuevo.Visible = true;
             panel_Usuarios.Visible = false;
 
         }
@@ -271,6 +316,23 @@ namespace Personal_Imhotep
             btnGuardar.Visible = false;
             btnGuardarCambios.Visible = true;
 
+            if(GridPersonal.SelectedCells[4].Value.ToString() == "BACHILLERATO")
+            {
+                txtTipoBachiller.Visible = true;
+                if(GridPersonal.SelectedCells[19].Value.ToString() == null)
+                {
+                    txtTipoBachiller.Text = "No Asignado";
+                }
+                txtTipoBachiller.Text = GridPersonal.SelectedCells[19].Value.ToString();
+                {
+
+                }
+            }
+            else
+            {
+                txtTipoBachiller.Visible = false;
+            }
+
             lblIdPerson.Text = GridPersonal.SelectedCells[1].Value.ToString();
 
             txtNombre.Text = GridPersonal.SelectedCells[2].Value.ToString();
@@ -281,11 +343,11 @@ namespace Personal_Imhotep
 
             dtFechaCaduc.Value = Convert.ToDateTime(GridPersonal.SelectedCells[5].Value);
 
-            dtFechCertifica.Value = Convert.ToDateTime(GridPersonal.SelectedCells[6].Value);
+            //dtFechCertifica.Value = Convert.ToDateTime(GridPersonal.SelectedCells[6].Value);
 
             txtObservacion.Text = GridPersonal.SelectedCells[7].Value.ToString();
 
-            dpAnio.Text = GridPersonal.SelectedCells[18].Value.ToString();
+            txtTipoBachiller.Text = GridPersonal.SelectedCells[19].Value.ToString();
   
             if(GridPersonal.SelectedCells[8].Value != null)
             {
@@ -301,13 +363,13 @@ namespace Personal_Imhotep
             {
                 titulo.MostrarTitulo(GridPersonal.SelectedCells[12].Value.ToString(), GridPersonal.SelectedCells[10].Value);
             }
-            
+
             if (GridPersonal.SelectedCells[14].Value != null)
             {
                 certif.MostrarCertificacion(GridPersonal.SelectedCells[16].Value.ToString(), GridPersonal.SelectedCells[14].Value);
             }
-            
-            if(GridPersonal.SelectedCells[15].Value != null)
+
+            if (GridPersonal.SelectedCells[15].Value != null)
             {
                 licencia.MostrarLicencia(GridPersonal.SelectedCells[17].Value.ToString(), GridPersonal.SelectedCells[15].Value);
             }
@@ -319,21 +381,39 @@ namespace Personal_Imhotep
             {
                 certif.ShowDialog();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            if(certif.rutaCertif != null)
+            if (certif.rutaCertif != null)
             {
                 certif.MostrarPreview(certif.rutaCertif);
             }
-            
+
         }
 
         private void btnGuardarCambios_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text != "")
+            if (txtNombre.Text == "")
+            {
+                errorProvider1.SetError(txtNombre, "Este campo no se debe dejar vacio");
+            }
+            if (txtCédula.Text == "")
+            {
+                errorProvider1.SetError(txtCédula, "Este campo no se debe dejar vacio");
+            }
+            if (txtTipoBachiller.Text == "Año del Personal")
+            {
+                errorProvider1.SetError(txtTipoBachiller, "Escoja un año para el personal correspondiente");
+
+            }
+
+            if (txtNombre.Text == "" || txtCédula.Text == "" || txtTipoBachiller.Text == "Año del Personal")
+            {
+                return;
+            }
+            else
             {
                 try
                 {
@@ -347,13 +427,12 @@ namespace Personal_Imhotep
 
                     Mostrar();
                     panel_Usuarios.Visible = false;
-                    
+
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-
             }
         }
 
@@ -384,6 +463,34 @@ namespace Personal_Imhotep
                 }
             }
 
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(txtNombre, "");
+        }
+
+        private void txtCédula_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(txtCédula, "");
+        }
+
+        private void dpAnio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(txtTipoBachiller, "");
+        }
+
+        private void panel_Usuarios_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dropFormacion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(dropFormacion.Text == "BACHILLERATO")
+            {
+                txtTipoBachiller.Visible = true;
+            }
         }
     }
 }
