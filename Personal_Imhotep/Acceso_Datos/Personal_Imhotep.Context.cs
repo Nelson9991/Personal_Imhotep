@@ -15,10 +15,10 @@ namespace Acceso_Datos
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class Personal_IMHOTEPEntities : DbContext
+    public partial class Personal_IMHOTEPEntities1 : DbContext
     {
-        public Personal_IMHOTEPEntities()
-            : base("name=Personal_IMHOTEPEntities")
+        public Personal_IMHOTEPEntities1()
+            : base("name=Personal_IMHOTEPEntities1")
         {
         }
     
@@ -109,6 +109,15 @@ namespace Acceso_Datos
                 new ObjectParameter("tipo_bachiller", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Actualizar_Persona", idParameter, nombreParameter, cedulaParameter, formacionParameter, caducidad_licenciaParameter, caducidad_certifParameter, observacionesParameter, hoja_vidaParameter, doc_personalesParameter, tituloParameter, nom_hojaVParameter, nom_TituloParameter, nom_docPParameter, doc_CertifParameter, licen_riesgoParameter, nom_docCertifParameter, nom_licenciaParameter, anioParameter, tipo_bachillerParameter);
+        }
+    
+        public virtual ObjectResult<Buscar_Anio_Personal_Result> Buscar_Anio_Personal(string letra)
+        {
+            var letraParameter = letra != null ?
+                new ObjectParameter("letra", letra) :
+                new ObjectParameter("letra", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Buscar_Anio_Personal_Result>("Buscar_Anio_Personal", letraParameter);
         }
     
         public virtual ObjectResult<buscar_formacion_Result> buscar_formacion(string letra)

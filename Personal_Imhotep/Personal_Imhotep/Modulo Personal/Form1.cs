@@ -180,6 +180,7 @@ namespace Personal_Imhotep
                     {
                         GridPersonal.Columns[20].Visible = true;
                         GridPersonal.Columns[20].HeaderText = "Tipo Bachiller";
+                        GridPersonal.Columns[20].DisplayIndex = 4;
                     }
                 }
             }
@@ -212,7 +213,7 @@ namespace Personal_Imhotep
             lblBachiller.Visible = false;
             txtTipoBachiller.Visible = false;
             panel_Usuarios.Visible = false;
-
+            dropBuscarFormacion.Enabled = false;
         }
 
         private void btnMostrarDatosP_Click(object sender, EventArgs e)
@@ -512,7 +513,7 @@ namespace Personal_Imhotep
 
         private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
         {
-
+            BuscarTipoBachiller();
         }
 
         private void BuscarNombPersona()
@@ -536,6 +537,7 @@ namespace Personal_Imhotep
                         {
                             GridPersonal.Columns[20].Visible = true;
                             GridPersonal.Columns[20].HeaderText = "Tipo Bachiller";
+                            GridPersonal.Columns[20].DisplayIndex = 4;
                         }
                     }
                 }
@@ -562,24 +564,176 @@ namespace Personal_Imhotep
 
         }
 
-        private void txtBuscarNom_TextChanged(object sender, EventArgs e)
+        private void BuscarTipoBachiller()
+        {
+            try
+            {
+                var personal = pr.BuscarTipoBachiller(txtBuscarBachiller.Text);
+                GridPersonal.DataSource = personal;
+
+                GridPersonal.Columns[0].DisplayIndex = 20;
+                GridPersonal.Columns[1].Visible = false;
+                GridPersonal.Columns[4].HeaderText = "Formación";
+                GridPersonal.Columns[5].HeaderText = "Licencia/Certificación";
+                GridPersonal.Columns[20].Visible = false;
+
+                if (GridPersonal.Rows.Count > 0)
+                {
+                    foreach (DataGridViewRow row in GridPersonal.Rows)
+                    {
+                        if (row.Cells[4].Value.ToString() == "BACHILLERATO")
+                        {
+                            GridPersonal.Columns[20].Visible = true;
+                            GridPersonal.Columns[20].HeaderText = "Tipo Bachiller";
+                            GridPersonal.Columns[20].DisplayIndex = 4;
+                        }
+                    }
+                }
+
+                GridPersonal.Columns[6].Visible = false;
+                GridPersonal.Columns[8].Visible = false;
+                GridPersonal.Columns[9].Visible = false;
+                GridPersonal.Columns[10].Visible = false;
+                GridPersonal.Columns[11].Visible = false;
+                GridPersonal.Columns[12].Visible = false;
+                GridPersonal.Columns[13].Visible = false;
+                GridPersonal.Columns[14].Visible = false;
+                GridPersonal.Columns[15].Visible = false;
+                GridPersonal.Columns[16].Visible = false;
+                GridPersonal.Columns[17].Visible = false;
+                GridPersonal.Columns[18].Visible = false;
+                GridPersonal.Columns[19].DisplayIndex = 19;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void BuscarAnioPersonal()
+        {
+            try
+            {
+                var personal = pr.BuscarAnioPersona(txtBuscarAnio.Text);
+                GridPersonal.DataSource = personal;
+
+                GridPersonal.Columns[0].DisplayIndex = 20;
+                GridPersonal.Columns[1].Visible = false;
+                GridPersonal.Columns[4].HeaderText = "Formación";
+                GridPersonal.Columns[5].HeaderText = "Licencia/Certificación";
+                GridPersonal.Columns[20].Visible = false;
+
+                if (GridPersonal.Rows.Count > 0)
+                {
+                    foreach (DataGridViewRow row in GridPersonal.Rows)
+                    {
+                        if (row.Cells[4].Value.ToString() == "BACHILLERATO")
+                        {
+                            GridPersonal.Columns[20].Visible = true;
+                            GridPersonal.Columns[20].HeaderText = "Tipo Bachiller";
+                            GridPersonal.Columns[20].DisplayIndex = 4;
+                        }
+                    }
+                }
+
+                GridPersonal.Columns[6].Visible = false;
+                GridPersonal.Columns[8].Visible = false;
+                GridPersonal.Columns[9].Visible = false;
+                GridPersonal.Columns[10].Visible = false;
+                GridPersonal.Columns[11].Visible = false;
+                GridPersonal.Columns[12].Visible = false;
+                GridPersonal.Columns[13].Visible = false;
+                GridPersonal.Columns[14].Visible = false;
+                GridPersonal.Columns[15].Visible = false;
+                GridPersonal.Columns[16].Visible = false;
+                GridPersonal.Columns[17].Visible = false;
+                GridPersonal.Columns[18].Visible = false;
+                GridPersonal.Columns[19].DisplayIndex = 19;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void BuscarFormacionPersonal()
+        {
+            try
+            {
+                var personal = pr.BuscarFormacionPerso(dropBuscarFormacion.Text);
+                GridPersonal.DataSource = personal;
+
+                GridPersonal.Columns[0].DisplayIndex = 20;
+                GridPersonal.Columns[1].Visible = false;
+                GridPersonal.Columns[4].HeaderText = "Formación";
+                GridPersonal.Columns[5].HeaderText = "Licencia/Certificación";
+                GridPersonal.Columns[20].Visible = false;
+
+                if (GridPersonal.Rows.Count > 0)
+                {
+                    foreach (DataGridViewRow row in GridPersonal.Rows)
+                    {
+                        if (row.Cells[4].Value.ToString() == "BACHILLERATO")
+                        {
+                            GridPersonal.Columns[20].Visible = true;
+                            GridPersonal.Columns[20].HeaderText = "Tipo Bachiller";
+                            GridPersonal.Columns[20].DisplayIndex = 4;
+                        }
+                    }
+                }
+
+                GridPersonal.Columns[6].Visible = false;
+                GridPersonal.Columns[8].Visible = false;
+                GridPersonal.Columns[9].Visible = false;
+                GridPersonal.Columns[10].Visible = false;
+                GridPersonal.Columns[11].Visible = false;
+                GridPersonal.Columns[12].Visible = false;
+                GridPersonal.Columns[13].Visible = false;
+                GridPersonal.Columns[14].Visible = false;
+                GridPersonal.Columns[15].Visible = false;
+                GridPersonal.Columns[16].Visible = false;
+                GridPersonal.Columns[17].Visible = false;
+                GridPersonal.Columns[18].Visible = false;
+                GridPersonal.Columns[19].DisplayIndex = 19;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+            private void txtBuscarNom_TextChanged(object sender, EventArgs e)
         {
             BuscarNombPersona();
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void txtBuscarAnio_TextChanged(object sender, EventArgs e)
         {
-
+            BuscarAnioPersonal();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(chkFiltarFormacion.Checked == true)
+            {
+                dropBuscarFormacion.Enabled = true;
+            }
+            else if(chkFiltarFormacion.Checked == false)
+            {
+                dropBuscarFormacion.Text = "";
+                dropBuscarFormacion.Enabled = false;
+                Mostrar();
+            }
         }
 
-        private void dtFechaCaduc_ValueChanged(object sender, EventArgs e)
+        private void dropBuscarFormacion_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            BuscarFormacionPersonal();
         }
     }
 }

@@ -53,6 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buscar_Anio_Personal_Result.cs">
+      <DependentUpon>Personal_Imhotep.tt</DependentUpon>
+    </Compile>
     <Compile Include="buscar_formacion_Result.cs">
       <DependentUpon>Personal_Imhotep.tt</DependentUpon>
     </Compile>
