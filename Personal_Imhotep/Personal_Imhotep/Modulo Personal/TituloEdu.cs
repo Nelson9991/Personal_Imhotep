@@ -48,39 +48,37 @@ namespace Personal_Imhotep.Modulo_Personal
             this.Close();
         }
 
-        public FileStream fs = null;
+        FileStream fs = null;
 
         public void MostrarTitulo(string nombreTitulo, object buffer)
         {
-            
             byte[] buffer2;
 
             string ruta = @"C:\temp\";
 
-            if (buffer.ToString() != "")
+            try
             {
-                ruta = Path.Combine(ruta, nombreTitulo);
-
-                rutaTitulo = ruta;
-
-                buffer2 = (byte[])buffer;
-
-                try
+                if (buffer.ToString() != "")
                 {
+                    ruta = Path.Combine(ruta, nombreTitulo);
+
+                    rutaTitulo = ruta;
+
+                    buffer2 = (byte[])buffer;
+
+
                     using (fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-
-
-                webTitulo.Navigate(ruta);
             }
+            catch
+            {
+              
+            }
+
+            webTitulo.Navigate(ruta);
         }
 
         private void btnGuardarTitulo_Click(object sender, EventArgs e)

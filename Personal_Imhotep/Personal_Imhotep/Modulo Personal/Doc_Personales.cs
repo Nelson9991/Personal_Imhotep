@@ -48,7 +48,7 @@ namespace Personal_Imhotep.Modulo_Personal
             webDocs.Navigate(ruta);
         }
 
-        public FileStream fs;
+        FileStream fs;
 
         public void MostrarDocs_Perso(string nombreDoc, object buffer)
         {
@@ -57,31 +57,31 @@ namespace Personal_Imhotep.Modulo_Personal
 
             string ruta = @"C:\temp\";
 
-            if (buffer.ToString() != "")
+            try
             {
-                ruta = Path.Combine(ruta, nombreDoc);
-
-                rutaDocs = ruta;
-
-                buffer2 = (byte[])buffer;
-
-                try
+                if (buffer.ToString() != "")
                 {
+                    ruta = Path.Combine(ruta, nombreDoc);
+
+                    rutaDocs = ruta;
+
+                    buffer2 = (byte[])buffer;
+
+
                     using (fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-  
-
-
-                webDocs.Navigate(ruta);
             }
+            catch
+            {
+               
+            }
+
+            webDocs.Navigate(ruta);
         }
+        
 
         private void btnGuardarDocs_Click(object sender, EventArgs e)
         {

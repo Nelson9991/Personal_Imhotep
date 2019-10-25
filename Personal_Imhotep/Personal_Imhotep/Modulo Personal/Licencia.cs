@@ -49,7 +49,7 @@ namespace Personal_Imhotep.Modulo_Personal
             webLicencia.Navigate(ruta);
         }
 
-        public FileStream fs = null;
+        FileStream fs = null;
 
         public void MostrarLicencia(string nombreLicen, object buffer)
         {
@@ -57,28 +57,31 @@ namespace Personal_Imhotep.Modulo_Personal
 
             string ruta = @"C:\temp\";
 
-            if (buffer.ToString() != "")
+            try
             {
-                ruta = Path.Combine(ruta, nombreLicen);
-
-                rutaLicen = ruta;
-
-                buffer2 = (byte[])buffer;
-
-                try
+                if (buffer.ToString() != "")
                 {
+                    ruta = Path.Combine(ruta, nombreLicen);
+
+                    rutaLicen = ruta;
+
+                    buffer2 = (byte[])buffer;
+
+
                     using (fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-                webLicencia.Navigate(ruta);
             }
+            catch
+            {
+               
+            }
+
+
+            webLicencia.Navigate(ruta);
+            
         }
 
         private void btnLicencia_Click(object sender, EventArgs e)

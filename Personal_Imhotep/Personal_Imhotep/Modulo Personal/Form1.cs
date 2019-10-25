@@ -51,9 +51,9 @@ namespace Personal_Imhotep
             {
                 hoja.ShowDialog();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
+                
             }
 
             if(hoja.rutaHoja != null)
@@ -99,7 +99,7 @@ namespace Personal_Imhotep
 
             persona.nom_Licencia = licencia.nombLicen;
 
-            persona.anio = Convert.ToInt32(txtTipoBachiller.Text);
+            persona.anio = Convert.ToInt32(dropAnio.Text);
 
             persona.Tipo_Bachillerato = txtTipoBachiller.Text;
 
@@ -117,13 +117,13 @@ namespace Personal_Imhotep
             {
                 errorProvider1.SetError(txtCédula, "Este campo no se debe dejar vacio");
             }
-            if (txtTipoBachiller.Text == "Año del Personal")
+            if (dropAnio.Text == "Año del Personal")
             {
-                errorProvider1.SetError(txtTipoBachiller, "Escoja un año para el personal correspondiente");
+                errorProvider1.SetError(dropAnio, "Escoja un año para el personal correspondiente");
                 
             }
 
-            if (txtNombre.Text == "" || txtCédula.Text == "" || txtTipoBachiller.Text == "Año del Personal")
+            if (txtNombre.Text == "" || txtCédula.Text == "" || dropAnio.Text == "Año del Personal")
             {
                 return;
             }
@@ -166,19 +166,24 @@ namespace Personal_Imhotep
                 var personal = pr.MostrarPersonal();
                 GridPersonal.DataSource = personal;
 
-                GridPersonal.Columns[0].DisplayIndex = 18;
+                GridPersonal.Columns[0].DisplayIndex = 20;
                 GridPersonal.Columns[1].Visible = false;
-                GridPersonal.Columns[5].HeaderText = "Cadu. Licencia/Certificación";
-                if(GridPersonal.SelectedCells[4].Value.ToString() == "BACHILLERATO")
+            GridPersonal.Columns[4].HeaderText = "Formación";
+            GridPersonal.Columns[5].HeaderText = "Licencia/Certificación";
+            GridPersonal.Columns[20].Visible = false;
+
+            if(GridPersonal.Rows.Count > 0)
+            {
+               foreach(DataGridViewRow row in GridPersonal.Rows)
                 {
-                    GridPersonal.Columns[20].Visible = true;
-                    GridPersonal.Columns[20].HeaderText = "Tipo Bachiller"; 
-                    GridPersonal.Columns[20].DisplayIndex = 4;
+                    if(row.Cells[4].Value.ToString() == "BACHILLERATO")
+                    {
+                        GridPersonal.Columns[20].Visible = true;
+                        GridPersonal.Columns[20].HeaderText = "Tipo Bachiller";
+                    }
                 }
-                else
-                {
-                    GridPersonal.Columns[20].Visible = false;
-                }
+            }
+               
                 GridPersonal.Columns[6].Visible = false;
                 GridPersonal.Columns[8].Visible = false;
                 GridPersonal.Columns[9].Visible = false;
@@ -191,7 +196,7 @@ namespace Personal_Imhotep
                 GridPersonal.Columns[16].Visible = false;
                 GridPersonal.Columns[17].Visible = false;
                 GridPersonal.Columns[18].Visible = false;
-                GridPersonal.Columns[19].Visible = false;
+                GridPersonal.Columns[19].DisplayIndex = 19;
 
             }
             catch (Exception ex)
@@ -204,6 +209,7 @@ namespace Personal_Imhotep
         private void Form1_Load(object sender, EventArgs e)
         {
             Mostrar();
+            lblBachiller.Visible = false;
             txtTipoBachiller.Visible = false;
             panel_Usuarios.Visible = false;
 
@@ -215,9 +221,9 @@ namespace Personal_Imhotep
             {
                 doc.ShowDialog();
             }
-            catch (Exception ex)
+            catch 
             {
-                MessageBox.Show(ex.Message);
+                
             }
 
             if(doc.rutaDocs != null)
@@ -232,9 +238,9 @@ namespace Personal_Imhotep
             {
                 titulo.ShowDialog();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
+                
             }
 
             if(titulo.rutaTitulo != null)
@@ -249,9 +255,9 @@ namespace Personal_Imhotep
             {
                 licencia.ShowDialog();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
+                
             }
 
             if(licencia.rutaLicen != null)
@@ -276,7 +282,9 @@ namespace Personal_Imhotep
             titulo.rutaTitulo = "";
             doc.rutaDocs = "";
             licencia.rutaLicen = "";
-
+            lblBachiller.Visible = false;
+            txtTipoBachiller.Text = "";
+            txtTipoBachiller.Visible = false;
             panel_Usuarios.Visible = true;
             txtNombre.Text = "";
             txtCédula.Text = "";
@@ -284,7 +292,7 @@ namespace Personal_Imhotep
             dtFechaCaduc.Value = DateTime.Today;
             //dtFechCertifica.Value = DateTime.Today;
             dropFormacion.Text = "Formación";
-            txtTipoBachiller.Text = "Año del Personal";
+            dropAnio.Text = "Año del Personal";
             btnGuardar.Visible = true;
             btnGuardarCambios.Visible = false;
             btnNuevo.Visible = false;
@@ -293,7 +301,7 @@ namespace Personal_Imhotep
         {
 
             MatarProcesoAcrobat();
-            errorProvider1.SetError(txtTipoBachiller, "");
+            errorProvider1.SetError(dropAnio, "");
             errorProvider1.SetError(txtNombre, "");
             errorProvider1.SetError(txtCédula, "");
             btnNuevo.Visible = true;
@@ -319,14 +327,15 @@ namespace Personal_Imhotep
             if(GridPersonal.SelectedCells[4].Value.ToString() == "BACHILLERATO")
             {
                 txtTipoBachiller.Visible = true;
-                if(GridPersonal.SelectedCells[19].Value.ToString() == null)
+                if(GridPersonal.SelectedCells[20].Value.ToString() == null)
                 {
                     txtTipoBachiller.Text = "No Asignado";
                 }
-                txtTipoBachiller.Text = GridPersonal.SelectedCells[19].Value.ToString();
+                else
                 {
-
+                    txtTipoBachiller.Text = GridPersonal.SelectedCells[20].Value.ToString();
                 }
+
             }
             else
             {
@@ -347,7 +356,7 @@ namespace Personal_Imhotep
 
             txtObservacion.Text = GridPersonal.SelectedCells[7].Value.ToString();
 
-            txtTipoBachiller.Text = GridPersonal.SelectedCells[19].Value.ToString();
+            dropAnio.Text = GridPersonal.SelectedCells[19].Value.ToString();
   
             if(GridPersonal.SelectedCells[8].Value != null)
             {
@@ -364,14 +373,14 @@ namespace Personal_Imhotep
                 titulo.MostrarTitulo(GridPersonal.SelectedCells[12].Value.ToString(), GridPersonal.SelectedCells[10].Value);
             }
 
-            if (GridPersonal.SelectedCells[14].Value != null)
-            {
-                certif.MostrarCertificacion(GridPersonal.SelectedCells[16].Value.ToString(), GridPersonal.SelectedCells[14].Value);
-            }
-
             if (GridPersonal.SelectedCells[15].Value != null)
             {
-                licencia.MostrarLicencia(GridPersonal.SelectedCells[17].Value.ToString(), GridPersonal.SelectedCells[15].Value);
+                certif.MostrarCertificacion(GridPersonal.SelectedCells[17].Value.ToString(), GridPersonal.SelectedCells[15].Value);
+            }
+
+            if (GridPersonal.SelectedCells[16].Value != null)
+            {
+                licencia.MostrarLicencia(GridPersonal.SelectedCells[18].Value.ToString(), GridPersonal.SelectedCells[16].Value);
             }
         }
 
@@ -381,9 +390,9 @@ namespace Personal_Imhotep
             {
                 certif.ShowDialog();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
+               
             }
 
             if (certif.rutaCertif != null)
@@ -403,13 +412,13 @@ namespace Personal_Imhotep
             {
                 errorProvider1.SetError(txtCédula, "Este campo no se debe dejar vacio");
             }
-            if (txtTipoBachiller.Text == "Año del Personal")
+            if (dropAnio.Text == "Año del Personal")
             {
-                errorProvider1.SetError(txtTipoBachiller, "Escoja un año para el personal correspondiente");
+                errorProvider1.SetError(dropAnio, "Escoja un año para el personal correspondiente");
 
             }
 
-            if (txtNombre.Text == "" || txtCédula.Text == "" || txtTipoBachiller.Text == "Año del Personal")
+            if (txtNombre.Text == "" || txtCédula.Text == "" || dropAnio.Text == "Año del Personal")
             {
                 return;
             }
@@ -477,7 +486,7 @@ namespace Personal_Imhotep
 
         private void dpAnio_SelectedIndexChanged(object sender, EventArgs e)
         {
-            errorProvider1.SetError(txtTipoBachiller, "");
+            errorProvider1.SetError(dropAnio, "");
         }
 
         private void panel_Usuarios_Paint(object sender, PaintEventArgs e)
@@ -489,8 +498,88 @@ namespace Personal_Imhotep
         {
             if(dropFormacion.Text == "BACHILLERATO")
             {
+                lblBachiller.Visible = true;
                 txtTipoBachiller.Visible = true;
             }
+            else
+            {
+                lblBachiller.Visible = false;
+                txtTipoBachiller.Text = "";
+                txtTipoBachiller.Visible = false;
+
+            }
+        }
+
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuscarNombPersona()
+        {
+            try
+            {
+                  var personal =  pr.BuscarNombPerso(txtBuscarNom.Text);
+                    GridPersonal.DataSource = personal;
+
+                GridPersonal.Columns[0].DisplayIndex = 20;
+                GridPersonal.Columns[1].Visible = false;
+                GridPersonal.Columns[4].HeaderText = "Formación";
+                GridPersonal.Columns[5].HeaderText = "Licencia/Certificación";
+                GridPersonal.Columns[20].Visible = false;
+
+                if (GridPersonal.Rows.Count > 0)
+                {
+                    foreach (DataGridViewRow row in GridPersonal.Rows)
+                    {
+                        if (row.Cells[4].Value.ToString() == "BACHILLERATO")
+                        {
+                            GridPersonal.Columns[20].Visible = true;
+                            GridPersonal.Columns[20].HeaderText = "Tipo Bachiller";
+                        }
+                    }
+                }
+
+                GridPersonal.Columns[6].Visible = false;
+                GridPersonal.Columns[8].Visible = false;
+                GridPersonal.Columns[9].Visible = false;
+                GridPersonal.Columns[10].Visible = false;
+                GridPersonal.Columns[11].Visible = false;
+                GridPersonal.Columns[12].Visible = false;
+                GridPersonal.Columns[13].Visible = false;
+                GridPersonal.Columns[14].Visible = false;
+                GridPersonal.Columns[15].Visible = false;
+                GridPersonal.Columns[16].Visible = false;
+                GridPersonal.Columns[17].Visible = false;
+                GridPersonal.Columns[18].Visible = false;
+                GridPersonal.Columns[19].DisplayIndex = 19;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void txtBuscarNom_TextChanged(object sender, EventArgs e)
+        {
+            BuscarNombPersona();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtFechaCaduc_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

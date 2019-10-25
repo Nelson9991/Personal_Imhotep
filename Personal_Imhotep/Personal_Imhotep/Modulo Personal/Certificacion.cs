@@ -42,7 +42,7 @@ namespace Personal_Imhotep.Modulo_Personal
             webCertificacion.Navigate(ruta);
         }
 
-        public FileStream fs = null;
+        FileStream fs = null;
 
         public void MostrarCertificacion(string nombreCertif, object buffer)
         {
@@ -51,34 +51,31 @@ namespace Personal_Imhotep.Modulo_Personal
 
             string ruta = @"C:\temp\";
 
-            if (buffer.ToString() != "")
+            try
             {
-                ruta = Path.Combine(ruta, nombreCertif);
-
-                rutaCertif = ruta;
-
-                buffer2 = (byte[])buffer;
-
-                try
+                if (buffer.ToString() != "")
                 {
+                    ruta = Path.Combine(ruta, nombreCertif);
+
+                    rutaCertif = ruta;
+
+                    buffer2 = (byte[])buffer;
+
+
                     using (fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    fs.Close();
-                }
-
-
-                webCertificacion.Navigate(ruta);
             }
+            catch
+            {
+                
+            }
+    
+            webCertificacion.Navigate(ruta);
         }
+    
 
         private void btnCertif_Click(object sender, EventArgs e)
         {
