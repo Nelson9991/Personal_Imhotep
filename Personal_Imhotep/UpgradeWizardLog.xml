@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\App.config" />
+  <event action="Analyze" type="Success" name="Certificacion.resx" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Modulo Personal\Certificacion.resx" />
+  <event action="Analyze" type="Success" name="Doc_Personales.resx" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Modulo Personal\Doc_Personales.resx" />
+  <event action="Analyze" type="Success" name="Form1.resx" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Modulo Personal\Form1.resx" />
+  <event action="Analyze" type="Success" name="Hoja de Vida.resx" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Modulo Personal\Hoja de Vida.resx" />
+  <event action="Analyze" type="Success" name="Licencia.resx" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Modulo Personal\Licencia.resx" />
+  <event action="Analyze" type="Success" name="TituloEdu.resx" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Modulo Personal\TituloEdu.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\packages.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\Acceso_Datos.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\App.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\packages.config" />
+  <event action="Analyze" type="Success" name="Acceso_Datos" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\Acceso_Datos.csproj" />
+  <event action="Analyze" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.sln" />
+  <event action="Backup" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.csproj" />
+  <event action="Upgrade" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.csproj" />
+  <event action="Upgrade" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.sln" />
+</log>

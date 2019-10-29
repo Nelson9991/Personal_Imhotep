@@ -43,6 +43,7 @@ namespace Personal_Imhotep
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            
         }
 
         private void btnMostrarHoja_Click(object sender, EventArgs e)
@@ -113,6 +114,10 @@ namespace Personal_Imhotep
             {
                 errorProvider1.SetError(txtNombre, "Este campo no se debe dejar vacio");
             }
+            if(txtTipoBachiller.Visible == true && txtTipoBachiller.Text == "")
+            {
+                errorProvider1.SetError(txtTipoBachiller, "Este campo no se debe dejar vacio");
+            }
             if(txtCédula.Text == "")
             {
                 errorProvider1.SetError(txtCédula, "Este campo no se debe dejar vacio");
@@ -122,8 +127,12 @@ namespace Personal_Imhotep
                 errorProvider1.SetError(dropAnio, "Escoja un año para el personal correspondiente");
                 
             }
+            if(dropFormacion.Text == "Formación")
+            {
+                errorProvider1.SetError(dropFormacion, "Debe Selecionar una Formacion");
+            }
 
-            if (txtNombre.Text == "" || txtCédula.Text == "" || dropAnio.Text == "Año del Personal")
+            if (txtNombre.Text == "" || txtCédula.Text == "" || dropAnio.Text == "Año del Personal" ||(txtTipoBachiller.Visible == true && txtTipoBachiller.Text == "") || dropFormacion.Text == "Formación")
             {
                 return;
             }
@@ -145,7 +154,14 @@ namespace Personal_Imhotep
                 }
                 catch (Exception ex)
                 {
-                    var result = MessageBox.Show(ex.InnerException.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    if (ex.InnerException != null)
+                    {
+                        var result = MessageBox.Show(ex.InnerException.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
 
                     return;
                 }
@@ -297,6 +313,11 @@ namespace Personal_Imhotep
             btnGuardar.Visible = true;
             btnGuardarCambios.Visible = false;
             btnNuevo.Visible = false;
+            errorProvider1.SetError(dropAnio, "");
+            errorProvider1.SetError(txtNombre, "");
+            errorProvider1.SetError(txtCédula, "");
+            errorProvider1.SetError(txtTipoBachiller, "");
+            errorProvider1.SetError(dropFormacion, "");
         }
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
@@ -305,6 +326,8 @@ namespace Personal_Imhotep
             errorProvider1.SetError(dropAnio, "");
             errorProvider1.SetError(txtNombre, "");
             errorProvider1.SetError(txtCédula, "");
+            errorProvider1.SetError(txtTipoBachiller, "");
+            errorProvider1.SetError(dropFormacion, "");
             btnNuevo.Visible = true;
             panel_Usuarios.Visible = false;
 
@@ -409,6 +432,10 @@ namespace Personal_Imhotep
             {
                 errorProvider1.SetError(txtNombre, "Este campo no se debe dejar vacio");
             }
+            if(txtTipoBachiller.Visible == true && txtTipoBachiller.Text == "")
+            {
+                errorProvider1.SetError(txtTipoBachiller, "Este campo no se debe dejar vacio");
+            }
             if (txtCédula.Text == "")
             {
                 errorProvider1.SetError(txtCédula, "Este campo no se debe dejar vacio");
@@ -419,7 +446,7 @@ namespace Personal_Imhotep
 
             }
 
-            if (txtNombre.Text == "" || txtCédula.Text == "" || dropAnio.Text == "Año del Personal")
+            if (txtNombre.Text == "" || txtCédula.Text == "" || dropAnio.Text == "Año del Personal" || (txtTipoBachiller.Visible == true && txtTipoBachiller.Text == ""))
             {
                 return;
             }
@@ -441,7 +468,14 @@ namespace Personal_Imhotep
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    if (ex.InnerException != null)
+                    {
+                        var result = MessageBox.Show(ex.InnerException.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
             }
         }
@@ -497,7 +531,8 @@ namespace Personal_Imhotep
 
         private void dropFormacion_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(dropFormacion.Text == "BACHILLERATO")
+            errorProvider1.SetError(dropFormacion, "");
+            if (dropFormacion.Text == "BACHILLERATO")
             {
                 lblBachiller.Visible = true;
                 txtTipoBachiller.Visible = true;
@@ -734,6 +769,84 @@ namespace Personal_Imhotep
         private void dropBuscarFormacion_SelectedIndexChanged(object sender, EventArgs e)
         {
             BuscarFormacionPersonal();
+        }
+
+        private void txtTipoBachiller_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(txtTipoBachiller, "");
+        }
+
+        public void Numeros(Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox cajaTexto, KeyPressEventArgs e)
+        {
+            if(Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if(Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+        
+        private void txtCédula_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Numeros(txtCédula,e);
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Maximized)
+            {
+                Point p = new Point(0, 266);
+
+                panel5.Location = p;
+            }
+            else if(this.WindowState == FormWindowState.Normal)
+                {
+                    Point p = new Point(0, 245);
+
+                panel5.Location = p;
+            }
+
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            var resul = MessageBox.Show("¿Está seguro/a de salir del programa?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            if(resul == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+            
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnExportarExcel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -15,10 +15,10 @@ namespace Acceso_Datos
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class Personal_IMHOTEPEntities1 : DbContext
+    public partial class Personal_IMHOTEPEntities : DbContext
     {
-        public Personal_IMHOTEPEntities1()
-            : base("name=Personal_IMHOTEPEntities1")
+        public Personal_IMHOTEPEntities()
+            : base("name=Personal_IMHOTEPEntities")
         {
         }
     
