@@ -1,5 +1,6 @@
 ﻿using Acceso_Datos;
 using Personal_Imhotep.Modulo_Personal;
+using Personal_Imhotep.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +28,8 @@ namespace Personal_Imhotep
         Licencia licencia = new Licencia();
 
         Certificacion certif = new Certificacion();
+
+        FormReport report = new FormReport();
 
         public Form1()
         {
@@ -846,7 +849,14 @@ namespace Personal_Imhotep
 
         private void btnExportarExcel_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                report.ShowDialog();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
