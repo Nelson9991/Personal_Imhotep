@@ -126,7 +126,7 @@
             this.btnGuardarTitulo.IdleIconLeftImage = null;
             this.btnGuardarTitulo.IdleIconRightImage = null;
             this.btnGuardarTitulo.IndicateFocus = false;
-            this.btnGuardarTitulo.Location = new System.Drawing.Point(502, 477);
+            this.btnGuardarTitulo.Location = new System.Drawing.Point(535, 487);
             this.btnGuardarTitulo.Name = "btnGuardarTitulo";
             stateProperties1.BorderColor = System.Drawing.Color.LimeGreen;
             stateProperties1.BorderRadius = 3;
@@ -160,7 +160,7 @@
             this.panel2.Location = new System.Drawing.Point(9, 49);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(954, 402);
+            this.panel2.Size = new System.Drawing.Size(1000, 419);
             this.panel2.TabIndex = 6;
             // 
             // webTitulo
@@ -169,7 +169,7 @@
             this.webTitulo.Location = new System.Drawing.Point(0, 0);
             this.webTitulo.MinimumSize = new System.Drawing.Size(20, 20);
             this.webTitulo.Name = "webTitulo";
-            this.webTitulo.Size = new System.Drawing.Size(952, 400);
+            this.webTitulo.Size = new System.Drawing.Size(998, 417);
             this.webTitulo.TabIndex = 1;
             // 
             // panel1
@@ -179,7 +179,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(972, 35);
+            this.panel1.Size = new System.Drawing.Size(1024, 35);
             this.panel1.TabIndex = 5;
             // 
             // bunifuButton2
@@ -220,7 +220,7 @@
             this.bunifuButton2.IdleIconLeftImage = null;
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(927, 0);
+            this.bunifuButton2.Location = new System.Drawing.Point(979, 0);
             this.bunifuButton2.Name = "bunifuButton2";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
             stateProperties3.BorderRadius = 1;
@@ -284,7 +284,7 @@
             this.btnCargarTitulo.IdleIconLeftImage = null;
             this.btnCargarTitulo.IdleIconRightImage = null;
             this.btnCargarTitulo.IndicateFocus = false;
-            this.btnCargarTitulo.Location = new System.Drawing.Point(223, 477);
+            this.btnCargarTitulo.Location = new System.Drawing.Point(275, 487);
             this.btnCargarTitulo.Name = "btnCargarTitulo";
             stateProperties5.BorderColor = System.Drawing.Color.LimeGreen;
             stateProperties5.BorderRadius = 3;
@@ -316,7 +316,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(972, 528);
+            this.ClientSize = new System.Drawing.Size(1024, 544);
             this.Controls.Add(this.btnGuardarTitulo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

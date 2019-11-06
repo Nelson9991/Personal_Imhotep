@@ -8,11 +8,11 @@ namespace Personal_Imhotep.Reportes
     using Telerik.Reporting.Drawing;
 
     /// <summary>
-    /// Summary description for Reporte_Personal.
+    /// Summary description for Report1.
     /// </summary>
-    public partial class Reporte_Personal : Telerik.Reporting.Report
+    public partial class Report1 : Telerik.Reporting.Report
     {
-        public Reporte_Personal()
+        public Report1()
         {
             //
             // Required for telerik Reporting designer support

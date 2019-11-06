@@ -217,7 +217,7 @@ namespace Personal_Imhotep
                 GridPersonal.Columns[17].Visible = false;
                 GridPersonal.Columns[18].Visible = false;
                 GridPersonal.Columns[19].DisplayIndex = 19;
-
+                GridPersonal.Columns[19].HeaderText = "Año";
             }
             catch (Exception ex)
             {
@@ -802,18 +802,7 @@ namespace Personal_Imhotep
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
-            if(this.WindowState == FormWindowState.Maximized)
-            {
-                Point p = new Point(0, 266);
-
-                panel5.Location = p;
-            }
-            else if(this.WindowState == FormWindowState.Normal)
-                {
-                    Point p = new Point(0, 245);
-
-                panel5.Location = p;
-            }
+        
 
         }
 
@@ -856,6 +845,22 @@ namespace Personal_Imhotep
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                Point p = new Point(40, 100);
+
+                panel_Usuarios.Location = p;
+            }
+            else if (this.WindowState == FormWindowState.Normal)
+            {
+                Point p = new Point(0, 88);
+
+                panel_Usuarios.Location = p;
             }
         }
     }

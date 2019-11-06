@@ -93,9 +93,9 @@
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.webLicencia);
-            this.panel2.Location = new System.Drawing.Point(12, 70);
+            this.panel2.Location = new System.Drawing.Point(12, 50);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(932, 378);
+            this.panel2.Size = new System.Drawing.Size(1000, 429);
             this.panel2.TabIndex = 12;
             // 
             // webLicencia
@@ -104,7 +104,7 @@
             this.webLicencia.Location = new System.Drawing.Point(0, 0);
             this.webLicencia.MinimumSize = new System.Drawing.Size(20, 20);
             this.webLicencia.Name = "webLicencia";
-            this.webLicencia.Size = new System.Drawing.Size(930, 376);
+            this.webLicencia.Size = new System.Drawing.Size(998, 427);
             this.webLicencia.TabIndex = 1;
             // 
             // btnLicencia
@@ -144,7 +144,7 @@
             this.btnLicencia.IdleIconLeftImage = null;
             this.btnLicencia.IdleIconRightImage = null;
             this.btnLicencia.IndicateFocus = false;
-            this.btnLicencia.Location = new System.Drawing.Point(502, 458);
+            this.btnLicencia.Location = new System.Drawing.Point(527, 494);
             this.btnLicencia.Name = "btnLicencia";
             stateProperties1.BorderColor = System.Drawing.Color.LimeGreen;
             stateProperties1.BorderRadius = 3;
@@ -178,7 +178,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(972, 35);
+            this.panel1.Size = new System.Drawing.Size(1024, 35);
             this.panel1.TabIndex = 10;
             // 
             // bunifuButton2
@@ -219,7 +219,7 @@
             this.bunifuButton2.IdleIconLeftImage = null;
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(927, 0);
+            this.bunifuButton2.Location = new System.Drawing.Point(979, 0);
             this.bunifuButton2.Name = "bunifuButton2";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
             stateProperties3.BorderRadius = 1;
@@ -283,7 +283,7 @@
             this.btnCargarLicencia.IdleIconLeftImage = null;
             this.btnCargarLicencia.IdleIconRightImage = null;
             this.btnCargarLicencia.IndicateFocus = false;
-            this.btnCargarLicencia.Location = new System.Drawing.Point(241, 458);
+            this.btnCargarLicencia.Location = new System.Drawing.Point(262, 494);
             this.btnCargarLicencia.Name = "btnCargarLicencia";
             stateProperties5.BorderColor = System.Drawing.Color.LimeGreen;
             stateProperties5.BorderRadius = 3;
@@ -315,7 +315,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(972, 528);
+            this.ClientSize = new System.Drawing.Size(1024, 544);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnLicencia);
             this.Controls.Add(this.panel1);

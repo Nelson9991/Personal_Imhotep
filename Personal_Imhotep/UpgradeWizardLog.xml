@@ -24,6 +24,7 @@
   <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\packages.config" />
   <event action="Analyze" type="Success" name="packages.config" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\packages.config" />
   <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="FormReport.resx" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Reportes\FormReport.resx" />
   <event action="Analyze" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.csproj" />
   <event>Get project references.</event>
   <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\Acceso_Datos.csproj" />
@@ -43,8 +44,4 @@
   <event action="Analyze" type="Success" name="packages.config" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\packages.config" />
   <event action="Analyze" type="Success" name="Acceso_Datos" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Acceso_Datos\Acceso_Datos.csproj" />
   <event action="Analyze" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.sln" />
-  <event action="Backup" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.csproj" />
-  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.csproj" />
-  <event action="Upgrade" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.csproj" />
-  <event action="Upgrade" type="Success" name="Personal_Imhotep" path="C:\Users\Nelson\source\repos\Personal_Imhotep\Personal_Imhotep\Personal_Imhotep.sln" />
 </log>
