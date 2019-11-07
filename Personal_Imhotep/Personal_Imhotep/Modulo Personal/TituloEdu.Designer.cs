@@ -336,9 +336,9 @@
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnGuardarTitulo;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.WebBrowser webTitulo;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCargarTitulo;
+        public System.Windows.Forms.WebBrowser webTitulo;
     }
 }

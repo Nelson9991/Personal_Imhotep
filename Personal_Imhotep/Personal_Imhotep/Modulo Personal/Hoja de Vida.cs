@@ -55,37 +55,46 @@ namespace Personal_Imhotep.Modulo_Personal
             this.Close();
         }
 
-        FileStream fs = null;
-
         public void MostrarHojaV(string nombreHoja, object buffer)
         {
             byte[] buffer2;
 
-            string ruta = @"C:\temp\";
+            string ruta = Directory.CreateDirectory(@"C:\temp\").FullName;
+
+            Random random = new Random();
+
+            int numrand = random.Next( 1, 20);
 
             try
             {
                 if (buffer.ToString() != "")
                 {
-                    ruta = Path.Combine(ruta, nombreHoja);
+                    ruta = Path.Combine(ruta, nombreHoja + numrand.ToString());
 
                     rutaHoja = ruta;
 
                     buffer2 = (byte[])buffer;
 
 
-                    using (fs = File.Create(ruta))
+                    using (FileStream fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
+
+                        fs.Close();
+   
                     }
                 }
             }
-            catch
+            catch(Exception ex)
             {
-              
+                MessageBox.Show(ex.Message);
             }
  
             webHojaV.Navigate(ruta);
-        }                 
+
+
+        }
+
+
     }
 }

@@ -334,10 +334,10 @@
 
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.WebBrowser webLicencia;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLicencia;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCargarLicencia;
+        public System.Windows.Forms.WebBrowser webLicencia;
     }
 }

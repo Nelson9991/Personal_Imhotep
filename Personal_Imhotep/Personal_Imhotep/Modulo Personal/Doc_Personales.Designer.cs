@@ -333,11 +333,11 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnGuardarDocs;
-        private System.Windows.Forms.WebBrowser webDocs;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCargarDocs;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
+        public System.Windows.Forms.WebBrowser webDocs;
     }
 }

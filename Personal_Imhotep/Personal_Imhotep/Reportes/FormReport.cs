@@ -34,7 +34,16 @@ namespace Personal_Imhotep.Reportes
                 reporte.table1.DataSource = personal;
                 reportView.Report = reporte;
 
-                reportView.RefreshReport();
+                try
+                {
+                    reportView.AccessibleRole = AccessibleRole.Window;
+                    reportView.RefreshReport();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
             }
             catch (Exception ex)
             {
@@ -84,6 +93,7 @@ namespace Personal_Imhotep.Reportes
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+            reportView.Reset();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -98,6 +108,11 @@ namespace Personal_Imhotep.Reportes
                 txtBuscarAnio.Visible = false;
                 btnMostrar.Visible = false;
             }
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            MostrarTodos();
         }
     }
 }

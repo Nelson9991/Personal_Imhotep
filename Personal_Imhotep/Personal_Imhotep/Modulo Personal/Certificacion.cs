@@ -24,16 +24,18 @@ namespace Personal_Imhotep.Modulo_Personal
 
         private void btnCargarCertifi_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Archivo de programa |*.pdf;*.png;*.jpg";
-
-            if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
+            using (OpenFileDialog ofd = new OpenFileDialog())
             {
-                string ruta = ofd.FileName;
-                rutaCertif = ruta;
-                nombCertif = Path.GetFileName(ruta);
-                buffer = File.ReadAllBytes(ruta);
-                webCertificacion.Navigate(ruta);
+                ofd.Filter = "Archivo de programa |*.pdf;*.png;*.jpg";
+
+                if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
+                {
+                    string ruta = ofd.FileName;
+                    rutaCertif = ruta;
+                    nombCertif = Path.GetFileName(ruta);
+                    buffer = File.ReadAllBytes(ruta);
+                    webCertificacion.Navigate(ruta);
+                }
             }
         }
 
@@ -42,41 +44,50 @@ namespace Personal_Imhotep.Modulo_Personal
             webCertificacion.Navigate(ruta);
         }
 
-        FileStream fs = null;
 
         public void MostrarCertificacion(string nombreCertif, object buffer)
         {
 
             byte[] buffer2;
 
-            string ruta = @"C:\temp\";
+            string ruta = Directory.CreateDirectory(@"C:\temp\").FullName;
+
+            Random random = new Random();
+
+            int numrand = random.Next(1, 20);
+
 
             try
             {
                 if (buffer.ToString() != "")
                 {
-                    ruta = Path.Combine(ruta, nombreCertif);
+                    ruta = Path.Combine(ruta, nombreCertif + numrand.ToString());
 
                     rutaCertif = ruta;
 
                     buffer2 = (byte[])buffer;
 
 
-                    using (fs = File.Create(ruta))
+                    using (FileStream fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
+
+                        fs.Close();
+
                     }
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                
+                MessageBox.Show(ex.Message);
             }
     
             webCertificacion.Navigate(ruta);
-        }
-    
 
+
+        }
+
+ 
         private void btnCertif_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Datos Guardados");

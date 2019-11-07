@@ -124,6 +124,15 @@
     <value>52</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAlCAYAAAAEGWqvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACmSURBVFhH7Y+xDcJAEASvFDqwzm6ACmjUMSkFgF504AaI
+        qAC/0UTo8/1He9IkdxfMxF/M9JxOWXKdy/wZhOvhjH5Elb9VWo89s6Ef0TgOAfoOkIG+A2Sg7wAZ6DtA
+        BvoOkIG+A2Sg7wAZ6DtABvoOkIG+A2Sg7wAZ6DtABvoOkIG+A2Sg7wAZ6H8Dtt9j72TJN/oRy2M518Wr
+        9dgjh3ze84L+yBOxA2Xrvgwy/VbxAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btnMostrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAKIAAAAhCAYAAABa1nBtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -143,13 +152,14 @@
         ZAa8a4wbKQGKBnEcznIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnReporGeneral.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAlCAYAAAAEGWqvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACmSURBVFhH7Y+xDcJAEASvFDqwzm6ACmjUMSkFgF504AaI
-        qAC/0UTo8/1He9IkdxfMxF/M9JxOWXKdy/wZhOvhjH5Elb9VWo89s6Ef0TgOAfoOkIG+A2Sg7wAZ6DtA
-        BvoOkIG+A2Sg7wAZ6DtABvoOkIG+A2Sg7wAZ6DtABvoOkIG+A2Sg7wAZ6H8Dtt9j72TJN/oRy2M518Wr
-        9dgjh3ze84L+yBOxA2Xrvgwy/VbxAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAKIAAAAhCAYAAABa1nBtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVHhe7dyxUcNAGITRa0Q2pVABrUkMZRCTUgoNENHA
+        CYvZUKm9BG9nXnLzh198w+zf7LruT9dtvl+2fYeHeZ0fR3vJcIzLOj9PD+HOlnV+JcNbiCcH8CjJUIh0
+        JUMh0pUMhUhXMhQiXclQiHQlQyHSlQyFSFcyFCJdyVCIdCVDIdKVDIVIVzIUIl3JUIh0JUMh0pUMhUhX
+        MhQiXclQiHQlQyHSlQyFSFcyFCJdyVCIdCVDIdKVDIVIVzIUIl3JUIh0JUMh0pUMxzj+Hzk7gHtbtvmT
+        DP9+A3u+PXyfHcK9HBEub/MlGZq1N8YvWOzC8ozabsAAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

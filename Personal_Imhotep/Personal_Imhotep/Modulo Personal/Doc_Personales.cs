@@ -30,16 +30,21 @@ namespace Personal_Imhotep.Modulo_Personal
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Archivo de programa |*.pdf;*.png;*.jpg";
+            using(OpenFileDialog ofd = new OpenFileDialog())
+            { 
+                ofd.Filter = "Archivo de programa |*.pdf;*.png;*.jpg";
 
-            if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
-            {
-                string ruta = ofd.FileName;
-                rutaDocs = ruta;
-                nombDocs = Path.GetFileName(ruta);
-                buffer = File.ReadAllBytes(ruta);
-                webDocs.Navigate(ruta);
+                if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
+                {
+                    string ruta = ofd.FileName;
+                    rutaDocs = ruta;
+                    nombDocs = Path.GetFileName(ruta);
+                    using (FileStream fs = File.OpenRead(ruta))
+                    {
+                        fs.Read(buffer, 0, int.MaxValue);
+                    }
+                    webDocs.Navigate(ruta);
+                }
             }
         }
 
@@ -48,40 +53,49 @@ namespace Personal_Imhotep.Modulo_Personal
             webDocs.Navigate(ruta);
         }
 
-        FileStream fs;
+        
 
         public void MostrarDocs_Perso(string nombreDoc, object buffer)
         {
 
             byte[] buffer2;
 
-            string ruta = @"C:\temp\";
+            string ruta = Directory.CreateDirectory(@"C:\temp\").FullName;
+
+            Random random = new Random();
+
+            int numrand = random.Next(1, 20);
+
 
             try
             {
                 if (buffer.ToString() != "")
                 {
-                    ruta = Path.Combine(ruta, nombreDoc);
+                    ruta = Path.Combine(ruta, nombreDoc + numrand.ToString());
 
                     rutaDocs = ruta;
 
                     buffer2 = (byte[])buffer;
 
 
-                    using (fs = File.Create(ruta))
+                    using (FileStream fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
+  
+                        fs.Close();
+    
                     }
                 }
             }
-            catch
+            catch(Exception ex)
             {
-               
+                MessageBox.Show(ex.Message);
             }
 
             webDocs.Navigate(ruta);
+
         }
-        
+
 
         private void btnGuardarDocs_Click(object sender, EventArgs e)
         {

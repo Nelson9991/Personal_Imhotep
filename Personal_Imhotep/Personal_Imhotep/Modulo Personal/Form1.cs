@@ -10,6 +10,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -55,12 +56,12 @@ namespace Personal_Imhotep
             {
                 hoja.ShowDialog();
             }
-            catch
+            catch (Exception ex)
             {
-                
+                MessageBox.Show(ex.Message);
             }
 
-            if(hoja.rutaHoja != null)
+            if (hoja.rutaHoja != null)
             {
                 hoja.MostrarPreview(hoja.rutaHoja);
             }
@@ -113,7 +114,7 @@ namespace Personal_Imhotep
         private void rtyToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            if(txtNombre.Text == "")
+            if (txtNombre.Text == "")
             {
                 errorProvider1.SetError(txtNombre, "Este campo no se debe dejar vacio");
             }
@@ -148,6 +149,11 @@ namespace Personal_Imhotep
                 {
                     persona.Formacion = "";
                 }
+                if(licencia.nombLicen == null)
+                {
+                    persona.Caducidad_licencia = null;
+                     
+                }
 
                 try
                 {
@@ -172,8 +178,8 @@ namespace Personal_Imhotep
                 MessageBox.Show("Datos guardados");
                 Mostrar();
                 panel_Usuarios.Visible = false;
-                btnNuevo.Visible = true;
-                btnNuevo.Visible = true;
+                btnNuevo.Enabled = true;
+                btnExportarExcel.Enabled = true;
             }    
         }
 
@@ -203,7 +209,11 @@ namespace Personal_Imhotep
                     }
                 }
             }
-               
+                GridPersonal.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 GridPersonal.Columns[6].Visible = false;
                 GridPersonal.Columns[8].Visible = false;
                 GridPersonal.Columns[9].Visible = false;
@@ -241,12 +251,12 @@ namespace Personal_Imhotep
             {
                 doc.ShowDialog();
             }
-            catch 
+            catch (Exception ex)
             {
-                
+                MessageBox.Show(ex.Message);
             }
 
-            if(doc.rutaDocs != null)
+            if (doc.rutaDocs != null)
             {
                 doc.MostrarPreview(doc.rutaDocs);
             }
@@ -258,12 +268,12 @@ namespace Personal_Imhotep
             {
                 titulo.ShowDialog();
             }
-            catch
+            catch (Exception ex)
             {
-                
+                MessageBox.Show(ex.Message);
             }
 
-            if(titulo.rutaTitulo != null)
+            if (titulo.rutaTitulo != null)
             {
                 titulo.MostrarPreview(titulo.rutaTitulo);
             }
@@ -275,12 +285,12 @@ namespace Personal_Imhotep
             {
                 licencia.ShowDialog();
             }
-            catch
+            catch (Exception ex)
             {
-                
+                MessageBox.Show(ex.Message);
             }
 
-            if(licencia.rutaLicen != null)
+            if (licencia.rutaLicen != null)
             {
                 licencia.MostrarPreview(licencia.rutaLicen);
             }
@@ -290,13 +300,7 @@ namespace Personal_Imhotep
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            var resultado = System.Diagnostics.Process.GetProcessesByName("AcroRd32");
-            foreach (var item in resultado)
-            {
-                item.Kill();
-            }
-
-
+ 
             hoja.rutaHoja = "";
             certif.rutaCertif = "";
             titulo.rutaTitulo = "";
@@ -315,42 +319,96 @@ namespace Personal_Imhotep
             dropAnio.Text = "Año del Personal";
             btnGuardar.Visible = true;
             btnGuardarCambios.Visible = false;
-            btnNuevo.Visible = false;
+            btnNuevo.Enabled = false;
+            btnExportarExcel.Enabled = false;
             errorProvider1.SetError(dropAnio, "");
             errorProvider1.SetError(txtNombre, "");
             errorProvider1.SetError(txtCédula, "");
             errorProvider1.SetError(txtTipoBachiller, "");
             errorProvider1.SetError(dropFormacion, "");
         }
+
+            public static async Task<bool> TryDeleteDirectory(
+ string directoryPath,
+ int maxRetries = 10,
+ int millisecondsDelay = 25)
+            {
+                if (directoryPath == null)
+                    throw new ArgumentNullException(directoryPath);
+                if (maxRetries < 1)
+                    throw new ArgumentOutOfRangeException(nameof(maxRetries));
+                if (millisecondsDelay < 1)
+                    throw new ArgumentOutOfRangeException(nameof(millisecondsDelay));
+
+                for (int i = 0; i < maxRetries; ++i)
+                {
+                    try
+                    {
+                        if (Directory.Exists(directoryPath))
+                        {
+                            Directory.Delete(directoryPath, true);
+                        }
+
+                        return true;
+                    }
+                    catch (IOException)
+                    {
+                        await Task.Delay(millisecondsDelay);
+                    }
+                    catch (UnauthorizedAccessException)
+                    {
+                        await Task.Delay(millisecondsDelay);
+                    }
+                }
+
+            return false;    
+
+        }
+
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
-
+            hoja.webHojaV.GoHome();
+            licencia.webLicencia.GoHome(); ;
+            doc.webDocs.GoHome();
+            certif.webCertificacion.GoHome();
+            titulo.webTitulo.GoHome();
+            var files = TryDeleteDirectory(@"C:\temp\");
             MatarProcesoAcrobat();
             errorProvider1.SetError(dropAnio, "");
             errorProvider1.SetError(txtNombre, "");
             errorProvider1.SetError(txtCédula, "");
             errorProvider1.SetError(txtTipoBachiller, "");
             errorProvider1.SetError(dropFormacion, "");
-            btnNuevo.Visible = true;
+            btnNuevo.Enabled = true;
+            btnExportarExcel.Enabled = true;
             panel_Usuarios.Visible = false;
-
         }
 
         public void MatarProcesoAcrobat()
         {
-            var resultado = System.Diagnostics.Process.GetProcessesByName("AcroRd32");
-            foreach (var item in resultado)
+            try
+            
             {
-                item.Kill();
+                    foreach (Process proc in Process.GetProcessesByName("AcroRd32"))
+                    {
+                        proc.Close();
+                    } 
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
        private void GridPersonal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+  
             panel_Usuarios.Visible = true;
             btnGuardar.Visible = false;
             btnGuardarCambios.Visible = true;
-
+            btnExportarExcel.Enabled = false;
+            btnNuevo.Enabled = false;
             if(GridPersonal.SelectedCells[4].Value.ToString() == "BACHILLERATO")
             {
                 txtTipoBachiller.Visible = true;
@@ -377,7 +435,11 @@ namespace Personal_Imhotep
 
             dropFormacion.Text = GridPersonal.SelectedCells[4].Value.ToString();
 
-            dtFechaCaduc.Value = Convert.ToDateTime(GridPersonal.SelectedCells[5].Value);
+            if(Convert.ToDateTime(GridPersonal.SelectedCells[5].Value) < DateTime.MinValue)
+            {
+                dtFechaCaduc.Value = Convert.ToDateTime(GridPersonal.SelectedCells[5].Value);
+            }
+    
 
             //dtFechCertifica.Value = Convert.ToDateTime(GridPersonal.SelectedCells[6].Value);
 
@@ -409,6 +471,7 @@ namespace Personal_Imhotep
             {
                 licencia.MostrarLicencia(GridPersonal.SelectedCells[18].Value.ToString(), GridPersonal.SelectedCells[16].Value);
             }
+            
         }
 
         private void btnMostrarCerti_Click(object sender, EventArgs e)
@@ -417,9 +480,9 @@ namespace Personal_Imhotep
             {
                 certif.ShowDialog();
             }
-            catch
+            catch(Exception ex)
             {
-               
+                MessageBox.Show(ex.Message);
             }
 
             if (certif.rutaCertif != null)
@@ -431,6 +494,7 @@ namespace Personal_Imhotep
 
         private void btnGuardarCambios_Click(object sender, EventArgs e)
         {
+
             if (txtNombre.Text == "")
             {
                 errorProvider1.SetError(txtNombre, "Este campo no se debe dejar vacio");
@@ -480,6 +544,9 @@ namespace Personal_Imhotep
                         MessageBox.Show(ex.Message);
                     }
                 }
+
+                btnNuevo.Enabled = true;
+                btnExportarExcel.Enabled = true;
             }
         }
 
