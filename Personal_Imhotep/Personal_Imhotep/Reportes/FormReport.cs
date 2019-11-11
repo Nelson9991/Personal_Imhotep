@@ -22,6 +22,7 @@ namespace Personal_Imhotep.Reportes
         }
 
         Report1 reporte = new Report1();
+        Report2 reporte2 = new Report2(); 
 
         private void MostrarTodos()
         {
@@ -58,10 +59,10 @@ namespace Personal_Imhotep.Reportes
             {
                 var personal = pr.BuscarAnioPersona(txtBuscarAnio.Text);
 
-                reporte = new Report1();
-                reporte.DataSource = personal;
-                reporte.table1.DataSource = personal;
-                reportView.Report = reporte;
+                reporte2 = new Report2();
+                reporte2.DataSource = personal;
+                reporte2.table1.DataSource = personal;
+                reportView.Report = reporte2;
 
                 reportView.RefreshReport();
             }

@@ -76,6 +76,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>..\..\..\..\..\..\..\Programas\VisualStudio\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>..\..\..\..\..\..\..\Programas\VisualStudio\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
       <HintPath>..\..\..\..\..\..\..\Programas\VisualStudio\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
     </Reference>
@@ -158,6 +161,12 @@
     <Compile Include="Reportes\Report1.Designer.cs">
       <DependentUpon>Report1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\Report2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Report2.Designer.cs">
+      <DependentUpon>Report2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Modulo Personal\Certificacion.resx">
       <DependentUpon>Certificacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Report1.resx">
       <DependentUpon>Report1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Report2.resx">
+      <DependentUpon>Report2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />

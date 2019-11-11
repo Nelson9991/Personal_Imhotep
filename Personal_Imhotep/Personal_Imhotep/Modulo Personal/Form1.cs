@@ -32,6 +32,12 @@ namespace Personal_Imhotep
 
         FormReport report = new FormReport();
 
+        public byte[] hojaV;
+        public byte[] titulob;
+        public byte[] docsb;
+        public byte[] experi;
+        public byte[] licen;
+
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +60,11 @@ namespace Personal_Imhotep
         {
             try
             {
+                //if (hoja.rutaHoja != null)
+                //{
+                //    hoja.MostrarPreview();
+                //}
+                MatarProcesoAcrobat();
                 hoja.ShowDialog();
             }
             catch (Exception ex)
@@ -61,10 +72,6 @@ namespace Personal_Imhotep
                 MessageBox.Show(ex.Message);
             }
 
-            if (hoja.rutaHoja != null)
-            {
-                hoja.MostrarPreview(hoja.rutaHoja);
-            }
         }
 
 
@@ -103,6 +110,124 @@ namespace Personal_Imhotep
             persona.nom_docCertif = certif.nombCertif;
 
             persona.nom_Licencia = licencia.nombLicen;
+
+            persona.anio = Convert.ToInt32(dropAnio.Text);
+
+            persona.Tipo_Bachillerato = txtTipoBachiller.Text;
+
+            return persona;
+        }
+
+        public Personal ObeterDatosParaActualizar()
+        {
+            Personal persona = new Personal();
+
+            persona.Id = Convert.ToInt32(lblIdPerson.Text);
+
+            persona.Nombre = txtNombre.Text;
+
+            persona.Cédula = txtCédula.Text;
+
+            persona.Formacion = dropFormacion.Text;
+
+            persona.Caducidad_licencia = dtFechaCaduc.Value;
+
+            persona.Certificacion = null;
+
+            persona.Observaciones = txtObservacion.Text;
+
+            if(hoja.buffer != null)
+            {
+                persona.hoja_de_vida = hoja.buffer;
+            }
+            else if(hoja.buffer == null)
+            {
+                persona.hoja_de_vida = hojaV;
+            }
+   
+            if(doc.buffer != null)
+            {
+                persona.doc_personales = doc.buffer;
+
+            }
+            else if(doc.buffer == null)
+            {
+                persona.doc_personales = docsb;
+            }
+      
+            if(titulo.buffer != null)
+            {
+                persona.doc_Titulo = titulo.buffer;
+            }
+            else if(titulo.buffer == null)
+            {
+                persona.doc_Titulo = titulob;
+            }
+
+            if(hoja.nombHoja != null)
+            {
+                persona.nombre_hojaV = hoja.nombHoja;
+            }
+            else if(hoja.nombHoja == null)
+            {
+                persona.nombre_hojaV = lblNomHo.Text;
+            }
+
+            if(titulo.nombTitulo != null)
+            {
+                persona.nombre_titulo = titulo.nombTitulo;
+            }
+            else if(titulo.nombTitulo == null)
+            {
+                persona.nombre_titulo = lblNomTitu.Text;
+            }
+
+            if(doc.nombDocs !=null)
+            {
+                persona.nombre_docP = doc.nombDocs;
+            }
+
+            else if(doc.nombDocs == null)
+            {
+                persona.nombre_docP = lblnomDocs.Text;
+            }
+
+            if(certif.buffer != null)
+            {
+                persona.doc_Certificacion = certif.buffer;
+            }
+            else if(certif.buffer == null)
+            {
+                persona.doc_Certificacion = experi;
+            }
+    
+            if(licencia.buffer != null)
+            {
+                persona.Licencia_Riesgos = licencia.buffer;
+            }
+            else if(licencia.buffer == null)
+            {
+                persona.Licencia_Riesgos = licen;
+            }
+
+            if(certif.nombCertif != null)
+            {
+                persona.nom_docCertif = certif.nombCertif;
+            }
+            else if(certif.nombCertif == null)
+            {
+                persona.nom_docCertif = lblNomExper.Text;
+
+            }
+
+            if(licencia.nombLicen != null)
+            {
+                persona.nom_Licencia = licencia.nombLicen;
+            }
+            else if(licencia.nombLicen == null)
+            {
+                persona.nom_Licencia = lblNomLice.Text;
+            }
 
             persona.anio = Convert.ToInt32(dropAnio.Text);
 
@@ -183,7 +308,7 @@ namespace Personal_Imhotep
             }    
         }
 
-        private void Mostrar()
+        public void Mostrar()
         {
             try
             {
@@ -238,17 +363,18 @@ namespace Personal_Imhotep
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Mostrar();
             lblBachiller.Visible = false;
             txtTipoBachiller.Visible = false;
             panel_Usuarios.Visible = false;
-            dropBuscarFormacion.Enabled = false;
+            panelMostrar.Visible = false;
+            dropBuscarFormacion1.Enabled = false;
         }
 
         private void btnMostrarDatosP_Click(object sender, EventArgs e)
         {
             try
             {
+                MatarProcesoAcrobat();
                 doc.ShowDialog();
             }
             catch (Exception ex)
@@ -256,16 +382,21 @@ namespace Personal_Imhotep
                 MessageBox.Show(ex.Message);
             }
 
-            if (doc.rutaDocs != null)
-            {
-                doc.MostrarPreview(doc.rutaDocs);
-            }
+            //if (doc.rutaDocs != null)
+            //{
+            //    doc.MostrarPreview();
+            //}
         }
 
         private void btnMostrarTitulo_Click(object sender, EventArgs e)
         {
             try
             {
+                if (titulo.rutaTitulo != null)
+                {
+                    titulo.MostrarPreview();
+                }
+                MatarProcesoAcrobat();
                 titulo.ShowDialog();
             }
             catch (Exception ex)
@@ -273,16 +404,14 @@ namespace Personal_Imhotep
                 MessageBox.Show(ex.Message);
             }
 
-            if (titulo.rutaTitulo != null)
-            {
-                titulo.MostrarPreview(titulo.rutaTitulo);
-            }
+
         }
 
         private void btnMostrarLicen_Click(object sender, EventArgs e)
         {
             try
             {
+                MatarProcesoAcrobat();
                 licencia.ShowDialog();
             }
             catch (Exception ex)
@@ -290,22 +419,23 @@ namespace Personal_Imhotep
                 MessageBox.Show(ex.Message);
             }
 
-            if (licencia.rutaLicen != null)
-            {
-                licencia.MostrarPreview(licencia.rutaLicen);
-            }
+            //if (licencia.rutaLicen != null)
+            //{
+            //    licencia.MostrarPreview();
+            //}
         }
 
 
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
- 
-            hoja.rutaHoja = "";
-            certif.rutaCertif = "";
-            titulo.rutaTitulo = "";
-            doc.rutaDocs = "";
-            licencia.rutaLicen = "";
+
+            //hoja.rutaHoja = "";
+            //certif.rutaCertif = "";
+            //titulo.rutaTitulo = "";
+            //doc.rutaDocs = "";
+            //licencia.rutaLicen = "";
+            MatarProcesoAcrobat();
             lblBachiller.Visible = false;
             txtTipoBachiller.Text = "";
             txtTipoBachiller.Visible = false;
@@ -329,9 +459,9 @@ namespace Personal_Imhotep
         }
 
             public static async Task<bool> TryDeleteDirectory(
- string directoryPath,
- int maxRetries = 10,
- int millisecondsDelay = 25)
+            string directoryPath,
+            int maxRetries = 10,
+            int millisecondsDelay = 30)
             {
                 if (directoryPath == null)
                     throw new ArgumentNullException(directoryPath);
@@ -367,13 +497,14 @@ namespace Personal_Imhotep
 
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
-            hoja.webHojaV.GoHome();
-            licencia.webLicencia.GoHome(); ;
-            doc.webDocs.GoHome();
-            certif.webCertificacion.GoHome();
-            titulo.webTitulo.GoHome();
-            var files = TryDeleteDirectory(@"C:\temp\");
+
+            var files = TryDeleteDirectory(@"C:\temp");
             MatarProcesoAcrobat();
+            //hoja.webHojaV.Stop();
+            //licencia.webLicencia.Stop();
+            //doc.webDocs.Stop();
+            //certif.webCertificacion.Stop();
+            //titulo.webTitulo.Stop();
             errorProvider1.SetError(dropAnio, "");
             errorProvider1.SetError(txtNombre, "");
             errorProvider1.SetError(txtCédula, "");
@@ -401,9 +532,9 @@ namespace Personal_Imhotep
 
         }
 
-       private void GridPersonal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void GridPersonal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-  
+            Directory.CreateDirectory(@"C:\temp\");
             panel_Usuarios.Visible = true;
             btnGuardar.Visible = false;
             btnGuardarCambios.Visible = true;
@@ -440,35 +571,49 @@ namespace Personal_Imhotep
                 dtFechaCaduc.Value = Convert.ToDateTime(GridPersonal.SelectedCells[5].Value);
             }
     
-
             //dtFechCertifica.Value = Convert.ToDateTime(GridPersonal.SelectedCells[6].Value);
 
             txtObservacion.Text = GridPersonal.SelectedCells[7].Value.ToString();
 
             dropAnio.Text = GridPersonal.SelectedCells[19].Value.ToString();
-  
-            if(GridPersonal.SelectedCells[8].Value != null)
+
+            if (GridPersonal.SelectedCells[8].Value != null)
             {
+                hojaV = (byte[])GridPersonal.SelectedCells[8].Value;
+                lblNomHo.Text = GridPersonal.SelectedCells[11].Value.ToString();
+
                 hoja.MostrarHojaV(GridPersonal.SelectedCells[11].Value.ToString(), GridPersonal.SelectedCells[8].Value);
             }
             
             if (GridPersonal.SelectedCells[9].Value != null)
             {
+                docsb = (byte[])GridPersonal.SelectedCells[9].Value;
+                lblnomDocs.Text = GridPersonal.SelectedCells[13].Value.ToString();
+
                 doc.MostrarDocs_Perso(GridPersonal.SelectedCells[13].Value.ToString(), GridPersonal.SelectedCells[9].Value);
             }
             
             if(GridPersonal.SelectedCells[10].Value != null)
             {
+                titulob = (byte[])GridPersonal.SelectedCells[10].Value;
+                lblNomTitu.Text = GridPersonal.SelectedCells[12].Value.ToString();
+
                 titulo.MostrarTitulo(GridPersonal.SelectedCells[12].Value.ToString(), GridPersonal.SelectedCells[10].Value);
             }
 
             if (GridPersonal.SelectedCells[15].Value != null)
             {
+                experi = (byte[])GridPersonal.SelectedCells[15].Value;
+                lblNomExper.Text = GridPersonal.SelectedCells[17].Value.ToString();
+
                 certif.MostrarCertificacion(GridPersonal.SelectedCells[17].Value.ToString(), GridPersonal.SelectedCells[15].Value);
             }
 
             if (GridPersonal.SelectedCells[16].Value != null)
             {
+               licen = (byte[])GridPersonal.SelectedCells[16].Value;
+                lblNomLice.Text = GridPersonal.SelectedCells[18].Value.ToString();
+
                 licencia.MostrarLicencia(GridPersonal.SelectedCells[18].Value.ToString(), GridPersonal.SelectedCells[16].Value);
             }
             
@@ -478,6 +623,7 @@ namespace Personal_Imhotep
         {
             try
             {
+                MatarProcesoAcrobat();
                 certif.ShowDialog();
             }
             catch(Exception ex)
@@ -485,10 +631,10 @@ namespace Personal_Imhotep
                 MessageBox.Show(ex.Message);
             }
 
-            if (certif.rutaCertif != null)
-            {
-                certif.MostrarPreview(certif.rutaCertif);
-            }
+            //if (certif.rutaCertif != null)
+            //{
+            //    certif.MostrarPreview();
+            //}
 
         }
 
@@ -521,9 +667,7 @@ namespace Personal_Imhotep
             {
                 try
                 {
-                    var persona = ObtenerDatosPersona();
-
-                    persona.Id = Convert.ToInt32(lblIdPerson.Text);
+                    var persona = ObeterDatosParaActualizar();
 
                     pr.ActualizarPersona(persona);
 
@@ -582,10 +726,13 @@ namespace Personal_Imhotep
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
             errorProvider1.SetError(txtNombre, "");
+            
         }
 
         private void txtCédula_TextChanged(object sender, EventArgs e)
         {
+         
+
             errorProvider1.SetError(txtCédula, "");
         }
 
@@ -618,14 +765,14 @@ namespace Personal_Imhotep
 
         private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
         {
-            BuscarTipoBachiller();
+           
         }
 
         private void BuscarNombPersona()
         {
             try
             {
-                  var personal =  pr.BuscarNombPerso(txtBuscarNom.Text);
+                  var personal =  pr.BuscarNombPerso(txtBuscarNom1.Text);
                     GridPersonal.DataSource = personal;
 
                 GridPersonal.Columns[0].DisplayIndex = 20;
@@ -673,7 +820,7 @@ namespace Personal_Imhotep
         {
             try
             {
-                var personal = pr.BuscarTipoBachiller(txtBuscarBachiller.Text);
+                var personal = pr.BuscarTipoBachiller(txtBuscarBachiller1.Text);
                 GridPersonal.DataSource = personal;
 
                 GridPersonal.Columns[0].DisplayIndex = 20;
@@ -717,11 +864,11 @@ namespace Personal_Imhotep
 
         }
 
-        private void BuscarAnioPersonal()
+        public void BuscarAnioPersonal(string letra)
         {
             try
             {
-                var personal = pr.BuscarAnioPersona(txtBuscarAnio.Text);
+                var personal = pr.BuscarAnioPersona(letra);
                 GridPersonal.DataSource = personal;
 
                 GridPersonal.Columns[0].DisplayIndex = 20;
@@ -769,7 +916,7 @@ namespace Personal_Imhotep
         {
             try
             {
-                var personal = pr.BuscarFormacionPerso(dropBuscarFormacion.Text);
+                var personal = pr.BuscarFormacionPerso(dropBuscarFormacion1.Text);
                 GridPersonal.DataSource = personal;
 
                 GridPersonal.Columns[0].DisplayIndex = 20;
@@ -812,26 +959,16 @@ namespace Personal_Imhotep
             }
         }
 
-            private void txtBuscarNom_TextChanged(object sender, EventArgs e)
-        {
-            BuscarNombPersona();
-        }
-
-        private void txtBuscarAnio_TextChanged(object sender, EventArgs e)
-        {
-            BuscarAnioPersonal();
-        }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(chkFiltarFormacion.Checked == true)
+            if(chkFiltarFormacion1.Checked == true)
             {
-                dropBuscarFormacion.Enabled = true;
+                dropBuscarFormacion1.Enabled = true;
             }
-            else if(chkFiltarFormacion.Checked == false)
+            else if(chkFiltarFormacion1.Checked == false)
             {
-                dropBuscarFormacion.Text = "";
-                dropBuscarFormacion.Enabled = false;
+                dropBuscarFormacion1.Text = "";
+                dropBuscarFormacion1.Enabled = false;
                 Mostrar();
             }
         }
@@ -865,12 +1002,6 @@ namespace Personal_Imhotep
         private void txtCédula_KeyPress(object sender, KeyPressEventArgs e)
         {
             Numeros(txtCédula,e);
-        }
-
-        private void Form1_SizeChanged(object sender, EventArgs e)
-        {
-        
-
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
@@ -919,16 +1050,116 @@ namespace Personal_Imhotep
         {
             if (this.WindowState == FormWindowState.Maximized)
             {
-                Point p = new Point(40, 100);
+                Point p = new Point(68, 95);
 
                 panel_Usuarios.Location = p;
             }
             else if (this.WindowState == FormWindowState.Normal)
             {
-                Point p = new Point(0, 88);
+                Point p = new Point(60, 83);
 
                 panel_Usuarios.Location = p;
             }
+        }
+
+        private void btnMostTodos_Click(object sender, EventArgs e)
+        {
+            Mostrar();
+        } 
+
+        private void txtBuscarAnio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Numeros(txtBuscarAnio, e);
+        }
+
+        private void txtBuscarAnio_TextChange(object sender, EventArgs e)
+        {
+            BuscarAnioPersonal(txtBuscarAnio.Text);
+        }
+
+        private void txtBuscarBachiller1_TextChanged(object sender, EventArgs e)
+        {
+            BuscarTipoBachiller();
+        }
+
+        private void txtBuscarNom1_TextChanged(object sender, EventArgs e)
+        {
+            BuscarNombPersona();
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            panelMostrar.Visible = true;
+            txtMostrarAnio.Text = "";
+            txtMostrarAnio.Visible = false;
+            btnMosPorAnio.Visible = false;
+            btnNuevo.Enabled = false;
+            btnExportarExcel.Enabled = false;
+            bunifuImageButton2.Enabled = false;
+        }
+
+        private void btnMostTodos_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                Mostrar();
+                MessageBox.Show("Datos Cargados Exitosamente");
+                panelMostrar.Visible = false;
+                btnNuevo.Enabled = true;
+                btnExportarExcel.Enabled = true;
+                bunifuImageButton2.Enabled = true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void chkMostarA_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkMostarA.Checked == true)
+            {
+                txtMostrarAnio.Visible = true;
+                btnMosPorAnio.Visible = true;
+            }
+            else if (chkMostarA.Checked == false)
+            {
+                txtMostrarAnio.Text = "";
+                txtMostrarAnio.Visible = false;
+                btnMosPorAnio.Visible = false;
+            }
+        }
+
+        private void btnMosPorAnio_Click(object sender, EventArgs e)
+        {
+            if (txtMostrarAnio.Text != "")
+            {
+                try
+                {
+                    BuscarAnioPersonal(txtMostrarAnio.Text);
+                    MessageBox.Show("Datos Cargados Exitosamente");
+                    panelMostrar.Visible = false;
+                    btnNuevo.Enabled = true;
+                    btnExportarExcel.Enabled = true;
+                    bunifuImageButton2.Enabled = true;
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if (txtMostrarAnio.Text == "")
+            {
+                MessageBox.Show("Debe escribir un año para cargar el Listado");
+            }
+        }
+
+        private void btnVolverMos_Click(object sender, EventArgs e)
+        {
+            panelMostrar.Visible = false;
+            btnNuevo.Enabled = true;
+            btnExportarExcel.Enabled = true;
+            bunifuImageButton2.Enabled = true;
         }
     }
 }

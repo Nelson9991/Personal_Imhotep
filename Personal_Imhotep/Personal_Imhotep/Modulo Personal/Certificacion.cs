@@ -39,18 +39,27 @@ namespace Personal_Imhotep.Modulo_Personal
             }
         }
 
-        public void MostrarPreview(string ruta)
+        public void MostrarPreview()
         {
-            webCertificacion.Navigate(ruta);
+            try
+            {
+                webCertificacion.Navigate(rutaCertif);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
-        public void MostrarCertificacion(string nombreCertif, object buffer)
+        public async void MostrarCertificacion(string nombreCertif, object buffer)
         {
 
             byte[] buffer2;
 
-            string ruta = Directory.CreateDirectory(@"C:\temp\").FullName;
+            string ruta = @"C:\temp\";
+
+            FileStream fs;
 
             Random random = new Random();
 
@@ -68,26 +77,27 @@ namespace Personal_Imhotep.Modulo_Personal
                     buffer2 = (byte[])buffer;
 
 
-                    using (FileStream fs = File.Create(ruta))
+                    using (fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
-
-                        fs.Close();
-
+      
                     }
+                    webCertificacion.Navigate(ruta);
                 }
-            }
-            catch(Exception ex)
+        }
+            catch (IOException)
             {
-                MessageBox.Show(ex.Message);
+                await Task.Delay(30);
             }
-    
-            webCertificacion.Navigate(ruta);
+            catch (UnauthorizedAccessException)
+            {
+                await Task.Delay(30);
+            }
 
 
         }
 
- 
+
         private void btnCertif_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Datos Guardados");

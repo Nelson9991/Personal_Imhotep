@@ -64,26 +64,39 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties37 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties41 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties42 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties51 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties52 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties41 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties42 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties43 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties44 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties45 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties46 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties49 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties50 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties37 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRestaurar = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -96,8 +109,15 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnNuevo = new Bunifu.UI.WinForms.BunifuImageButton();
             this.panel_Usuarios = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lblNomLice = new System.Windows.Forms.Label();
+            this.lblNomTitu = new System.Windows.Forms.Label();
+            this.lblNomHo = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.lblIdPerson = new System.Windows.Forms.Label();
+            this.lblNomExper = new System.Windows.Forms.Label();
+            this.lblnomDocs = new System.Windows.Forms.Label();
             this.txtTipoBachiller = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lblBachiller = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -118,7 +138,6 @@
             this.btnMostrarHoja = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label7 = new System.Windows.Forms.Label();
             this.txtObservacion = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dtFechaCaduc = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.dropFormacion = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -126,20 +145,29 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.chkFiltarFormacion = new System.Windows.Forms.CheckBox();
-            this.txtBuscarAnio = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.txtBuscarBachiller = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.bunifuImageButton2 = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.dropBuscarFormacion = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.txtBuscarNom = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.btnBuscarNom = new Bunifu.UI.WinForms.BunifuImageButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnExportarExcel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.GridPersonal = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.chkFiltarFormacion1 = new System.Windows.Forms.CheckBox();
+            this.txtBuscarAnio = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.txtBuscarBachiller1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.dropBuscarFormacion1 = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.txtBuscarNom1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton2 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.panelMostrar = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
+            this.btnMosPorAnio = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.txtMostrarAnio = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.chkMostarA = new System.Windows.Forms.CheckBox();
+            this.btnMostTodos = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnVolverMos = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -147,10 +175,13 @@
             this.panel_Usuarios.SuspendLayout();
             this.panel6.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridPersonal)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panelMostrar.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuFormDock1
@@ -207,6 +238,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1293, 41);
             this.panel1.TabIndex = 0;
+            this.bunifuToolTip1.SetToolTip(this.panel1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel1, "");
             // 
             // btnRestaurar
             // 
@@ -236,7 +270,10 @@
             this.btnRestaurar.ShowSizeMarkers = false;
             this.btnRestaurar.Size = new System.Drawing.Size(28, 29);
             this.btnRestaurar.TabIndex = 11;
+            this.bunifuToolTip1.SetToolTip(this.btnRestaurar, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnRestaurar, null);
             this.btnRestaurar.ToolTipText = "";
+            this.bunifuToolTip1.SetToolTipTitle(this.btnRestaurar, "");
             this.btnRestaurar.Visible = false;
             this.btnRestaurar.WaitOnLoad = false;
             this.btnRestaurar.Zoom = 0;
@@ -271,7 +308,10 @@
             this.btnMinimizar.ShowSizeMarkers = false;
             this.btnMinimizar.Size = new System.Drawing.Size(29, 29);
             this.btnMinimizar.TabIndex = 10;
+            this.bunifuToolTip1.SetToolTip(this.btnMinimizar, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnMinimizar, null);
             this.btnMinimizar.ToolTipText = "";
+            this.bunifuToolTip1.SetToolTipTitle(this.btnMinimizar, "");
             this.btnMinimizar.WaitOnLoad = false;
             this.btnMinimizar.Zoom = 0;
             this.btnMinimizar.ZoomSpeed = 10;
@@ -304,7 +344,10 @@
             this.btnMaximizar.ShowSizeMarkers = false;
             this.btnMaximizar.Size = new System.Drawing.Size(29, 29);
             this.btnMaximizar.TabIndex = 9;
+            this.bunifuToolTip1.SetToolTip(this.btnMaximizar, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnMaximizar, null);
             this.btnMaximizar.ToolTipText = "";
+            this.bunifuToolTip1.SetToolTipTitle(this.btnMaximizar, "");
             this.btnMaximizar.WaitOnLoad = false;
             this.btnMaximizar.Zoom = 0;
             this.btnMaximizar.ZoomSpeed = 10;
@@ -338,7 +381,10 @@
             this.btnCerrar.ShowSizeMarkers = false;
             this.btnCerrar.Size = new System.Drawing.Size(29, 29);
             this.btnCerrar.TabIndex = 8;
+            this.bunifuToolTip1.SetToolTip(this.btnCerrar, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnCerrar, null);
             this.btnCerrar.ToolTipText = "";
+            this.bunifuToolTip1.SetToolTipTitle(this.btnCerrar, "");
             this.btnCerrar.WaitOnLoad = false;
             this.btnCerrar.Zoom = 0;
             this.btnCerrar.ZoomSpeed = 10;
@@ -352,6 +398,9 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(192, 41);
             this.panel3.TabIndex = 1;
+            this.bunifuToolTip1.SetToolTip(this.panel3, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel3, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel3, "");
             // 
             // label1
             // 
@@ -364,30 +413,39 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Listado de  Personal";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuToolTip1.SetToolTip(this.label1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label1, "");
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1202, 41);
+            this.panel2.Location = new System.Drawing.Point(1232, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(91, 625);
+            this.panel2.Size = new System.Drawing.Size(61, 625);
             this.panel2.TabIndex = 1;
+            this.bunifuToolTip1.SetToolTip(this.panel2, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel2, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel2, "");
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.btnNuevo);
-            this.panel5.Location = new System.Drawing.Point(0, 245);
+            this.panel5.Location = new System.Drawing.Point(0, 265);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(91, 100);
+            this.panel5.Size = new System.Drawing.Size(62, 73);
             this.panel5.TabIndex = 0;
+            this.bunifuToolTip1.SetToolTip(this.panel5, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel5, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel5, "");
             // 
             // btnNuevo
             // 
             this.btnNuevo.ActiveImage = null;
             this.btnNuevo.AllowAnimations = true;
             this.btnNuevo.AllowBuffering = false;
-            this.btnNuevo.AllowZooming = true;
+            this.btnNuevo.AllowZooming = false;
             this.btnNuevo.BackColor = System.Drawing.Color.Transparent;
             this.btnNuevo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnNuevo.ErrorImage")));
             this.btnNuevo.FadeWhenInactive = false;
@@ -395,31 +453,34 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageActive = null;
             this.btnNuevo.ImageLocation = null;
-            this.btnNuevo.ImageMargin = 20;
-            this.btnNuevo.ImageSize = new System.Drawing.Size(65, 65);
-            this.btnNuevo.ImageZoomSize = new System.Drawing.Size(85, 85);
+            this.btnNuevo.ImageMargin = 0;
+            this.btnNuevo.ImageSize = new System.Drawing.Size(61, 61);
+            this.btnNuevo.ImageZoomSize = new System.Drawing.Size(61, 61);
             this.btnNuevo.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnNuevo.InitialImage")));
-            this.btnNuevo.Location = new System.Drawing.Point(3, 7);
+            this.btnNuevo.Location = new System.Drawing.Point(0, 5);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.btnNuevo.MaximumSize = new System.Drawing.Size(85, 85);
-            this.btnNuevo.MinimumSize = new System.Drawing.Size(85, 85);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Rotation = 0;
             this.btnNuevo.ShowActiveImage = true;
             this.btnNuevo.ShowCursorChanges = true;
-            this.btnNuevo.ShowImageBorders = true;
+            this.btnNuevo.ShowImageBorders = false;
             this.btnNuevo.ShowSizeMarkers = false;
-            this.btnNuevo.Size = new System.Drawing.Size(85, 85);
+            this.btnNuevo.Size = new System.Drawing.Size(61, 61);
             this.btnNuevo.TabIndex = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnNuevo, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnNuevo, null);
             this.btnNuevo.ToolTipText = "";
+            this.bunifuToolTip1.SetToolTipTitle(this.btnNuevo, "");
             this.btnNuevo.WaitOnLoad = false;
-            this.btnNuevo.Zoom = 20;
+            this.btnNuevo.Zoom = 0;
             this.btnNuevo.ZoomSpeed = 10;
             this.btnNuevo.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // panel_Usuarios
             // 
             this.panel_Usuarios.BorderColor = System.Drawing.Color.Transparent;
+            this.panel_Usuarios.Controls.Add(this.label14);
             this.panel_Usuarios.Controls.Add(this.panel6);
             this.panel_Usuarios.Controls.Add(this.txtTipoBachiller);
             this.panel_Usuarios.Controls.Add(this.lblBachiller);
@@ -439,7 +500,6 @@
             this.panel_Usuarios.Controls.Add(this.btnMostrarHoja);
             this.panel_Usuarios.Controls.Add(this.label7);
             this.panel_Usuarios.Controls.Add(this.txtObservacion);
-            this.panel_Usuarios.Controls.Add(this.label6);
             this.panel_Usuarios.Controls.Add(this.label4);
             this.panel_Usuarios.Controls.Add(this.dtFechaCaduc);
             this.panel_Usuarios.Controls.Add(this.dropFormacion);
@@ -448,22 +508,92 @@
             this.panel_Usuarios.Controls.Add(this.txtNombre);
             this.panel_Usuarios.Controls.Add(this.label2);
             this.panel_Usuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_Usuarios.Location = new System.Drawing.Point(0, 88);
+            this.panel_Usuarios.Location = new System.Drawing.Point(61, 83);
             this.panel_Usuarios.Name = "panel_Usuarios";
             this.panel_Usuarios.PanelColor = System.Drawing.Color.Empty;
             this.panel_Usuarios.ShadowDept = 2;
             this.panel_Usuarios.ShadowTopLeftVisible = true;
             this.panel_Usuarios.Size = new System.Drawing.Size(1202, 558);
             this.panel_Usuarios.TabIndex = 4;
-            this.panel_Usuarios.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Usuarios_Paint);
+            this.bunifuToolTip1.SetToolTip(this.panel_Usuarios, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel_Usuarios, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel_Usuarios, "");
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label14.Location = new System.Drawing.Point(314, 190);
+            this.label14.Margin = new System.Windows.Forms.Padding(20, 25, 20, 20);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(118, 20);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "Observaciones:";
+            this.bunifuToolTip1.SetToolTip(this.label14, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label14, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label14, "");
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.lblNomLice);
+            this.panel6.Controls.Add(this.lblNomTitu);
+            this.panel6.Controls.Add(this.lblNomHo);
+            this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.lblIdPerson);
+            this.panel6.Controls.Add(this.lblNomExper);
+            this.panel6.Controls.Add(this.lblnomDocs);
             this.panel6.Location = new System.Drawing.Point(42, 20);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(10, 10);
             this.panel6.TabIndex = 30;
+            this.bunifuToolTip1.SetToolTip(this.panel6, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel6, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel6, "");
+            // 
+            // lblNomLice
+            // 
+            this.lblNomLice.AutoSize = true;
+            this.lblNomLice.Location = new System.Drawing.Point(39, 84);
+            this.lblNomLice.Name = "lblNomLice";
+            this.lblNomLice.Size = new System.Drawing.Size(0, 20);
+            this.lblNomLice.TabIndex = 44;
+            this.bunifuToolTip1.SetToolTip(this.lblNomLice, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.lblNomLice, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.lblNomLice, "");
+            // 
+            // lblNomTitu
+            // 
+            this.lblNomTitu.AutoSize = true;
+            this.lblNomTitu.Location = new System.Drawing.Point(114, 104);
+            this.lblNomTitu.Name = "lblNomTitu";
+            this.lblNomTitu.Size = new System.Drawing.Size(0, 20);
+            this.lblNomTitu.TabIndex = 43;
+            this.bunifuToolTip1.SetToolTip(this.lblNomTitu, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.lblNomTitu, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.lblNomTitu, "");
+            // 
+            // lblNomHo
+            // 
+            this.lblNomHo.AutoSize = true;
+            this.lblNomHo.Location = new System.Drawing.Point(182, 73);
+            this.lblNomHo.Name = "lblNomHo";
+            this.lblNomHo.Size = new System.Drawing.Size(0, 20);
+            this.lblNomHo.TabIndex = 42;
+            this.bunifuToolTip1.SetToolTip(this.lblNomHo, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.lblNomHo, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.lblNomHo, "");
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(192, 33);
+            this.label6.Margin = new System.Windows.Forms.Padding(20, 25, 20, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 20);
+            this.label6.TabIndex = 41;
+            this.bunifuToolTip1.SetToolTip(this.label6, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label6, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label6, "");
             // 
             // lblIdPerson
             // 
@@ -473,6 +603,31 @@
             this.lblIdPerson.Size = new System.Drawing.Size(21, 20);
             this.lblIdPerson.TabIndex = 24;
             this.lblIdPerson.Text = "id";
+            this.bunifuToolTip1.SetToolTip(this.lblIdPerson, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.lblIdPerson, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.lblIdPerson, "");
+            // 
+            // lblNomExper
+            // 
+            this.lblNomExper.AutoSize = true;
+            this.lblNomExper.Location = new System.Drawing.Point(60, 23);
+            this.lblNomExper.Name = "lblNomExper";
+            this.lblNomExper.Size = new System.Drawing.Size(0, 20);
+            this.lblNomExper.TabIndex = 39;
+            this.bunifuToolTip1.SetToolTip(this.lblNomExper, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.lblNomExper, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.lblNomExper, "");
+            // 
+            // lblnomDocs
+            // 
+            this.lblnomDocs.AutoSize = true;
+            this.lblnomDocs.Location = new System.Drawing.Point(60, 62);
+            this.lblnomDocs.Name = "lblnomDocs";
+            this.lblnomDocs.Size = new System.Drawing.Size(0, 20);
+            this.lblnomDocs.TabIndex = 38;
+            this.bunifuToolTip1.SetToolTip(this.lblnomDocs, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.lblnomDocs, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.lblnomDocs, "");
             // 
             // txtTipoBachiller
             // 
@@ -502,7 +657,7 @@
             this.txtTipoBachiller.IconRight = null;
             this.txtTipoBachiller.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTipoBachiller.Lines = new string[0];
-            this.txtTipoBachiller.Location = new System.Drawing.Point(510, 136);
+            this.txtTipoBachiller.Location = new System.Drawing.Point(510, 132);
             this.txtTipoBachiller.MaxLength = 32767;
             this.txtTipoBachiller.MinimumSize = new System.Drawing.Size(100, 35);
             this.txtTipoBachiller.Modified = false;
@@ -546,6 +701,9 @@
             this.txtTipoBachiller.TextMarginLeft = 5;
             this.txtTipoBachiller.TextMarginTop = 0;
             this.txtTipoBachiller.TextPlaceholder = "\r\n";
+            this.bunifuToolTip1.SetToolTip(this.txtTipoBachiller, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtTipoBachiller, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtTipoBachiller, "");
             this.txtTipoBachiller.UseSystemPasswordChar = false;
             this.txtTipoBachiller.WordWrap = true;
             this.txtTipoBachiller.TextChanged += new System.EventHandler(this.txtTipoBachiller_TextChanged);
@@ -553,12 +711,15 @@
             // lblBachiller
             // 
             this.lblBachiller.AutoSize = true;
-            this.lblBachiller.Location = new System.Drawing.Point(571, 112);
+            this.lblBachiller.Location = new System.Drawing.Point(571, 108);
             this.lblBachiller.Margin = new System.Windows.Forms.Padding(20, 25, 20, 20);
             this.lblBachiller.Name = "lblBachiller";
             this.lblBachiller.Size = new System.Drawing.Size(152, 20);
             this.lblBachiller.TabIndex = 28;
             this.lblBachiller.Text = "Tipo de Bachillerato:";
+            this.bunifuToolTip1.SetToolTip(this.lblBachiller, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.lblBachiller, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.lblBachiller, "");
             // 
             // label13
             // 
@@ -570,6 +731,9 @@
             this.label13.Size = new System.Drawing.Size(133, 20);
             this.label13.TabIndex = 27;
             this.label13.Text = "Año del Personal:";
+            this.bunifuToolTip1.SetToolTip(this.label13, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label13, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label13, "");
             // 
             // label12
             // 
@@ -581,6 +745,9 @@
             this.label12.Size = new System.Drawing.Size(88, 20);
             this.label12.TabIndex = 26;
             this.label12.Text = "Formacíon:";
+            this.bunifuToolTip1.SetToolTip(this.label12, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label12, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label12, "");
             // 
             // dropAnio
             // 
@@ -631,6 +798,9 @@
             this.dropAnio.TabIndex = 25;
             this.dropAnio.Tag = "O";
             this.dropAnio.Text = "Año del Personal";
+            this.bunifuToolTip1.SetToolTip(this.dropAnio, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.dropAnio, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.dropAnio, "");
             this.dropAnio.SelectedIndexChanged += new System.EventHandler(this.dpAnio_SelectedIndexChanged);
             // 
             // bunifuButton7
@@ -694,6 +864,9 @@
             this.bunifuButton7.TabIndex = 23;
             this.bunifuButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton7.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.bunifuButton7, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuButton7, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuButton7, "");
             this.bunifuButton7.UseDefaultRadiusAndThickness = true;
             this.bunifuButton7.Click += new System.EventHandler(this.bunifuButton7_Click);
             // 
@@ -758,6 +931,9 @@
             this.btnMostrarLicen.TabIndex = 22;
             this.btnMostrarLicen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMostrarLicen.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnMostrarLicen, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnMostrarLicen, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnMostrarLicen, "");
             this.btnMostrarLicen.UseDefaultRadiusAndThickness = true;
             this.btnMostrarLicen.Click += new System.EventHandler(this.btnMostrarLicen_Click);
             // 
@@ -771,6 +947,9 @@
             this.label11.Size = new System.Drawing.Size(158, 20);
             this.label11.TabIndex = 21;
             this.label11.Text = "Licencia/Certificación";
+            this.bunifuToolTip1.SetToolTip(this.label11, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label11, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label11, "");
             // 
             // menuStrip1
             // 
@@ -780,11 +959,14 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnGuardarCambios,
             this.btnGuardar});
-            this.menuStrip1.Location = new System.Drawing.Point(468, 441);
+            this.menuStrip1.Location = new System.Drawing.Point(471, 441);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(286, 59);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
+            this.bunifuToolTip1.SetToolTip(this.menuStrip1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.menuStrip1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.menuStrip1, "");
             // 
             // btnGuardarCambios
             // 
@@ -864,6 +1046,9 @@
             this.btnMostrarCerti.TabIndex = 20;
             this.btnMostrarCerti.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMostrarCerti.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnMostrarCerti, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnMostrarCerti, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnMostrarCerti, "");
             this.btnMostrarCerti.UseDefaultRadiusAndThickness = true;
             this.btnMostrarCerti.Click += new System.EventHandler(this.btnMostrarCerti_Click);
             // 
@@ -877,6 +1062,9 @@
             this.label10.Size = new System.Drawing.Size(128, 20);
             this.label10.TabIndex = 19;
             this.label10.Text = "Doc. Experiencia";
+            this.bunifuToolTip1.SetToolTip(this.label10, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label10, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label10, "");
             // 
             // btnMostrarTitulo
             // 
@@ -939,6 +1127,9 @@
             this.btnMostrarTitulo.TabIndex = 18;
             this.btnMostrarTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMostrarTitulo.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnMostrarTitulo, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnMostrarTitulo, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnMostrarTitulo, "");
             this.btnMostrarTitulo.UseDefaultRadiusAndThickness = true;
             this.btnMostrarTitulo.Click += new System.EventHandler(this.btnMostrarTitulo_Click);
             // 
@@ -952,6 +1143,9 @@
             this.label9.Size = new System.Drawing.Size(47, 20);
             this.label9.TabIndex = 17;
             this.label9.Text = "Título";
+            this.bunifuToolTip1.SetToolTip(this.label9, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label9, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label9, "");
             // 
             // btnMostrarDatosP
             // 
@@ -1014,6 +1208,9 @@
             this.btnMostrarDatosP.TabIndex = 16;
             this.btnMostrarDatosP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMostrarDatosP.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnMostrarDatosP, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnMostrarDatosP, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnMostrarDatosP, "");
             this.btnMostrarDatosP.UseDefaultRadiusAndThickness = true;
             this.btnMostrarDatosP.Click += new System.EventHandler(this.btnMostrarDatosP_Click);
             // 
@@ -1027,6 +1224,9 @@
             this.label8.Size = new System.Drawing.Size(191, 20);
             this.label8.TabIndex = 15;
             this.label8.Text = "Documentos Personales: ";
+            this.bunifuToolTip1.SetToolTip(this.label8, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label8, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label8, "");
             // 
             // btnMostrarHoja
             // 
@@ -1089,6 +1289,9 @@
             this.btnMostrarHoja.TabIndex = 14;
             this.btnMostrarHoja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMostrarHoja.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnMostrarHoja, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnMostrarHoja, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnMostrarHoja, "");
             this.btnMostrarHoja.UseDefaultRadiusAndThickness = true;
             this.btnMostrarHoja.Click += new System.EventHandler(this.btnMostrarHoja_Click);
             // 
@@ -1102,6 +1305,9 @@
             this.label7.Size = new System.Drawing.Size(100, 20);
             this.label7.TabIndex = 13;
             this.label7.Text = "Hoja de Vida";
+            this.bunifuToolTip1.SetToolTip(this.label7, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label7, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label7, "");
             // 
             // txtObservacion
             // 
@@ -1130,7 +1336,7 @@
             this.txtObservacion.IconRight = null;
             this.txtObservacion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtObservacion.Lines = new string[0];
-            this.txtObservacion.Location = new System.Drawing.Point(442, 220);
+            this.txtObservacion.Location = new System.Drawing.Point(433, 190);
             this.txtObservacion.Margin = new System.Windows.Forms.Padding(1, 3, 3, 3);
             this.txtObservacion.MaxLength = 32767;
             this.txtObservacion.MinimumSize = new System.Drawing.Size(100, 35);
@@ -1174,18 +1380,11 @@
             this.txtObservacion.TextMarginLeft = 5;
             this.txtObservacion.TextMarginTop = 0;
             this.txtObservacion.TextPlaceholder = "";
+            this.bunifuToolTip1.SetToolTip(this.txtObservacion, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtObservacion, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtObservacion, "");
             this.txtObservacion.UseSystemPasswordChar = false;
             this.txtObservacion.WordWrap = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(315, 224);
-            this.label6.Margin = new System.Windows.Forms.Padding(20, 25, 20, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 20);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Observaciones:";
             // 
             // label4
             // 
@@ -1196,6 +1395,9 @@
             this.label4.Size = new System.Drawing.Size(242, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Caducidad  Licencia/Certificación";
+            this.bunifuToolTip1.SetToolTip(this.label4, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label4, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label4, "");
             // 
             // dtFechaCaduc
             // 
@@ -1221,6 +1423,9 @@
             this.dtFechaCaduc.Size = new System.Drawing.Size(236, 32);
             this.dtFechaCaduc.TabIndex = 7;
             this.dtFechaCaduc.Tag = "O";
+            this.bunifuToolTip1.SetToolTip(this.dtFechaCaduc, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.dtFechaCaduc, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.dtFechaCaduc, "");
             // 
             // dropFormacion
             // 
@@ -1250,7 +1455,8 @@
             this.dropFormacion.Items.AddRange(new object[] {
             "BACHILLERATO",
             "BÁSICA",
-            "SUPERIOR"});
+            "SUPERIOR",
+            "NINGUNA"});
             this.dropFormacion.Location = new System.Drawing.Point(510, 43);
             this.dropFormacion.Margin = new System.Windows.Forms.Padding(30, 20, 0, 20);
             this.dropFormacion.Name = "dropFormacion";
@@ -1258,6 +1464,9 @@
             this.dropFormacion.TabIndex = 6;
             this.dropFormacion.Tag = "O";
             this.dropFormacion.Text = "Formación";
+            this.bunifuToolTip1.SetToolTip(this.dropFormacion, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.dropFormacion, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.dropFormacion, "");
             this.dropFormacion.SelectedIndexChanged += new System.EventHandler(this.dropFormacion_SelectedIndexChanged);
             // 
             // txtCédula
@@ -1331,6 +1540,9 @@
             this.txtCédula.TextMarginLeft = 5;
             this.txtCédula.TextMarginTop = 0;
             this.txtCédula.TextPlaceholder = "\r\n";
+            this.bunifuToolTip1.SetToolTip(this.txtCédula, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtCédula, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtCédula, "");
             this.txtCédula.UseSystemPasswordChar = false;
             this.txtCédula.WordWrap = true;
             this.txtCédula.TextChanged += new System.EventHandler(this.txtCédula_TextChanged);
@@ -1345,6 +1557,9 @@
             this.label3.Size = new System.Drawing.Size(63, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Cédula:";
+            this.bunifuToolTip1.SetToolTip(this.label3, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label3, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label3, "");
             // 
             // txtNombre
             // 
@@ -1418,6 +1633,9 @@
             this.txtNombre.TextMarginLeft = 5;
             this.txtNombre.TextMarginTop = 0;
             this.txtNombre.TextPlaceholder = "\r\n";
+            this.bunifuToolTip1.SetToolTip(this.txtNombre, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtNombre, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtNombre, "");
             this.txtNombre.UseSystemPasswordChar = false;
             this.txtNombre.WordWrap = true;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
@@ -1431,387 +1649,9 @@
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre:";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.chkFiltarFormacion);
-            this.panel4.Controls.Add(this.txtBuscarAnio);
-            this.panel4.Controls.Add(this.txtBuscarBachiller);
-            this.panel4.Controls.Add(this.bunifuImageButton1);
-            this.panel4.Controls.Add(this.bunifuImageButton2);
-            this.panel4.Controls.Add(this.dropBuscarFormacion);
-            this.panel4.Controls.Add(this.txtBuscarNom);
-            this.panel4.Controls.Add(this.btnBuscarNom);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(0, 41);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1202, 47);
-            this.panel4.TabIndex = 2;
-            // 
-            // chkFiltarFormacion
-            // 
-            this.chkFiltarFormacion.AutoSize = true;
-            this.chkFiltarFormacion.Location = new System.Drawing.Point(271, 9);
-            this.chkFiltarFormacion.Name = "chkFiltarFormacion";
-            this.chkFiltarFormacion.Size = new System.Drawing.Size(174, 24);
-            this.chkFiltarFormacion.TabIndex = 30;
-            this.chkFiltarFormacion.Text = "Filtrar por Formación";
-            this.chkFiltarFormacion.UseVisualStyleBackColor = true;
-            this.chkFiltarFormacion.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // txtBuscarAnio
-            // 
-            this.txtBuscarAnio.AcceptsReturn = false;
-            this.txtBuscarAnio.AcceptsTab = false;
-            this.txtBuscarAnio.AnimationSpeed = 200;
-            this.txtBuscarAnio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtBuscarAnio.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtBuscarAnio.BackColor = System.Drawing.Color.Transparent;
-            this.txtBuscarAnio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscarAnio.BackgroundImage")));
-            this.txtBuscarAnio.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtBuscarAnio.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtBuscarAnio.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtBuscarAnio.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtBuscarAnio.BorderRadius = 1;
-            this.txtBuscarAnio.BorderThickness = 1;
-            this.txtBuscarAnio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtBuscarAnio.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarAnio.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txtBuscarAnio.DefaultText = "";
-            this.txtBuscarAnio.FillColor = System.Drawing.Color.White;
-            this.txtBuscarAnio.HideSelection = true;
-            this.txtBuscarAnio.IconLeft = null;
-            this.txtBuscarAnio.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarAnio.IconPadding = 10;
-            this.txtBuscarAnio.IconRight = null;
-            this.txtBuscarAnio.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarAnio.Lines = new string[0];
-            this.txtBuscarAnio.Location = new System.Drawing.Point(981, 7);
-            this.txtBuscarAnio.MaxLength = 32767;
-            this.txtBuscarAnio.MinimumSize = new System.Drawing.Size(100, 35);
-            this.txtBuscarAnio.Modified = false;
-            this.txtBuscarAnio.Multiline = true;
-            this.txtBuscarAnio.Name = "txtBuscarAnio";
-            stateProperties31.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties31.FillColor = System.Drawing.Color.Empty;
-            stateProperties31.ForeColor = System.Drawing.Color.Empty;
-            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBuscarAnio.OnActiveState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.Empty;
-            stateProperties32.FillColor = System.Drawing.Color.White;
-            stateProperties32.ForeColor = System.Drawing.Color.Empty;
-            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBuscarAnio.OnDisabledState = stateProperties32;
-            stateProperties33.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties33.FillColor = System.Drawing.Color.Empty;
-            stateProperties33.ForeColor = System.Drawing.Color.Empty;
-            stateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBuscarAnio.OnHoverState = stateProperties33;
-            stateProperties34.BorderColor = System.Drawing.Color.Silver;
-            stateProperties34.FillColor = System.Drawing.Color.White;
-            stateProperties34.ForeColor = System.Drawing.Color.Empty;
-            stateProperties34.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBuscarAnio.OnIdleState = stateProperties34;
-            this.txtBuscarAnio.PasswordChar = '\0';
-            this.txtBuscarAnio.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBuscarAnio.PlaceholderText = "Buscar por Año";
-            this.txtBuscarAnio.ReadOnly = false;
-            this.txtBuscarAnio.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBuscarAnio.SelectedText = "";
-            this.txtBuscarAnio.SelectionLength = 0;
-            this.txtBuscarAnio.SelectionStart = 0;
-            this.txtBuscarAnio.ShortcutsEnabled = true;
-            this.txtBuscarAnio.Size = new System.Drawing.Size(218, 35);
-            this.txtBuscarAnio.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtBuscarAnio.TabIndex = 10;
-            this.txtBuscarAnio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBuscarAnio.TextMarginBottom = 0;
-            this.txtBuscarAnio.TextMarginLeft = 5;
-            this.txtBuscarAnio.TextMarginTop = 0;
-            this.txtBuscarAnio.TextPlaceholder = "Buscar por Año";
-            this.txtBuscarAnio.UseSystemPasswordChar = false;
-            this.txtBuscarAnio.WordWrap = true;
-            this.txtBuscarAnio.TextChanged += new System.EventHandler(this.txtBuscarAnio_TextChanged);
-            // 
-            // txtBuscarBachiller
-            // 
-            this.txtBuscarBachiller.AcceptsReturn = false;
-            this.txtBuscarBachiller.AcceptsTab = false;
-            this.txtBuscarBachiller.AnimationSpeed = 200;
-            this.txtBuscarBachiller.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtBuscarBachiller.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtBuscarBachiller.BackColor = System.Drawing.Color.Transparent;
-            this.txtBuscarBachiller.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscarBachiller.BackgroundImage")));
-            this.txtBuscarBachiller.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtBuscarBachiller.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtBuscarBachiller.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtBuscarBachiller.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtBuscarBachiller.BorderRadius = 1;
-            this.txtBuscarBachiller.BorderThickness = 1;
-            this.txtBuscarBachiller.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtBuscarBachiller.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarBachiller.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txtBuscarBachiller.DefaultText = "";
-            this.txtBuscarBachiller.FillColor = System.Drawing.Color.White;
-            this.txtBuscarBachiller.HideSelection = true;
-            this.txtBuscarBachiller.IconLeft = null;
-            this.txtBuscarBachiller.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarBachiller.IconPadding = 10;
-            this.txtBuscarBachiller.IconRight = null;
-            this.txtBuscarBachiller.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarBachiller.Lines = new string[0];
-            this.txtBuscarBachiller.Location = new System.Drawing.Point(717, 6);
-            this.txtBuscarBachiller.MaxLength = 32767;
-            this.txtBuscarBachiller.MinimumSize = new System.Drawing.Size(100, 35);
-            this.txtBuscarBachiller.Modified = false;
-            this.txtBuscarBachiller.Multiline = true;
-            this.txtBuscarBachiller.Name = "txtBuscarBachiller";
-            stateProperties35.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties35.FillColor = System.Drawing.Color.Empty;
-            stateProperties35.ForeColor = System.Drawing.Color.Empty;
-            stateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBuscarBachiller.OnActiveState = stateProperties35;
-            stateProperties36.BorderColor = System.Drawing.Color.Empty;
-            stateProperties36.FillColor = System.Drawing.Color.White;
-            stateProperties36.ForeColor = System.Drawing.Color.Empty;
-            stateProperties36.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBuscarBachiller.OnDisabledState = stateProperties36;
-            stateProperties37.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties37.FillColor = System.Drawing.Color.Empty;
-            stateProperties37.ForeColor = System.Drawing.Color.Empty;
-            stateProperties37.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBuscarBachiller.OnHoverState = stateProperties37;
-            stateProperties38.BorderColor = System.Drawing.Color.Silver;
-            stateProperties38.FillColor = System.Drawing.Color.White;
-            stateProperties38.ForeColor = System.Drawing.Color.Empty;
-            stateProperties38.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBuscarBachiller.OnIdleState = stateProperties38;
-            this.txtBuscarBachiller.PasswordChar = '\0';
-            this.txtBuscarBachiller.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBuscarBachiller.PlaceholderText = "Buscar por Tipo Bachiller";
-            this.txtBuscarBachiller.ReadOnly = false;
-            this.txtBuscarBachiller.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBuscarBachiller.SelectedText = "";
-            this.txtBuscarBachiller.SelectionLength = 0;
-            this.txtBuscarBachiller.SelectionStart = 0;
-            this.txtBuscarBachiller.ShortcutsEnabled = true;
-            this.txtBuscarBachiller.Size = new System.Drawing.Size(218, 35);
-            this.txtBuscarBachiller.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtBuscarBachiller.TabIndex = 8;
-            this.txtBuscarBachiller.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBuscarBachiller.TextMarginBottom = 0;
-            this.txtBuscarBachiller.TextMarginLeft = 5;
-            this.txtBuscarBachiller.TextMarginTop = 0;
-            this.txtBuscarBachiller.TextPlaceholder = "Buscar por Tipo Bachiller";
-            this.txtBuscarBachiller.UseSystemPasswordChar = false;
-            this.txtBuscarBachiller.WordWrap = true;
-            this.txtBuscarBachiller.TextChanged += new System.EventHandler(this.bunifuTextBox1_TextChanged);
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.ActiveImage = null;
-            this.bunifuImageButton1.AllowAnimations = true;
-            this.bunifuImageButton1.AllowBuffering = false;
-            this.bunifuImageButton1.AllowZooming = true;
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
-            this.bunifuImageButton1.FadeWhenInactive = false;
-            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.ImageLocation = null;
-            this.bunifuImageButton1.ImageMargin = 10;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(25, 19);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(35, 29);
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(679, 9);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(22, 9, 0, 9);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Rotation = 0;
-            this.bunifuImageButton1.ShowActiveImage = true;
-            this.bunifuImageButton1.ShowCursorChanges = true;
-            this.bunifuImageButton1.ShowImageBorders = true;
-            this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(35, 29);
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.ToolTipText = "";
-            this.bunifuImageButton1.WaitOnLoad = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.ZoomSpeed = 10;
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.ActiveImage = null;
-            this.bunifuImageButton2.AllowAnimations = true;
-            this.bunifuImageButton2.AllowBuffering = false;
-            this.bunifuImageButton2.AllowZooming = true;
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.ErrorImage")));
-            this.bunifuImageButton2.FadeWhenInactive = false;
-            this.bunifuImageButton2.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.ImageLocation = null;
-            this.bunifuImageButton2.ImageMargin = 10;
-            this.bunifuImageButton2.ImageSize = new System.Drawing.Size(25, 19);
-            this.bunifuImageButton2.ImageZoomSize = new System.Drawing.Size(35, 29);
-            this.bunifuImageButton2.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.InitialImage")));
-            this.bunifuImageButton2.Location = new System.Drawing.Point(943, 9);
-            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(33, 14, 0, 14);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Rotation = 0;
-            this.bunifuImageButton2.ShowActiveImage = true;
-            this.bunifuImageButton2.ShowCursorChanges = true;
-            this.bunifuImageButton2.ShowImageBorders = true;
-            this.bunifuImageButton2.ShowSizeMarkers = false;
-            this.bunifuImageButton2.Size = new System.Drawing.Size(35, 29);
-            this.bunifuImageButton2.TabIndex = 9;
-            this.bunifuImageButton2.ToolTipText = "";
-            this.bunifuImageButton2.WaitOnLoad = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.ZoomSpeed = 10;
-            // 
-            // dropBuscarFormacion
-            // 
-            this.dropBuscarFormacion.BackColor = System.Drawing.Color.White;
-            this.dropBuscarFormacion.BorderRadius = 1;
-            this.dropBuscarFormacion.Color = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(153)))), ((int)(((byte)(215)))));
-            this.dropBuscarFormacion.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.dropBuscarFormacion.DisabledColor = System.Drawing.Color.Gray;
-            this.dropBuscarFormacion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.dropBuscarFormacion.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
-            this.dropBuscarFormacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.dropBuscarFormacion.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.dropBuscarFormacion.FillDropDown = false;
-            this.dropBuscarFormacion.FillIndicator = false;
-            this.dropBuscarFormacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dropBuscarFormacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.dropBuscarFormacion.FormattingEnabled = true;
-            this.dropBuscarFormacion.Icon = null;
-            this.dropBuscarFormacion.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.dropBuscarFormacion.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.dropBuscarFormacion.ItemBackColor = System.Drawing.Color.White;
-            this.dropBuscarFormacion.ItemBorderColor = System.Drawing.Color.White;
-            this.dropBuscarFormacion.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.dropBuscarFormacion.ItemHeight = 26;
-            this.dropBuscarFormacion.ItemHighLightColor = System.Drawing.Color.Thistle;
-            this.dropBuscarFormacion.Items.AddRange(new object[] {
-            "BACHILLERATO",
-            "BÁSICA",
-            "SUPERIOR"});
-            this.dropBuscarFormacion.Location = new System.Drawing.Point(451, 7);
-            this.dropBuscarFormacion.Name = "dropBuscarFormacion";
-            this.dropBuscarFormacion.Size = new System.Drawing.Size(217, 32);
-            this.dropBuscarFormacion.TabIndex = 6;
-            this.dropBuscarFormacion.Text = null;
-            this.dropBuscarFormacion.SelectedIndexChanged += new System.EventHandler(this.dropBuscarFormacion_SelectedIndexChanged);
-            // 
-            // txtBuscarNom
-            // 
-            this.txtBuscarNom.AcceptsReturn = false;
-            this.txtBuscarNom.AcceptsTab = false;
-            this.txtBuscarNom.AnimationSpeed = 200;
-            this.txtBuscarNom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtBuscarNom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtBuscarNom.BackColor = System.Drawing.Color.Transparent;
-            this.txtBuscarNom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscarNom.BackgroundImage")));
-            this.txtBuscarNom.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtBuscarNom.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txtBuscarNom.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtBuscarNom.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtBuscarNom.BorderRadius = 1;
-            this.txtBuscarNom.BorderThickness = 1;
-            this.txtBuscarNom.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtBuscarNom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarNom.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txtBuscarNom.DefaultText = "";
-            this.txtBuscarNom.FillColor = System.Drawing.Color.White;
-            this.txtBuscarNom.HideSelection = true;
-            this.txtBuscarNom.IconLeft = null;
-            this.txtBuscarNom.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarNom.IconPadding = 10;
-            this.txtBuscarNom.IconRight = null;
-            this.txtBuscarNom.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarNom.Lines = new string[0];
-            this.txtBuscarNom.Location = new System.Drawing.Point(42, 6);
-            this.txtBuscarNom.MaxLength = 32767;
-            this.txtBuscarNom.MinimumSize = new System.Drawing.Size(100, 35);
-            this.txtBuscarNom.Modified = false;
-            this.txtBuscarNom.Multiline = true;
-            this.txtBuscarNom.Name = "txtBuscarNom";
-            stateProperties39.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties39.FillColor = System.Drawing.Color.Empty;
-            stateProperties39.ForeColor = System.Drawing.Color.Empty;
-            stateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBuscarNom.OnActiveState = stateProperties39;
-            stateProperties40.BorderColor = System.Drawing.Color.Empty;
-            stateProperties40.FillColor = System.Drawing.Color.White;
-            stateProperties40.ForeColor = System.Drawing.Color.Empty;
-            stateProperties40.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBuscarNom.OnDisabledState = stateProperties40;
-            stateProperties41.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties41.FillColor = System.Drawing.Color.Empty;
-            stateProperties41.ForeColor = System.Drawing.Color.Empty;
-            stateProperties41.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBuscarNom.OnHoverState = stateProperties41;
-            stateProperties42.BorderColor = System.Drawing.Color.Silver;
-            stateProperties42.FillColor = System.Drawing.Color.White;
-            stateProperties42.ForeColor = System.Drawing.Color.Empty;
-            stateProperties42.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBuscarNom.OnIdleState = stateProperties42;
-            this.txtBuscarNom.PasswordChar = '\0';
-            this.txtBuscarNom.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBuscarNom.PlaceholderText = "Buscar por Nombre";
-            this.txtBuscarNom.ReadOnly = false;
-            this.txtBuscarNom.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBuscarNom.SelectedText = "";
-            this.txtBuscarNom.SelectionLength = 0;
-            this.txtBuscarNom.SelectionStart = 0;
-            this.txtBuscarNom.ShortcutsEnabled = true;
-            this.txtBuscarNom.Size = new System.Drawing.Size(218, 35);
-            this.txtBuscarNom.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtBuscarNom.TabIndex = 4;
-            this.txtBuscarNom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBuscarNom.TextMarginBottom = 0;
-            this.txtBuscarNom.TextMarginLeft = 5;
-            this.txtBuscarNom.TextMarginTop = 0;
-            this.txtBuscarNom.TextPlaceholder = "Buscar por Nombre";
-            this.txtBuscarNom.UseSystemPasswordChar = false;
-            this.txtBuscarNom.WordWrap = true;
-            this.txtBuscarNom.TextChanged += new System.EventHandler(this.txtBuscarNom_TextChanged);
-            // 
-            // btnBuscarNom
-            // 
-            this.btnBuscarNom.ActiveImage = null;
-            this.btnBuscarNom.AllowAnimations = true;
-            this.btnBuscarNom.AllowBuffering = false;
-            this.btnBuscarNom.AllowZooming = true;
-            this.btnBuscarNom.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscarNom.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnBuscarNom.ErrorImage")));
-            this.btnBuscarNom.FadeWhenInactive = false;
-            this.btnBuscarNom.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btnBuscarNom.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarNom.Image")));
-            this.btnBuscarNom.ImageActive = null;
-            this.btnBuscarNom.ImageLocation = null;
-            this.btnBuscarNom.ImageMargin = 10;
-            this.btnBuscarNom.ImageSize = new System.Drawing.Size(23, 19);
-            this.btnBuscarNom.ImageZoomSize = new System.Drawing.Size(33, 29);
-            this.btnBuscarNom.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnBuscarNom.InitialImage")));
-            this.btnBuscarNom.Location = new System.Drawing.Point(6, 9);
-            this.btnBuscarNom.Margin = new System.Windows.Forms.Padding(15, 6, 0, 6);
-            this.btnBuscarNom.Name = "btnBuscarNom";
-            this.btnBuscarNom.Rotation = 0;
-            this.btnBuscarNom.ShowActiveImage = true;
-            this.btnBuscarNom.ShowCursorChanges = true;
-            this.btnBuscarNom.ShowImageBorders = true;
-            this.btnBuscarNom.ShowSizeMarkers = false;
-            this.btnBuscarNom.Size = new System.Drawing.Size(33, 29);
-            this.btnBuscarNom.TabIndex = 3;
-            this.btnBuscarNom.ToolTipText = "";
-            this.btnBuscarNom.WaitOnLoad = false;
-            this.btnBuscarNom.Zoom = 10;
-            this.btnBuscarNom.ZoomSpeed = 10;
+            this.bunifuToolTip1.SetToolTip(this.label2, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label2, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label2, "");
             // 
             // errorProvider1
             // 
@@ -1823,8 +1663,11 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel8.Location = new System.Drawing.Point(0, 626);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1202, 40);
+            this.panel8.Size = new System.Drawing.Size(1232, 40);
             this.panel8.TabIndex = 4;
+            this.bunifuToolTip1.SetToolTip(this.panel8, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel8, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel8, "");
             // 
             // btnExportarExcel
             // 
@@ -1840,11 +1683,11 @@
             this.btnExportarExcel.ColorContrastOnClick = 45;
             this.btnExportarExcel.ColorContrastOnHover = 45;
             this.btnExportarExcel.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnExportarExcel.CustomizableEdges = borderEdges7;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btnExportarExcel.CustomizableEdges = borderEdges10;
             this.btnExportarExcel.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnExportarExcel.DisabledBorderColor = System.Drawing.Color.Empty;
             this.btnExportarExcel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1866,28 +1709,31 @@
             this.btnExportarExcel.IndicateFocus = false;
             this.btnExportarExcel.Location = new System.Drawing.Point(0, 0);
             this.btnExportarExcel.Name = "btnExportarExcel";
-            stateProperties29.BorderColor = System.Drawing.Color.LimeGreen;
-            stateProperties29.BorderRadius = 3;
-            stateProperties29.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties29.BorderThickness = 1;
-            stateProperties29.FillColor = System.Drawing.Color.LimeGreen;
-            stateProperties29.ForeColor = System.Drawing.Color.White;
-            stateProperties29.IconLeftImage = null;
-            stateProperties29.IconRightImage = null;
-            this.btnExportarExcel.onHoverState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.LimeGreen;
-            stateProperties30.BorderRadius = 3;
-            stateProperties30.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties30.BorderThickness = 1;
-            stateProperties30.FillColor = System.Drawing.Color.LimeGreen;
-            stateProperties30.ForeColor = System.Drawing.Color.White;
-            stateProperties30.IconLeftImage = null;
-            stateProperties30.IconRightImage = null;
-            this.btnExportarExcel.OnPressedState = stateProperties30;
+            stateProperties51.BorderColor = System.Drawing.Color.LimeGreen;
+            stateProperties51.BorderRadius = 3;
+            stateProperties51.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties51.BorderThickness = 1;
+            stateProperties51.FillColor = System.Drawing.Color.LimeGreen;
+            stateProperties51.ForeColor = System.Drawing.Color.White;
+            stateProperties51.IconLeftImage = null;
+            stateProperties51.IconRightImage = null;
+            this.btnExportarExcel.onHoverState = stateProperties51;
+            stateProperties52.BorderColor = System.Drawing.Color.LimeGreen;
+            stateProperties52.BorderRadius = 3;
+            stateProperties52.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties52.BorderThickness = 1;
+            stateProperties52.FillColor = System.Drawing.Color.LimeGreen;
+            stateProperties52.ForeColor = System.Drawing.Color.White;
+            stateProperties52.IconLeftImage = null;
+            stateProperties52.IconRightImage = null;
+            this.btnExportarExcel.OnPressedState = stateProperties52;
             this.btnExportarExcel.Size = new System.Drawing.Size(128, 40);
             this.btnExportarExcel.TabIndex = 0;
             this.btnExportarExcel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnExportarExcel.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnExportarExcel, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnExportarExcel, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnExportarExcel, "");
             this.btnExportarExcel.UseDefaultRadiusAndThickness = true;
             this.btnExportarExcel.Click += new System.EventHandler(this.btnExportarExcel_Click);
             // 
@@ -1940,13 +1786,12 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GridPersonal.DefaultCellStyle = dataGridViewCellStyle3;
-            this.GridPersonal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GridPersonal.EnableHeadersVisualStyles = false;
             this.GridPersonal.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.GridPersonal.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.GridPersonal.HeaderBgColor = System.Drawing.Color.Empty;
             this.GridPersonal.HeaderForeColor = System.Drawing.Color.White;
-            this.GridPersonal.Location = new System.Drawing.Point(0, 88);
+            this.GridPersonal.Location = new System.Drawing.Point(62, 82);
             this.GridPersonal.Name = "GridPersonal";
             this.GridPersonal.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -1966,9 +1811,12 @@
             this.GridPersonal.RowTemplate.Height = 40;
             this.GridPersonal.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.GridPersonal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GridPersonal.Size = new System.Drawing.Size(1202, 538);
+            this.GridPersonal.Size = new System.Drawing.Size(1168, 542);
             this.GridPersonal.TabIndex = 5;
             this.GridPersonal.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.bunifuToolTip1.SetToolTip(this.GridPersonal, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.GridPersonal, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.GridPersonal, "");
             this.GridPersonal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridPersonal_CellClick);
             this.GridPersonal.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridPersonal_CellDoubleClick);
             // 
@@ -1982,6 +1830,767 @@
             this.Eliminar.ReadOnly = true;
             this.Eliminar.Width = 5;
             // 
+            // panel7
+            // 
+            this.panel7.AutoSize = true;
+            this.panel7.Controls.Add(this.chkFiltarFormacion1);
+            this.panel7.Controls.Add(this.txtBuscarAnio);
+            this.panel7.Controls.Add(this.txtBuscarBachiller1);
+            this.panel7.Controls.Add(this.dropBuscarFormacion1);
+            this.panel7.Controls.Add(this.txtBuscarNom1);
+            this.panel7.Controls.Add(this.bunifuImageButton1);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel7.Location = new System.Drawing.Point(0, 41);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1232, 41);
+            this.panel7.TabIndex = 1;
+            this.bunifuToolTip1.SetToolTip(this.panel7, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel7, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel7, "");
+            // 
+            // chkFiltarFormacion1
+            // 
+            this.chkFiltarFormacion1.AutoSize = true;
+            this.chkFiltarFormacion1.Location = new System.Drawing.Point(319, 5);
+            this.chkFiltarFormacion1.Name = "chkFiltarFormacion1";
+            this.chkFiltarFormacion1.Size = new System.Drawing.Size(174, 24);
+            this.chkFiltarFormacion1.TabIndex = 36;
+            this.chkFiltarFormacion1.Text = "Filtrar por Formación";
+            this.bunifuToolTip1.SetToolTip(this.chkFiltarFormacion1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.chkFiltarFormacion1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.chkFiltarFormacion1, "");
+            this.chkFiltarFormacion1.UseVisualStyleBackColor = true;
+            this.chkFiltarFormacion1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // txtBuscarAnio
+            // 
+            this.txtBuscarAnio.AcceptsReturn = false;
+            this.txtBuscarAnio.AcceptsTab = false;
+            this.txtBuscarAnio.AnimationSpeed = 200;
+            this.txtBuscarAnio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBuscarAnio.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBuscarAnio.BackColor = System.Drawing.Color.Transparent;
+            this.txtBuscarAnio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscarAnio.BackgroundImage")));
+            this.txtBuscarAnio.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtBuscarAnio.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txtBuscarAnio.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtBuscarAnio.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtBuscarAnio.BorderRadius = 1;
+            this.txtBuscarAnio.BorderThickness = 1;
+            this.txtBuscarAnio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBuscarAnio.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarAnio.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.txtBuscarAnio.DefaultText = "";
+            this.txtBuscarAnio.FillColor = System.Drawing.Color.White;
+            this.txtBuscarAnio.HideSelection = true;
+            this.txtBuscarAnio.IconLeft = null;
+            this.txtBuscarAnio.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarAnio.IconPadding = 10;
+            this.txtBuscarAnio.IconRight = null;
+            this.txtBuscarAnio.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarAnio.Lines = new string[0];
+            this.txtBuscarAnio.Location = new System.Drawing.Point(996, 3);
+            this.txtBuscarAnio.MaxLength = 32767;
+            this.txtBuscarAnio.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtBuscarAnio.Modified = false;
+            this.txtBuscarAnio.Multiline = true;
+            this.txtBuscarAnio.Name = "txtBuscarAnio";
+            stateProperties39.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties39.FillColor = System.Drawing.Color.Empty;
+            stateProperties39.ForeColor = System.Drawing.Color.Empty;
+            stateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscarAnio.OnActiveState = stateProperties39;
+            stateProperties40.BorderColor = System.Drawing.Color.Empty;
+            stateProperties40.FillColor = System.Drawing.Color.White;
+            stateProperties40.ForeColor = System.Drawing.Color.Empty;
+            stateProperties40.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBuscarAnio.OnDisabledState = stateProperties40;
+            stateProperties41.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties41.FillColor = System.Drawing.Color.Empty;
+            stateProperties41.ForeColor = System.Drawing.Color.Empty;
+            stateProperties41.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscarAnio.OnHoverState = stateProperties41;
+            stateProperties42.BorderColor = System.Drawing.Color.Silver;
+            stateProperties42.FillColor = System.Drawing.Color.White;
+            stateProperties42.ForeColor = System.Drawing.Color.Empty;
+            stateProperties42.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscarAnio.OnIdleState = stateProperties42;
+            this.txtBuscarAnio.PasswordChar = '\0';
+            this.txtBuscarAnio.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBuscarAnio.PlaceholderText = "Buscar por Año";
+            this.txtBuscarAnio.ReadOnly = false;
+            this.txtBuscarAnio.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBuscarAnio.SelectedText = "";
+            this.txtBuscarAnio.SelectionLength = 0;
+            this.txtBuscarAnio.SelectionStart = 0;
+            this.txtBuscarAnio.ShortcutsEnabled = true;
+            this.txtBuscarAnio.Size = new System.Drawing.Size(218, 35);
+            this.txtBuscarAnio.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.txtBuscarAnio.TabIndex = 35;
+            this.txtBuscarAnio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBuscarAnio.TextMarginBottom = 0;
+            this.txtBuscarAnio.TextMarginLeft = 5;
+            this.txtBuscarAnio.TextMarginTop = 0;
+            this.txtBuscarAnio.TextPlaceholder = "Buscar por Año";
+            this.bunifuToolTip1.SetToolTip(this.txtBuscarAnio, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtBuscarAnio, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtBuscarAnio, "");
+            this.txtBuscarAnio.UseSystemPasswordChar = false;
+            this.txtBuscarAnio.WordWrap = true;
+            this.txtBuscarAnio.TextChange += new System.EventHandler(this.txtBuscarAnio_TextChange);
+            this.txtBuscarAnio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscarAnio_KeyPress);
+            // 
+            // txtBuscarBachiller1
+            // 
+            this.txtBuscarBachiller1.AcceptsReturn = false;
+            this.txtBuscarBachiller1.AcceptsTab = false;
+            this.txtBuscarBachiller1.AnimationSpeed = 200;
+            this.txtBuscarBachiller1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBuscarBachiller1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBuscarBachiller1.BackColor = System.Drawing.Color.Transparent;
+            this.txtBuscarBachiller1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscarBachiller1.BackgroundImage")));
+            this.txtBuscarBachiller1.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtBuscarBachiller1.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txtBuscarBachiller1.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtBuscarBachiller1.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtBuscarBachiller1.BorderRadius = 1;
+            this.txtBuscarBachiller1.BorderThickness = 1;
+            this.txtBuscarBachiller1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBuscarBachiller1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarBachiller1.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.txtBuscarBachiller1.DefaultText = "";
+            this.txtBuscarBachiller1.FillColor = System.Drawing.Color.White;
+            this.txtBuscarBachiller1.HideSelection = true;
+            this.txtBuscarBachiller1.IconLeft = null;
+            this.txtBuscarBachiller1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarBachiller1.IconPadding = 10;
+            this.txtBuscarBachiller1.IconRight = null;
+            this.txtBuscarBachiller1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarBachiller1.Lines = new string[0];
+            this.txtBuscarBachiller1.Location = new System.Drawing.Point(747, 3);
+            this.txtBuscarBachiller1.MaxLength = 32767;
+            this.txtBuscarBachiller1.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtBuscarBachiller1.Modified = false;
+            this.txtBuscarBachiller1.Multiline = true;
+            this.txtBuscarBachiller1.Name = "txtBuscarBachiller1";
+            stateProperties43.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties43.FillColor = System.Drawing.Color.Empty;
+            stateProperties43.ForeColor = System.Drawing.Color.Empty;
+            stateProperties43.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscarBachiller1.OnActiveState = stateProperties43;
+            stateProperties44.BorderColor = System.Drawing.Color.Empty;
+            stateProperties44.FillColor = System.Drawing.Color.White;
+            stateProperties44.ForeColor = System.Drawing.Color.Empty;
+            stateProperties44.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBuscarBachiller1.OnDisabledState = stateProperties44;
+            stateProperties45.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties45.FillColor = System.Drawing.Color.Empty;
+            stateProperties45.ForeColor = System.Drawing.Color.Empty;
+            stateProperties45.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscarBachiller1.OnHoverState = stateProperties45;
+            stateProperties46.BorderColor = System.Drawing.Color.Silver;
+            stateProperties46.FillColor = System.Drawing.Color.White;
+            stateProperties46.ForeColor = System.Drawing.Color.Empty;
+            stateProperties46.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscarBachiller1.OnIdleState = stateProperties46;
+            this.txtBuscarBachiller1.PasswordChar = '\0';
+            this.txtBuscarBachiller1.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBuscarBachiller1.PlaceholderText = "Buscar por Tipo Bachiller";
+            this.txtBuscarBachiller1.ReadOnly = false;
+            this.txtBuscarBachiller1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBuscarBachiller1.SelectedText = "";
+            this.txtBuscarBachiller1.SelectionLength = 0;
+            this.txtBuscarBachiller1.SelectionStart = 0;
+            this.txtBuscarBachiller1.ShortcutsEnabled = true;
+            this.txtBuscarBachiller1.Size = new System.Drawing.Size(218, 35);
+            this.txtBuscarBachiller1.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.txtBuscarBachiller1.TabIndex = 34;
+            this.txtBuscarBachiller1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBuscarBachiller1.TextMarginBottom = 0;
+            this.txtBuscarBachiller1.TextMarginLeft = 5;
+            this.txtBuscarBachiller1.TextMarginTop = 0;
+            this.txtBuscarBachiller1.TextPlaceholder = "Buscar por Tipo Bachiller";
+            this.bunifuToolTip1.SetToolTip(this.txtBuscarBachiller1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtBuscarBachiller1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtBuscarBachiller1, "");
+            this.txtBuscarBachiller1.UseSystemPasswordChar = false;
+            this.txtBuscarBachiller1.WordWrap = true;
+            this.txtBuscarBachiller1.TextChange += new System.EventHandler(this.bunifuTextBox1_TextChanged);
+            this.txtBuscarBachiller1.TextChanged += new System.EventHandler(this.txtBuscarBachiller1_TextChanged);
+            // 
+            // dropBuscarFormacion1
+            // 
+            this.dropBuscarFormacion1.BackColor = System.Drawing.Color.White;
+            this.dropBuscarFormacion1.BorderRadius = 1;
+            this.dropBuscarFormacion1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(153)))), ((int)(((byte)(215)))));
+            this.dropBuscarFormacion1.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.dropBuscarFormacion1.DisabledColor = System.Drawing.Color.Gray;
+            this.dropBuscarFormacion1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.dropBuscarFormacion1.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.dropBuscarFormacion1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dropBuscarFormacion1.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.dropBuscarFormacion1.FillDropDown = false;
+            this.dropBuscarFormacion1.FillIndicator = false;
+            this.dropBuscarFormacion1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dropBuscarFormacion1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.dropBuscarFormacion1.FormattingEnabled = true;
+            this.dropBuscarFormacion1.Icon = null;
+            this.dropBuscarFormacion1.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.dropBuscarFormacion1.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.dropBuscarFormacion1.ItemBackColor = System.Drawing.Color.White;
+            this.dropBuscarFormacion1.ItemBorderColor = System.Drawing.Color.White;
+            this.dropBuscarFormacion1.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.dropBuscarFormacion1.ItemHeight = 26;
+            this.dropBuscarFormacion1.ItemHighLightColor = System.Drawing.Color.Thistle;
+            this.dropBuscarFormacion1.Items.AddRange(new object[] {
+            "BACHILLERATO",
+            "BÁSICA",
+            "SUPERIOR"});
+            this.dropBuscarFormacion1.Location = new System.Drawing.Point(499, 3);
+            this.dropBuscarFormacion1.Name = "dropBuscarFormacion1";
+            this.dropBuscarFormacion1.Size = new System.Drawing.Size(217, 32);
+            this.dropBuscarFormacion1.TabIndex = 33;
+            this.dropBuscarFormacion1.Text = null;
+            this.bunifuToolTip1.SetToolTip(this.dropBuscarFormacion1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.dropBuscarFormacion1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.dropBuscarFormacion1, "");
+            this.dropBuscarFormacion1.SelectedIndexChanged += new System.EventHandler(this.dropBuscarFormacion_SelectedIndexChanged);
+            // 
+            // txtBuscarNom1
+            // 
+            this.txtBuscarNom1.AcceptsReturn = false;
+            this.txtBuscarNom1.AcceptsTab = false;
+            this.txtBuscarNom1.AnimationSpeed = 200;
+            this.txtBuscarNom1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBuscarNom1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBuscarNom1.BackColor = System.Drawing.Color.Transparent;
+            this.txtBuscarNom1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscarNom1.BackgroundImage")));
+            this.txtBuscarNom1.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtBuscarNom1.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txtBuscarNom1.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtBuscarNom1.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtBuscarNom1.BorderRadius = 1;
+            this.txtBuscarNom1.BorderThickness = 1;
+            this.txtBuscarNom1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBuscarNom1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarNom1.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.txtBuscarNom1.DefaultText = "";
+            this.txtBuscarNom1.FillColor = System.Drawing.Color.White;
+            this.txtBuscarNom1.HideSelection = true;
+            this.txtBuscarNom1.IconLeft = null;
+            this.txtBuscarNom1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarNom1.IconPadding = 10;
+            this.txtBuscarNom1.IconRight = null;
+            this.txtBuscarNom1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarNom1.Lines = new string[0];
+            this.txtBuscarNom1.Location = new System.Drawing.Point(71, 3);
+            this.txtBuscarNom1.MaxLength = 32767;
+            this.txtBuscarNom1.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtBuscarNom1.Modified = false;
+            this.txtBuscarNom1.Multiline = true;
+            this.txtBuscarNom1.Name = "txtBuscarNom1";
+            stateProperties47.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties47.FillColor = System.Drawing.Color.Empty;
+            stateProperties47.ForeColor = System.Drawing.Color.Empty;
+            stateProperties47.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscarNom1.OnActiveState = stateProperties47;
+            stateProperties48.BorderColor = System.Drawing.Color.Empty;
+            stateProperties48.FillColor = System.Drawing.Color.White;
+            stateProperties48.ForeColor = System.Drawing.Color.Empty;
+            stateProperties48.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBuscarNom1.OnDisabledState = stateProperties48;
+            stateProperties49.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties49.FillColor = System.Drawing.Color.Empty;
+            stateProperties49.ForeColor = System.Drawing.Color.Empty;
+            stateProperties49.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscarNom1.OnHoverState = stateProperties49;
+            stateProperties50.BorderColor = System.Drawing.Color.Silver;
+            stateProperties50.FillColor = System.Drawing.Color.White;
+            stateProperties50.ForeColor = System.Drawing.Color.Empty;
+            stateProperties50.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscarNom1.OnIdleState = stateProperties50;
+            this.txtBuscarNom1.PasswordChar = '\0';
+            this.txtBuscarNom1.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBuscarNom1.PlaceholderText = "Buscar por Nombre";
+            this.txtBuscarNom1.ReadOnly = false;
+            this.txtBuscarNom1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBuscarNom1.SelectedText = "";
+            this.txtBuscarNom1.SelectionLength = 0;
+            this.txtBuscarNom1.SelectionStart = 0;
+            this.txtBuscarNom1.ShortcutsEnabled = true;
+            this.txtBuscarNom1.Size = new System.Drawing.Size(218, 35);
+            this.txtBuscarNom1.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.txtBuscarNom1.TabIndex = 32;
+            this.txtBuscarNom1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBuscarNom1.TextMarginBottom = 0;
+            this.txtBuscarNom1.TextMarginLeft = 5;
+            this.txtBuscarNom1.TextMarginTop = 0;
+            this.txtBuscarNom1.TextPlaceholder = "Buscar por Nombre";
+            this.bunifuToolTip1.SetToolTip(this.txtBuscarNom1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtBuscarNom1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtBuscarNom1, "");
+            this.txtBuscarNom1.UseSystemPasswordChar = false;
+            this.txtBuscarNom1.WordWrap = true;
+            this.txtBuscarNom1.TextChanged += new System.EventHandler(this.txtBuscarNom1_TextChanged);
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.ActiveImage = null;
+            this.bunifuImageButton1.AllowAnimations = true;
+            this.bunifuImageButton1.AllowBuffering = false;
+            this.bunifuImageButton1.AllowZooming = true;
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
+            this.bunifuImageButton1.FadeWhenInactive = false;
+            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.ImageLocation = null;
+            this.bunifuImageButton1.ImageMargin = 10;
+            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(23, 19);
+            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(33, 29);
+            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
+            this.bunifuImageButton1.Location = new System.Drawing.Point(34, 6);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(15, 6, 0, 6);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Rotation = 0;
+            this.bunifuImageButton1.ShowActiveImage = true;
+            this.bunifuImageButton1.ShowCursorChanges = true;
+            this.bunifuImageButton1.ShowImageBorders = true;
+            this.bunifuImageButton1.ShowSizeMarkers = false;
+            this.bunifuImageButton1.Size = new System.Drawing.Size(33, 29);
+            this.bunifuImageButton1.TabIndex = 31;
+            this.bunifuToolTip1.SetToolTip(this.bunifuImageButton1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuImageButton1, null);
+            this.bunifuImageButton1.ToolTipText = "";
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuImageButton1, "");
+            this.bunifuImageButton1.WaitOnLoad = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.ZoomSpeed = 10;
+            // 
+            // bunifuToolTip1
+            // 
+            this.bunifuToolTip1.Active = true;
+            this.bunifuToolTip1.AlignTextWithTitle = false;
+            this.bunifuToolTip1.AllowAutoClose = false;
+            this.bunifuToolTip1.AllowFading = true;
+            this.bunifuToolTip1.AutoCloseDuration = 5000;
+            this.bunifuToolTip1.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuToolTip1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.bunifuToolTip1.ClickToShowDisplayControl = false;
+            this.bunifuToolTip1.ConvertNewlinesToBreakTags = true;
+            this.bunifuToolTip1.DisplayControl = null;
+            this.bunifuToolTip1.EntryAnimationSpeed = 350;
+            this.bunifuToolTip1.ExitAnimationSpeed = 200;
+            this.bunifuToolTip1.GenerateAutoCloseDuration = false;
+            this.bunifuToolTip1.IconMargin = 6;
+            this.bunifuToolTip1.InitialDelay = 0;
+            this.bunifuToolTip1.Name = "bunifuToolTip1";
+            this.bunifuToolTip1.Opacity = 1D;
+            this.bunifuToolTip1.OverrideToolTipTitles = false;
+            this.bunifuToolTip1.Padding = new System.Windows.Forms.Padding(10);
+            this.bunifuToolTip1.ReshowDelay = 100;
+            this.bunifuToolTip1.ShowAlways = true;
+            this.bunifuToolTip1.ShowBorders = false;
+            this.bunifuToolTip1.ShowIcons = true;
+            this.bunifuToolTip1.ShowShadows = true;
+            this.bunifuToolTip1.Tag = null;
+            this.bunifuToolTip1.TextFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuToolTip1.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuToolTip1.TextMargin = 2;
+            this.bunifuToolTip1.TitleFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.bunifuToolTip1.TitleForeColor = System.Drawing.Color.Black;
+            this.bunifuToolTip1.ToolTipPosition = new System.Drawing.Point(0, 0);
+            this.bunifuToolTip1.ToolTipTitle = null;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel9);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 82);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(61, 544);
+            this.panel4.TabIndex = 6;
+            this.bunifuToolTip1.SetToolTip(this.panel4, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel4, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel4, "");
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.bunifuImageButton2);
+            this.panel9.Location = new System.Drawing.Point(0, 228);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(61, 79);
+            this.panel9.TabIndex = 1;
+            this.bunifuToolTip1.SetToolTip(this.panel9, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panel9, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panel9, "");
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.ActiveImage = null;
+            this.bunifuImageButton2.AllowAnimations = true;
+            this.bunifuImageButton2.AllowBuffering = false;
+            this.bunifuImageButton2.AllowZooming = false;
+            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.ErrorImage")));
+            this.bunifuImageButton2.FadeWhenInactive = false;
+            this.bunifuImageButton2.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.ImageLocation = null;
+            this.bunifuImageButton2.ImageMargin = 0;
+            this.bunifuImageButton2.ImageSize = new System.Drawing.Size(61, 61);
+            this.bunifuImageButton2.ImageZoomSize = new System.Drawing.Size(61, 61);
+            this.bunifuImageButton2.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.InitialImage")));
+            this.bunifuImageButton2.Location = new System.Drawing.Point(0, 7);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
+            this.bunifuImageButton2.MaximumSize = new System.Drawing.Size(85, 85);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Rotation = 0;
+            this.bunifuImageButton2.ShowActiveImage = true;
+            this.bunifuImageButton2.ShowCursorChanges = true;
+            this.bunifuImageButton2.ShowImageBorders = false;
+            this.bunifuImageButton2.ShowSizeMarkers = false;
+            this.bunifuImageButton2.Size = new System.Drawing.Size(61, 61);
+            this.bunifuImageButton2.TabIndex = 0;
+            this.bunifuToolTip1.SetToolTip(this.bunifuImageButton2, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuImageButton2, null);
+            this.bunifuImageButton2.ToolTipText = "Mostrar Listado de Personal";
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuImageButton2, "");
+            this.bunifuImageButton2.WaitOnLoad = false;
+            this.bunifuImageButton2.Zoom = 0;
+            this.bunifuImageButton2.ZoomSpeed = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            // 
+            // panelMostrar
+            // 
+            this.panelMostrar.BorderColor = System.Drawing.Color.Transparent;
+            this.panelMostrar.Controls.Add(this.btnMosPorAnio);
+            this.panelMostrar.Controls.Add(this.txtMostrarAnio);
+            this.panelMostrar.Controls.Add(this.chkMostarA);
+            this.panelMostrar.Controls.Add(this.btnMostTodos);
+            this.panelMostrar.Controls.Add(this.label5);
+            this.panelMostrar.Controls.Add(this.btnVolverMos);
+            this.panelMostrar.Location = new System.Drawing.Point(436, 141);
+            this.panelMostrar.Name = "panelMostrar";
+            this.panelMostrar.PanelColor = System.Drawing.Color.Empty;
+            this.panelMostrar.ShadowDept = 2;
+            this.panelMostrar.ShadowTopLeftVisible = true;
+            this.panelMostrar.Size = new System.Drawing.Size(432, 277);
+            this.panelMostrar.TabIndex = 31;
+            this.bunifuToolTip1.SetToolTip(this.panelMostrar, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.panelMostrar, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.panelMostrar, "");
+            // 
+            // btnMosPorAnio
+            // 
+            this.btnMosPorAnio.AllowToggling = false;
+            this.btnMosPorAnio.AnimationSpeed = 200;
+            this.btnMosPorAnio.AutoGenerateColors = false;
+            this.btnMosPorAnio.BackColor = System.Drawing.Color.Transparent;
+            this.btnMosPorAnio.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnMosPorAnio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMosPorAnio.BackgroundImage")));
+            this.btnMosPorAnio.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnMosPorAnio.ButtonText = "Cagar Listado";
+            this.btnMosPorAnio.ButtonTextMarginLeft = 0;
+            this.btnMosPorAnio.ColorContrastOnClick = 45;
+            this.btnMosPorAnio.ColorContrastOnHover = 45;
+            this.btnMosPorAnio.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnMosPorAnio.CustomizableEdges = borderEdges7;
+            this.btnMosPorAnio.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnMosPorAnio.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.btnMosPorAnio.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnMosPorAnio.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnMosPorAnio.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnMosPorAnio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.btnMosPorAnio.ForeColor = System.Drawing.Color.White;
+            this.btnMosPorAnio.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMosPorAnio.IconMarginLeft = 11;
+            this.btnMosPorAnio.IconPadding = 10;
+            this.btnMosPorAnio.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMosPorAnio.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnMosPorAnio.IdleBorderRadius = 3;
+            this.btnMosPorAnio.IdleBorderThickness = 1;
+            this.btnMosPorAnio.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnMosPorAnio.IdleIconLeftImage = null;
+            this.btnMosPorAnio.IdleIconRightImage = null;
+            this.btnMosPorAnio.IndicateFocus = false;
+            this.btnMosPorAnio.Location = new System.Drawing.Point(262, 142);
+            this.btnMosPorAnio.Name = "btnMosPorAnio";
+            stateProperties29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties29.BorderRadius = 3;
+            stateProperties29.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties29.BorderThickness = 1;
+            stateProperties29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties29.ForeColor = System.Drawing.Color.White;
+            stateProperties29.IconLeftImage = null;
+            stateProperties29.IconRightImage = null;
+            this.btnMosPorAnio.onHoverState = stateProperties29;
+            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties30.BorderRadius = 3;
+            stateProperties30.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties30.BorderThickness = 1;
+            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties30.ForeColor = System.Drawing.Color.White;
+            stateProperties30.IconLeftImage = null;
+            stateProperties30.IconRightImage = null;
+            this.btnMosPorAnio.OnPressedState = stateProperties30;
+            this.btnMosPorAnio.Size = new System.Drawing.Size(148, 45);
+            this.btnMosPorAnio.TabIndex = 49;
+            this.btnMosPorAnio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnMosPorAnio.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnMosPorAnio, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnMosPorAnio, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnMosPorAnio, "");
+            this.btnMosPorAnio.UseDefaultRadiusAndThickness = true;
+            this.btnMosPorAnio.Visible = false;
+            this.btnMosPorAnio.Click += new System.EventHandler(this.btnMosPorAnio_Click);
+            // 
+            // txtMostrarAnio
+            // 
+            this.txtMostrarAnio.AcceptsReturn = false;
+            this.txtMostrarAnio.AcceptsTab = false;
+            this.txtMostrarAnio.AnimationSpeed = 200;
+            this.txtMostrarAnio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtMostrarAnio.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtMostrarAnio.BackColor = System.Drawing.Color.Transparent;
+            this.txtMostrarAnio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtMostrarAnio.BackgroundImage")));
+            this.txtMostrarAnio.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtMostrarAnio.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txtMostrarAnio.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtMostrarAnio.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtMostrarAnio.BorderRadius = 1;
+            this.txtMostrarAnio.BorderThickness = 1;
+            this.txtMostrarAnio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtMostrarAnio.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMostrarAnio.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.txtMostrarAnio.DefaultText = "";
+            this.txtMostrarAnio.FillColor = System.Drawing.Color.White;
+            this.txtMostrarAnio.HideSelection = true;
+            this.txtMostrarAnio.IconLeft = null;
+            this.txtMostrarAnio.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMostrarAnio.IconPadding = 10;
+            this.txtMostrarAnio.IconRight = null;
+            this.txtMostrarAnio.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMostrarAnio.Lines = new string[0];
+            this.txtMostrarAnio.Location = new System.Drawing.Point(28, 147);
+            this.txtMostrarAnio.MaxLength = 32767;
+            this.txtMostrarAnio.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtMostrarAnio.Modified = false;
+            this.txtMostrarAnio.Multiline = true;
+            this.txtMostrarAnio.Name = "txtMostrarAnio";
+            stateProperties31.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties31.FillColor = System.Drawing.Color.Empty;
+            stateProperties31.ForeColor = System.Drawing.Color.Empty;
+            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtMostrarAnio.OnActiveState = stateProperties31;
+            stateProperties32.BorderColor = System.Drawing.Color.Empty;
+            stateProperties32.FillColor = System.Drawing.Color.White;
+            stateProperties32.ForeColor = System.Drawing.Color.Empty;
+            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtMostrarAnio.OnDisabledState = stateProperties32;
+            stateProperties33.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties33.FillColor = System.Drawing.Color.Empty;
+            stateProperties33.ForeColor = System.Drawing.Color.Empty;
+            stateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtMostrarAnio.OnHoverState = stateProperties33;
+            stateProperties34.BorderColor = System.Drawing.Color.Silver;
+            stateProperties34.FillColor = System.Drawing.Color.White;
+            stateProperties34.ForeColor = System.Drawing.Color.Empty;
+            stateProperties34.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtMostrarAnio.OnIdleState = stateProperties34;
+            this.txtMostrarAnio.PasswordChar = '\0';
+            this.txtMostrarAnio.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtMostrarAnio.PlaceholderText = "Escirba el Año";
+            this.txtMostrarAnio.ReadOnly = false;
+            this.txtMostrarAnio.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtMostrarAnio.SelectedText = "";
+            this.txtMostrarAnio.SelectionLength = 0;
+            this.txtMostrarAnio.SelectionStart = 0;
+            this.txtMostrarAnio.ShortcutsEnabled = true;
+            this.txtMostrarAnio.Size = new System.Drawing.Size(218, 35);
+            this.txtMostrarAnio.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.txtMostrarAnio.TabIndex = 48;
+            this.txtMostrarAnio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtMostrarAnio.TextMarginBottom = 0;
+            this.txtMostrarAnio.TextMarginLeft = 5;
+            this.txtMostrarAnio.TextMarginTop = 0;
+            this.txtMostrarAnio.TextPlaceholder = "Escirba el Año";
+            this.bunifuToolTip1.SetToolTip(this.txtMostrarAnio, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtMostrarAnio, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtMostrarAnio, "");
+            this.txtMostrarAnio.UseSystemPasswordChar = false;
+            this.txtMostrarAnio.Visible = false;
+            this.txtMostrarAnio.WordWrap = true;
+            // 
+            // chkMostarA
+            // 
+            this.chkMostarA.AutoSize = true;
+            this.chkMostarA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMostarA.Location = new System.Drawing.Point(139, 112);
+            this.chkMostarA.Name = "chkMostarA";
+            this.chkMostarA.Size = new System.Drawing.Size(150, 24);
+            this.chkMostarA.TabIndex = 47;
+            this.chkMostarA.Text = "Mostrar por Años";
+            this.bunifuToolTip1.SetToolTip(this.chkMostarA, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.chkMostarA, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.chkMostarA, "");
+            this.chkMostarA.UseVisualStyleBackColor = true;
+            this.chkMostarA.CheckedChanged += new System.EventHandler(this.chkMostarA_CheckedChanged);
+            // 
+            // btnMostTodos
+            // 
+            this.btnMostTodos.AllowToggling = false;
+            this.btnMostTodos.AnimationSpeed = 200;
+            this.btnMostTodos.AutoGenerateColors = false;
+            this.btnMostTodos.BackColor = System.Drawing.Color.Transparent;
+            this.btnMostTodos.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnMostTodos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMostTodos.BackgroundImage")));
+            this.btnMostTodos.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnMostTodos.ButtonText = "Mostrar Todos";
+            this.btnMostTodos.ButtonTextMarginLeft = 0;
+            this.btnMostTodos.ColorContrastOnClick = 45;
+            this.btnMostTodos.ColorContrastOnHover = 45;
+            this.btnMostTodos.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnMostTodos.CustomizableEdges = borderEdges8;
+            this.btnMostTodos.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnMostTodos.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.btnMostTodos.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnMostTodos.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnMostTodos.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnMostTodos.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.btnMostTodos.ForeColor = System.Drawing.Color.White;
+            this.btnMostTodos.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMostTodos.IconMarginLeft = 11;
+            this.btnMostTodos.IconPadding = 10;
+            this.btnMostTodos.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMostTodos.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnMostTodos.IdleBorderRadius = 3;
+            this.btnMostTodos.IdleBorderThickness = 1;
+            this.btnMostTodos.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnMostTodos.IdleIconLeftImage = null;
+            this.btnMostTodos.IdleIconRightImage = null;
+            this.btnMostTodos.IndicateFocus = false;
+            this.btnMostTodos.Location = new System.Drawing.Point(117, 51);
+            this.btnMostTodos.Name = "btnMostTodos";
+            stateProperties35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties35.BorderRadius = 3;
+            stateProperties35.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties35.BorderThickness = 1;
+            stateProperties35.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties35.ForeColor = System.Drawing.Color.White;
+            stateProperties35.IconLeftImage = null;
+            stateProperties35.IconRightImage = null;
+            this.btnMostTodos.onHoverState = stateProperties35;
+            stateProperties36.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties36.BorderRadius = 3;
+            stateProperties36.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties36.BorderThickness = 1;
+            stateProperties36.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties36.ForeColor = System.Drawing.Color.White;
+            stateProperties36.IconLeftImage = null;
+            stateProperties36.IconRightImage = null;
+            this.btnMostTodos.OnPressedState = stateProperties36;
+            this.btnMostTodos.Size = new System.Drawing.Size(210, 45);
+            this.btnMostTodos.TabIndex = 46;
+            this.btnMostTodos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnMostTodos.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnMostTodos, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnMostTodos, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnMostTodos, "");
+            this.btnMostTodos.UseDefaultRadiusAndThickness = true;
+            this.btnMostTodos.Click += new System.EventHandler(this.btnMostTodos_Click_1);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(102, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(234, 20);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Mostrar Listado de Personal";
+            this.bunifuToolTip1.SetToolTip(this.label5, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label5, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label5, "");
+            // 
+            // btnVolverMos
+            // 
+            this.btnVolverMos.AllowToggling = false;
+            this.btnVolverMos.AnimationSpeed = 200;
+            this.btnVolverMos.AutoGenerateColors = false;
+            this.btnVolverMos.BackColor = System.Drawing.Color.Transparent;
+            this.btnVolverMos.BackColor1 = System.Drawing.Color.Transparent;
+            this.btnVolverMos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVolverMos.BackgroundImage")));
+            this.btnVolverMos.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnVolverMos.ButtonText = "Volver";
+            this.btnVolverMos.ButtonTextMarginLeft = 0;
+            this.btnVolverMos.ColorContrastOnClick = 45;
+            this.btnVolverMos.ColorContrastOnHover = 45;
+            this.btnVolverMos.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btnVolverMos.CustomizableEdges = borderEdges9;
+            this.btnVolverMos.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnVolverMos.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.btnVolverMos.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnVolverMos.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnVolverMos.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnVolverMos.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.btnVolverMos.ForeColor = System.Drawing.Color.Black;
+            this.btnVolverMos.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolverMos.IconMarginLeft = 11;
+            this.btnVolverMos.IconPadding = 10;
+            this.btnVolverMos.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolverMos.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            this.btnVolverMos.IdleBorderRadius = 3;
+            this.btnVolverMos.IdleBorderThickness = 1;
+            this.btnVolverMos.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnVolverMos.IdleIconLeftImage = null;
+            this.btnVolverMos.IdleIconRightImage = null;
+            this.btnVolverMos.IndicateFocus = true;
+            this.btnVolverMos.Location = new System.Drawing.Point(318, 217);
+            this.btnVolverMos.Name = "btnVolverMos";
+            stateProperties37.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            stateProperties37.BorderRadius = 3;
+            stateProperties37.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties37.BorderThickness = 1;
+            stateProperties37.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            stateProperties37.ForeColor = System.Drawing.Color.White;
+            stateProperties37.IconLeftImage = null;
+            stateProperties37.IconRightImage = null;
+            this.btnVolverMos.onHoverState = stateProperties37;
+            stateProperties38.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            stateProperties38.BorderRadius = 3;
+            stateProperties38.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties38.BorderThickness = 1;
+            stateProperties38.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            stateProperties38.ForeColor = System.Drawing.Color.White;
+            stateProperties38.IconLeftImage = null;
+            stateProperties38.IconRightImage = null;
+            this.btnVolverMos.OnPressedState = stateProperties38;
+            this.btnVolverMos.Size = new System.Drawing.Size(100, 41);
+            this.btnVolverMos.TabIndex = 44;
+            this.btnVolverMos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnVolverMos.TextMarginLeft = 0;
+            this.bunifuToolTip1.SetToolTip(this.btnVolverMos, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnVolverMos, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnVolverMos, "");
+            this.btnVolverMos.UseDefaultRadiusAndThickness = true;
+            this.btnVolverMos.Click += new System.EventHandler(this.btnVolverMos_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1989,9 +2598,11 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1293, 666);
             this.Controls.Add(this.panel_Usuarios);
+            this.Controls.Add(this.panelMostrar);
             this.Controls.Add(this.GridPersonal);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1999,7 +2610,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado Personal";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -2012,12 +2622,17 @@
             this.panel6.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridPersonal)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panelMostrar.ResumeLayout(false);
+            this.panelMostrar.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2028,9 +2643,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBuscarNom;
-        private Bunifu.UI.WinForms.BunifuImageButton btnBuscarNom;
         private System.Windows.Forms.Panel panel5;
         private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel panel_Usuarios;
         private System.Windows.Forms.Label label2;
@@ -2041,7 +2653,6 @@
         private System.Windows.Forms.Label label3;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtNombre;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtObservacion;
-        private System.Windows.Forms.Label label6;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnMostrarHoja;
         private System.Windows.Forms.Label label7;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnMostrarLicen;
@@ -2061,14 +2672,8 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private Bunifu.UI.WinForms.BunifuDropdown dropBuscarFormacion;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtTipoBachiller;
         private System.Windows.Forms.Label lblBachiller;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBuscarBachiller;
-        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBuscarAnio;
-        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton2;
-        private System.Windows.Forms.CheckBox chkFiltarFormacion;
         private System.Windows.Forms.Panel panel6;
         private Bunifu.UI.WinForms.BunifuImageButton btnNuevo;
         private Bunifu.UI.WinForms.BunifuImageButton btnCerrar;
@@ -2079,6 +2684,31 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnExportarExcel;
         public Bunifu.UI.WinForms.BunifuDataGridView GridPersonal;
         private System.Windows.Forms.DataGridViewImageColumn Eliminar;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.CheckBox chkFiltarFormacion1;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBuscarBachiller1;
+        private Bunifu.UI.WinForms.BunifuDropdown dropBuscarFormacion1;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBuscarNom1;
+        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBuscarAnio;
+        private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel9;
+        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton2;
+        private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel panelMostrar;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnMosPorAnio;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtMostrarAnio;
+        private System.Windows.Forms.CheckBox chkMostarA;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnMostTodos;
+        private System.Windows.Forms.Label label5;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnVolverMos;
+        private System.Windows.Forms.Label lblNomLice;
+        private System.Windows.Forms.Label lblNomTitu;
+        private System.Windows.Forms.Label lblNomHo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblNomExper;
+        private System.Windows.Forms.Label lblnomDocs;
+        private System.Windows.Forms.Label label14;
     }
 }
 

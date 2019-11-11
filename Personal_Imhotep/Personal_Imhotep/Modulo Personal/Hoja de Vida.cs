@@ -26,22 +26,33 @@ namespace Personal_Imhotep.Modulo_Personal
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Archivo de programa |*.pdf;*.png;*.jpg" ;
-
-            if(ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
+            using (OpenFileDialog ofd = new OpenFileDialog())
             {
-                string ruta = ofd.FileName;
-                rutaHoja = ruta;
-                nombHoja = Path.GetFileName(ruta);
-                buffer = File.ReadAllBytes(ruta);
-                webHojaV.Navigate(ruta);
+
+
+                ofd.Filter = "Archivo de programa |*.pdf;*.png;*.jpg";
+
+                if (ofd.ShowDialog() == DialogResult.OK || ofd.ShowDialog() == DialogResult.Yes)
+                {
+                    string ruta = ofd.FileName;
+                    rutaHoja = ruta;
+                    nombHoja = Path.GetFileName(ruta);
+                    buffer = File.ReadAllBytes(ruta);
+                    webHojaV.Navigate(ruta);
+                }
             }
         }
 
-        public void MostrarPreview(string ruta)
+        public void MostrarPreview()
         {
-            webHojaV.Navigate(ruta);
+            try
+            {
+                webHojaV.Navigate(rutaHoja);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
@@ -55,11 +66,13 @@ namespace Personal_Imhotep.Modulo_Personal
             this.Close();
         }
 
-        public void MostrarHojaV(string nombreHoja, object buffer)
+        public async void MostrarHojaV(string nombreHoja, object buffer)
         {
             byte[] buffer2;
 
-            string ruta = Directory.CreateDirectory(@"C:\temp\").FullName;
+            string ruta = @"C:\temp\";
+
+            FileStream fs;
 
             Random random = new Random();
 
@@ -76,21 +89,22 @@ namespace Personal_Imhotep.Modulo_Personal
                     buffer2 = (byte[])buffer;
 
 
-                    using (FileStream fs = File.Create(ruta))
+                    using (fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
 
-                        fs.Close();
-   
                     }
+                    webHojaV.Navigate(ruta);
                 }
             }
-            catch(Exception ex)
+            catch (IOException)
             {
-                MessageBox.Show(ex.Message);
+                await Task.Delay(30);
             }
- 
-            webHojaV.Navigate(ruta);
+            catch (UnauthorizedAccessException)
+            {
+                await Task.Delay(30);
+            }
 
 
         }

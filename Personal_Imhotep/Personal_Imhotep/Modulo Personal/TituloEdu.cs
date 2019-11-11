@@ -40,9 +40,16 @@ namespace Personal_Imhotep.Modulo_Personal
             }
         }
 
-        public void MostrarPreview(string ruta)
+        public void MostrarPreview()
         {
-            webTitulo.Navigate(ruta);
+            try
+            {
+                webTitulo.Navigate(rutaTitulo);
+            }
+  catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
@@ -51,16 +58,17 @@ namespace Personal_Imhotep.Modulo_Personal
         }
 
 
-        public void MostrarTitulo(string nombreTitulo, object buffer)
+        public async void MostrarTitulo(string nombreTitulo, object buffer)
         {
             byte[] buffer2;
 
-            string ruta = Directory.CreateDirectory(@"C:\temp\").FullName;
+            string ruta = @"C:\temp\";
+
+            FileStream fs;
 
             Random random = new Random();
 
             int numrand = random.Next(1, 20);
-
 
             try
             {
@@ -73,26 +81,24 @@ namespace Personal_Imhotep.Modulo_Personal
                     buffer2 = (byte[])buffer;
 
 
-                    using (FileStream fs = File.Create(ruta))
+                    using (fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
-
-                        fs.Close();
-
+      
                     }
+                    webTitulo.Navigate(ruta);
                 }
-            }
-            catch(Exception ex)
+        }
+           catch (IOException)
             {
-                MessageBox.Show(ex.Message);
+                await Task.Delay(30);
             }
-
-            webTitulo.Navigate(ruta);
+            catch (UnauthorizedAccessException)
+            {
+                await Task.Delay(30);
+            }
 
         }
-
-  
-
 
         private void btnGuardarTitulo_Click(object sender, EventArgs e)
         {

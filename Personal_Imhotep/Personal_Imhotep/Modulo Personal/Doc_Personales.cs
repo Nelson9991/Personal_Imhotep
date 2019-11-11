@@ -39,28 +39,35 @@ namespace Personal_Imhotep.Modulo_Personal
                     string ruta = ofd.FileName;
                     rutaDocs = ruta;
                     nombDocs = Path.GetFileName(ruta);
-                    using (FileStream fs = File.OpenRead(ruta))
-                    {
-                        fs.Read(buffer, 0, int.MaxValue);
-                    }
+                    buffer = File.ReadAllBytes(ruta);
                     webDocs.Navigate(ruta);
                 }
             }
         }
 
-        public void MostrarPreview(string ruta)
+        public void MostrarPreview()
         {
-            webDocs.Navigate(ruta);
+            try
+            {
+                webDocs.Navigate(rutaDocs);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
-        
 
-        public void MostrarDocs_Perso(string nombreDoc, object buffer)
+
+        public async void MostrarDocs_Perso(string nombreDoc, object buffer)
         {
 
             byte[] buffer2;
 
-            string ruta = Directory.CreateDirectory(@"C:\temp\").FullName;
+            string ruta = @"C:\temp\";
+
+            FileStream fs;
 
             Random random = new Random();
 
@@ -78,21 +85,22 @@ namespace Personal_Imhotep.Modulo_Personal
                     buffer2 = (byte[])buffer;
 
 
-                    using (FileStream fs = File.Create(ruta))
+                    using (fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
-  
-                        fs.Close();
-    
+
                     }
+                    webDocs.Navigate(ruta);
                 }
             }
-            catch(Exception ex)
+            catch (IOException)
             {
-                MessageBox.Show(ex.Message);
+                await Task.Delay(30);
             }
-
-            webDocs.Navigate(ruta);
+            catch (UnauthorizedAccessException)
+            {
+                await Task.Delay(30);
+            }
 
         }
 

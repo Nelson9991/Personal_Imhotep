@@ -48,17 +48,26 @@ namespace Personal_Imhotep.Modulo_Personal
             }
         }
 
-        public void MostrarPreview(string ruta)
+        public void MostrarPreview()
         {
-            webLicencia.Navigate(ruta);
+            try
+            {
+                webLicencia.Navigate(rutaLicen);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
-        public void MostrarLicencia(string nombreLicen, object buffer)
+        public async void MostrarLicencia(string nombreLicen, object buffer)
         {
             byte[] buffer2;
 
-           string ruta = Directory.CreateDirectory(@"C:\temp\").FullName;
+            string ruta = @"C:\temp\";
+
+            FileStream fs;
 
             Random random = new Random();
 
@@ -76,25 +85,27 @@ namespace Personal_Imhotep.Modulo_Personal
                     buffer2 = (byte[])buffer;
 
 
-                    using (FileStream fs = File.Create(ruta))
+                    using (fs = File.Create(ruta))
                     {
                         fs.Write(buffer2, 0, buffer2.Length);
-                        fs.Close();
-                        
+    
                     }
+                    webLicencia.Navigate(ruta);
+                    
                 }
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-
-            webLicencia.Navigate(ruta);
-
-            
         }
-        
+            catch (IOException)
+            {
+                await Task.Delay(30);
+            }
+            catch (UnauthorizedAccessException)
+            {
+                await Task.Delay(30);
+            }
+
+
+        }
+
 
         private void btnLicencia_Click(object sender, EventArgs e)
         {
