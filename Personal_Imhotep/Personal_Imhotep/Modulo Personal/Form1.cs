@@ -60,12 +60,12 @@ namespace Personal_Imhotep
         {
             try
             {
-                //if (hoja.rutaHoja != null)
-                //{
-                //    hoja.MostrarPreview();
-                //}
-                MatarProcesoAcrobat();
+                //    if (hoja.rutaHoja != null)
+                //    {
+                //        hoja.MostrarPreview();
+                //    }
                 hoja.ShowDialog();
+                MatarProcesoAcrobat();
             }
             catch (Exception ex)
             {
@@ -374,30 +374,31 @@ namespace Personal_Imhotep
         {
             try
             {
-                MatarProcesoAcrobat();
+                //if (doc.rutaDocs != null)
+                //{
+                //    doc.MostrarPreview();
+                //}
                 doc.ShowDialog();
+                MatarProcesoAcrobat();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            //if (doc.rutaDocs != null)
-            //{
-            //    doc.MostrarPreview();
-            //}
+
         }
 
         private void btnMostrarTitulo_Click(object sender, EventArgs e)
         {
             try
             {
-                if (titulo.rutaTitulo != null)
-                {
-                    titulo.MostrarPreview();
-                }
-                MatarProcesoAcrobat();
+                //if (titulo.rutaTitulo != null)
+                //{
+                //    titulo.MostrarPreview();
+                //}
                 titulo.ShowDialog();
+                MatarProcesoAcrobat();
             }
             catch (Exception ex)
             {
@@ -411,18 +412,19 @@ namespace Personal_Imhotep
         {
             try
             {
-                MatarProcesoAcrobat();
+
+                //if (licencia.rutaLicen != null)
+                //{
+                //    licencia.MostrarPreview();
+                //}
                 licencia.ShowDialog();
+                MatarProcesoAcrobat();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            //if (licencia.rutaLicen != null)
-            //{
-            //    licencia.MostrarPreview();
-            //}
         }
 
 
@@ -435,7 +437,6 @@ namespace Personal_Imhotep
             //titulo.rutaTitulo = "";
             //doc.rutaDocs = "";
             //licencia.rutaLicen = "";
-            MatarProcesoAcrobat();
             lblBachiller.Visible = false;
             txtTipoBachiller.Text = "";
             txtTipoBachiller.Visible = false;
@@ -520,7 +521,15 @@ namespace Personal_Imhotep
             try
             
             {
-                    foreach (Process proc in Process.GetProcessesByName("AcroRd32"))
+                //if (Process.GetProcessesByName(process).Length == 0)
+                //{
+                //    MessageBox.Show("Working");
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Not Working");
+                //}
+                foreach (Process proc in Process.GetProcessesByName("AcroRd32"))
                     {
                         proc.Close();
                     } 
@@ -623,18 +632,19 @@ namespace Personal_Imhotep
         {
             try
             {
-                MatarProcesoAcrobat();
+
+                //if (certif.rutaCertif != null)
+                //{
+                //    certif.MostrarPreview();
+                //}
                 certif.ShowDialog();
+                MatarProcesoAcrobat();
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            //if (certif.rutaCertif != null)
-            //{
-            //    certif.MostrarPreview();
-            //}
 
         }
 

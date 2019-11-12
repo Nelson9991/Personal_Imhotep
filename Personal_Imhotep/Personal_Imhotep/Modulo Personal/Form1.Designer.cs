@@ -260,7 +260,7 @@
             this.btnRestaurar.ImageSize = new System.Drawing.Size(28, 29);
             this.btnRestaurar.ImageZoomSize = new System.Drawing.Size(28, 29);
             this.btnRestaurar.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.InitialImage")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1225, 6);
+            this.btnRestaurar.Location = new System.Drawing.Point(1128, 2);
             this.btnRestaurar.Margin = new System.Windows.Forms.Padding(50, 22, 0, 22);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Rotation = 0;

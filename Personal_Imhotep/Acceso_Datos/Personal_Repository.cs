@@ -131,5 +131,15 @@ namespace Acceso_Datos
                 return usuarios.ToList();
             }
         }
+
+        public int InsertarUsuarios(USUARIO2 usuario)
+        {
+            using (var contexto = new Personal_IMHOTEPEntities())
+            {
+                var usuarios = contexto.insertar_usuario(usuario.Nombres_y_Apellidos, usuario.Login, usuario.Password, usuario.Icono, usuario.Nombre_de_icono, usuario.Correo, usuario.Rol, "ACTIVO");
+
+                return contexto.SaveChanges();
+            }
+        }
     }
 }
