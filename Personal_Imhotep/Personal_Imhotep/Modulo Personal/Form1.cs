@@ -60,10 +60,10 @@ namespace Personal_Imhotep
         {
             try
             {
-                //    if (hoja.rutaHoja != null)
-                //    {
-                //        hoja.MostrarPreview();
-                //    }
+                if (hoja.m_myFunctionCalled == false)
+                {
+                    hoja.MostrarPreview();
+                }
                 hoja.ShowDialog();
                 MatarProcesoAcrobat();
             }
@@ -339,6 +339,8 @@ namespace Personal_Imhotep
                 GridPersonal.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 GridPersonal.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 GridPersonal.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[19].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[20].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 GridPersonal.Columns[6].Visible = false;
                 GridPersonal.Columns[8].Visible = false;
                 GridPersonal.Columns[9].Visible = false;
@@ -363,6 +365,8 @@ namespace Personal_Imhotep
 
         private void Form1_Load(object sender, EventArgs e)
         {
+  
+            MatarProcesoAcrobat();
             lblBachiller.Visible = false;
             txtTipoBachiller.Visible = false;
             panel_Usuarios.Visible = false;
@@ -374,10 +378,10 @@ namespace Personal_Imhotep
         {
             try
             {
-                //if (doc.rutaDocs != null)
-                //{
-                //    doc.MostrarPreview();
-                //}
+                if (doc.m_myFunctionCalled == false)
+                {
+                    doc.MostrarPreview();
+                }
                 doc.ShowDialog();
                 MatarProcesoAcrobat();
             }
@@ -393,10 +397,10 @@ namespace Personal_Imhotep
         {
             try
             {
-                //if (titulo.rutaTitulo != null)
-                //{
-                //    titulo.MostrarPreview();
-                //}
+                if (titulo.m_myFunctionCalled == false)
+                {
+                    titulo.MostrarPreview();
+                }
                 titulo.ShowDialog();
                 MatarProcesoAcrobat();
             }
@@ -413,10 +417,10 @@ namespace Personal_Imhotep
             try
             {
 
-                //if (licencia.rutaLicen != null)
-                //{
-                //    licencia.MostrarPreview();
-                //}
+                if (licencia.m_myFunctionCalled == false)
+                {
+                    licencia.MostrarPreview();
+                }
                 licencia.ShowDialog();
                 MatarProcesoAcrobat();
             }
@@ -543,6 +547,7 @@ namespace Personal_Imhotep
 
         private void GridPersonal_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            MatarProcesoAcrobat();
             Directory.CreateDirectory(@"C:\temp\");
             panel_Usuarios.Visible = true;
             btnGuardar.Visible = false;
@@ -633,10 +638,10 @@ namespace Personal_Imhotep
             try
             {
 
-                //if (certif.rutaCertif != null)
-                //{
-                //    certif.MostrarPreview();
-                //}
+                if (certif.m_myFunctionCalled == false)
+                {
+                    certif.MostrarPreview();
+                }
                 certif.ShowDialog();
                 MatarProcesoAcrobat();
             }
@@ -804,6 +809,13 @@ namespace Personal_Imhotep
                     }
                 }
 
+                GridPersonal.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[19].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[20].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 GridPersonal.Columns[6].Visible = false;
                 GridPersonal.Columns[8].Visible = false;
                 GridPersonal.Columns[9].Visible = false;
@@ -851,7 +863,13 @@ namespace Personal_Imhotep
                         }
                     }
                 }
-
+                GridPersonal.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[19].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[20].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 GridPersonal.Columns[6].Visible = false;
                 GridPersonal.Columns[8].Visible = false;
                 GridPersonal.Columns[9].Visible = false;
@@ -899,7 +917,13 @@ namespace Personal_Imhotep
                         }
                     }
                 }
-
+                GridPersonal.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[19].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[20].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 GridPersonal.Columns[6].Visible = false;
                 GridPersonal.Columns[8].Visible = false;
                 GridPersonal.Columns[9].Visible = false;
@@ -913,6 +937,7 @@ namespace Personal_Imhotep
                 GridPersonal.Columns[17].Visible = false;
                 GridPersonal.Columns[18].Visible = false;
                 GridPersonal.Columns[19].DisplayIndex = 19;
+                GridPersonal.Columns[19].HeaderText = "Año";
 
             }
             catch (Exception ex)
@@ -947,7 +972,13 @@ namespace Personal_Imhotep
                         }
                     }
                 }
-
+                GridPersonal.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[19].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                GridPersonal.Columns[20].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 GridPersonal.Columns[6].Visible = false;
                 GridPersonal.Columns[8].Visible = false;
                 GridPersonal.Columns[9].Visible = false;
@@ -1020,6 +1051,7 @@ namespace Personal_Imhotep
 
             if(resul == DialogResult.OK)
             {
+                MatarProcesoAcrobat();
                 Application.Exit();
             }
             
@@ -1118,6 +1150,7 @@ namespace Personal_Imhotep
                 btnNuevo.Enabled = true;
                 btnExportarExcel.Enabled = true;
                 bunifuImageButton2.Enabled = true;
+                chkMostarA.Checked = false;
             }
             catch(Exception ex)
             {
@@ -1152,6 +1185,7 @@ namespace Personal_Imhotep
                     btnNuevo.Enabled = true;
                     btnExportarExcel.Enabled = true;
                     bunifuImageButton2.Enabled = true;
+                    chkMostarA.Checked = false;
                 }
                 catch(Exception ex)
                 {
@@ -1170,6 +1204,7 @@ namespace Personal_Imhotep
             btnNuevo.Enabled = true;
             btnExportarExcel.Enabled = true;
             bunifuImageButton2.Enabled = true;
+            chkMostarA.Checked = false;
         }
     }
 }

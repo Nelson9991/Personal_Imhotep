@@ -13,9 +13,13 @@ namespace Personal_Imhotep.Modulo_Personal
 {
     public partial class Certificacion : Form
     {
+        public bool m_myFunctionCalled;
+
         public Certificacion()
         {
             InitializeComponent();
+
+            m_myFunctionCalled = false;
         }
 
         public byte[] buffer = null;
@@ -51,9 +55,16 @@ namespace Personal_Imhotep.Modulo_Personal
             }
         }
 
+        public void myFunction()
+        {
+            m_myFunctionCalled = true;
+            return;
+        }
+
 
         public async void MostrarCertificacion(string nombreCertif, object buffer)
         {
+            myFunction();
 
             byte[] buffer2;
 
@@ -101,11 +112,13 @@ namespace Personal_Imhotep.Modulo_Personal
         private void btnCertif_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Datos Guardados");
+            m_myFunctionCalled = false;
             this.Close();
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
+            m_myFunctionCalled = false;
             this.Close();
         }
     }

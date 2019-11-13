@@ -94,6 +94,7 @@ namespace Personal_Imhotep.Reportes
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+            chkReport.Checked = false;
             reportView.Reset();
         }
 

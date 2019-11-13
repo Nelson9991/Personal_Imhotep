@@ -13,13 +13,18 @@ namespace Personal_Imhotep.Modulo_Personal
 {
     public partial class Doc_Personales : Form
     {
+        public bool m_myFunctionCalled;
+
         public Doc_Personales()
         {
             InitializeComponent();
+
+            m_myFunctionCalled = false;
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
+            m_myFunctionCalled = false;
             this.Close();
         }
 
@@ -58,10 +63,16 @@ namespace Personal_Imhotep.Modulo_Personal
 
         }
 
-
+        public void myFunction()
+        {
+            m_myFunctionCalled = true;
+            return;
+        }
 
         public async void MostrarDocs_Perso(string nombreDoc, object buffer)
         {
+
+            myFunction();
 
             byte[] buffer2;
 
@@ -108,6 +119,7 @@ namespace Personal_Imhotep.Modulo_Personal
         private void btnGuardarDocs_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Datos Guardados");
+            m_myFunctionCalled = false;
             this.Close();
         }
     }

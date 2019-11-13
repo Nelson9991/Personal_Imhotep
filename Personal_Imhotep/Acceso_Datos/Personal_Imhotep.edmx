@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Personal">
           <Key>
             <PropertyRef Name="Id" />
@@ -134,7 +134,8 @@
           <EntitySet Name="Personal" EntityType="Self.Personal" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="USUARIO2" EntityType="Self.USUARIO2" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -202,19 +203,19 @@
             <Parameter Name="tipo_bachiller" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="Buscar_Anio_Personal" ReturnType="Collection(Model.Buscar_Anio_Personal_Result)">
-          <Parameter Name="letra" Mode="In" Type="String" />
+            <Parameter Name="letra" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="buscar_formacion" ReturnType="Collection(Model.buscar_formacion_Result)">
-          <Parameter Name="letra" Mode="In" Type="String" />
+            <Parameter Name="letra" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="buscar_person_nom" ReturnType="Collection(Model.buscar_person_nom_Result)">
-          <Parameter Name="letra" Mode="In" Type="String" />
+            <Parameter Name="letra" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="buscar_tipo_Bachiller" ReturnType="Collection(Model.buscar_tipo_Bachiller_Result)">
-          <Parameter Name="letra" Mode="In" Type="String" />
+            <Parameter Name="letra" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="buscar_usuario" ReturnType="Collection(Model.buscar_usuario_Result)">
-          <Parameter Name="letra" Mode="In" Type="String" />
+            <Parameter Name="letra" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="editar_usuario">
             <Parameter Name="idUsuario" Mode="In" Type="Int32" />
@@ -227,7 +228,7 @@
             <Parameter Name="Rol" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="Eliminar_Persona">
-          <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="eliminar_usuario">
             <Parameter Name="idusuario" Mode="In" Type="Int32" />
@@ -269,8 +270,8 @@
         </EntityContainer>
         <ComplexType Name="Buscar_Anio_Personal_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="10" />
-          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
           <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
           <Property Type="DateTime" Name="Caducidad_licencia" Nullable="true" />
           <Property Type="DateTime" Name="Certificacion" Nullable="true" />
@@ -291,8 +292,8 @@
         </ComplexType>
         <ComplexType Name="buscar_formacion_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="10" />
-          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
           <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
           <Property Type="DateTime" Name="Caducidad_licencia" Nullable="true" />
           <Property Type="DateTime" Name="Certificacion" Nullable="true" />
@@ -313,8 +314,8 @@
         </ComplexType>
         <ComplexType Name="buscar_person_nom_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="10" />
-          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
           <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
           <Property Type="DateTime" Name="Caducidad_licencia" Nullable="true" />
           <Property Type="DateTime" Name="Certificacion" Nullable="true" />
@@ -335,8 +336,8 @@
         </ComplexType>
         <ComplexType Name="buscar_tipo_Bachiller_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="10" />
-          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
           <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
           <Property Type="DateTime" Name="Caducidad_licencia" Nullable="true" />
           <Property Type="DateTime" Name="Certificacion" Nullable="true" />
@@ -367,8 +368,8 @@
         </ComplexType>
         <ComplexType Name="Mostrar_Personas_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="10" />
-          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Cédula" Nullable="false" MaxLength="10" />
           <Property Type="String" Name="Formacion" Nullable="false" MaxLength="150" />
           <Property Type="DateTime" Name="Caducidad_licencia" Nullable="true" />
           <Property Type="DateTime" Name="Certificacion" Nullable="true" />

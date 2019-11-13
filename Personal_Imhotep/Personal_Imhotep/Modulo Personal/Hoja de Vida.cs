@@ -14,10 +14,13 @@ namespace Personal_Imhotep.Modulo_Personal
 {
     public partial class Hoja_de_Vida : Form 
     {
+        public bool m_myFunctionCalled;
 
         public Hoja_de_Vida()
         {
             InitializeComponent();
+
+            m_myFunctionCalled = false;
         }
 
         public byte[] buffer = null;
@@ -57,17 +60,27 @@ namespace Personal_Imhotep.Modulo_Personal
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
+            m_myFunctionCalled = false;
             this.Close();
         }
 
         private void btnGuardarHoja_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Datos Guardados");
+            m_myFunctionCalled = false;
             this.Close();
         }
 
-        public async void MostrarHojaV(string nombreHoja, object buffer)
+        public void myFunction()
         {
+            m_myFunctionCalled = true;
+            return;
+        }
+
+    public async void MostrarHojaV(string nombreHoja, object buffer)
+        {
+            myFunction();
+
             byte[] buffer2;
 
             string ruta = @"C:\temp\";
